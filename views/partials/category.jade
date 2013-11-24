@@ -1,0 +1,8 @@
+div(ng-controller='ProjectsCtrl')
+	h1 {{selectedCategory()}}
+	article.row(ng-repeat="project in projects | filter: {category: selectedCategorySlug}")
+		.col.col-md-6.col-lg-4.col-lg-offset-2
+			.pr-img.pr-img_featured.img-responsive
+		.col.col-md-6.col-lg-4
+			h2 {{project.name}}
+			div(ng-include="projectLongDesc(project)")

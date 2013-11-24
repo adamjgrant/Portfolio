@@ -1,0 +1,15 @@
+
+<div ng-controller="ProjectsCtrl">
+  <article ng-repeat="project in projects | filter: {duplicate: false}" class="row">
+    <div class="col col-lg-4 col-lg-offset-2 col-md-6">
+      <div style="margin-top: 42px" class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
+    </div>
+    <div class="col col-lg-4 col-md-6">
+      <div class="page-header">
+        <h1><a href="#/{{slug(project.category)}}" class="pointer">{{project.name}}</a><br/><small>{{project.year}}</small></h1>
+      </div>
+      <p>{{project.shortDesc}}</p>
+      <p class="text-muted">{{project.technologies}}</p>
+    </div>
+  </article>
+</div>

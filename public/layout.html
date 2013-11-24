@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="The Elegant Frontend Framework">
+    <meta name="author" content="Adam Kochanowicz">
+    <script src="https://jspm.io/loader.js"></script>
+    <script src="//cdn.firebase.com/v0/firebase.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/kickstrap.js"></script><script type="text/javascript">
+(function() {
+  var a;
+
+  a = document.createElement('link');
+
+  a.id = 'main-stylesheet';
+
+  a.rel = 'stylesheet';
+
+  if (k$.settings.theme === 'bootstrap') {
+    a.href = "https://github.jspm.io/twbs/bootstrap@3.0.2/css/bootstrap.css";
+  } else {
+    a.href = 'themes/' + k$.settings.theme + '.css';
+  }
+
+  document.head.appendChild(a);
+
+}).call(this);
+</script>
+    <title>Adam Kochanowicz, UX Designer</title>
+    <link rel="stylesheet" href="css/kickstrap.css">
+  </head>
+  <body>
+    <div id="sf-wrap">
+      <div id="sf-push"></div>
+    </div>
+    <section id="sf-footer" class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav">
+          <li><a href="#">&copy; Adam Kochanowicz</a></li>
+        </ul>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="http://getkickstrap.com">Powered by <span class="kickstrap-logo">Kickstrap</span></a></li>
+        </ul>
+      </div>
+    </section>
+    <link rel="stylesheet" href="/css/featured-images.css"><script type="text/javascript">
+(function() {
+  k$.ready(function() {});
+
+}).call(this);
+</script>
+  </body>
+</html>

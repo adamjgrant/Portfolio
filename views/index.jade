@@ -1,0 +1,15 @@
+extends layout
+
+block variables
+	- var active = 'home'
+
+block content
+	include _header
+
+	.container
+		section.ks-beforeload
+			img.center-block(src="/img/loading.gif")
+		section.ks-afterload(ng-view)
+
+	:coffeescript
+		k$.ready ->  

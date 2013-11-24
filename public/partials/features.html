@@ -1,0 +1,136 @@
+
+<iframe src="//player.vimeo.com/video/79834881?color=ffffff" style="width: 1000px; height: 500px" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" class="img-responsive"></iframe>
+<div class="row">
+  <h1 class="text-center">Bootstrap for Serious Web Applications</h1>
+  <p class="text-center"><a href="http://j.mp/1aEORWX" style="margin-right: 5px" class="btn btn-primary btn-lg">Get the Beta</a><a href="" ng-click="nodemo()" class="btn btn-default btn-lg">Demo</a></p>
+</div>
+<article>
+  <blockquote lang="en" class="twitter-tweet">
+    <p><a href="http://t.co/8jhTM6rK">http://t.co/8jhTM6rK<</a>its products like this that keep me stoked on being a nerd! <a href="http://t.co/3IGRhFal">http://t.co/3IGRhFal</a>&mdash; freak pelican (@freakpelican) <a href="https://twitter.com/freakpelican/statuses/276237241431519232">5 Décembre 2012</a></p>
+  </blockquote>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Why You'll Love It</h1>
+  </div>
+  <div class="col col-md-6">
+    <p class="lead">Made with the best tech on Earth.</p>
+    <p>Kickstrap seamlessly combines Bootstrap with top-tier web technologies. It's so advanced, it can run an authenticated, database-driven web app <strong>without a native backend.</strong></p>
+    <p>This is accomplished by the coupling of Google's Angular.js and Firebase.io, a websocket Backend as a Service (Baas). This is ready to go out-of-the-box, but optional to use.</p>
+  </div>
+  <div class="col col-md-6">
+    <div class="col col-md-6"><img src="./img/mashable.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/hn.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/dzone.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/t3n.png" class="img-responsive"/></div><br/>
+    <p><small>As seen on these news websites</small></p>
+  </div>
+  <div class="clearfix"></div>
+</article>
+<article>
+  <div class="page-header">
+    <h1>The Most Trusted Fork of Bootstrap</h1>
+  </div>
+  <div class="col col-md-6">
+    <p class="lead">Modern, Scalable, Production Ready.</p>
+    <p>In this second version, we've reworked Kickstrap from the ground up, empowering it with the best in pre-processing technologies (Jade, CoffeeScript, Stylus), package-dependency management (JSPM.io), and a fast, front-end MVC (Angular.js).</p>
+  </div>
+  <div class="col col-md-6">
+    <div class="col col-md-6"><img src="./img/vegankit.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/abergs.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/ipreo.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/peugeot.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/skuvault.png" class="img-responsive"/></div>
+    <div class="col col-md-6"><img src="./img/fwdslash.png" class="img-responsive"/></div><br/>
+    <p><small>Trusted by these brands</small></p>
+  </div>
+  <div class="clearfix"></div>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Backend as a Service</h1>
+  </div>
+  <p class="lead">Out-of-box functionality with Firebase.com
+    <div class="col col-sm-7">
+      <p>Kickstrap works with Firebase's cloud-based backend from square one. Via an agreement with Firebase, we're able to set up all of our users with a special, unlimited usage, read-only sample database out-of-the-box. You can then copy this to your own Firebase account and set up your own custom read/write and authentication permissions.</p>
+    </div>
+    <div class="col col-sm-5"><img src="https://www.firebase.com/images/firebase_arrow_active.png"/></div>
+  </p>
+  <div class="clearfix"></div>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Included Themes</h1>
+  </div>
+  <p class="lead">Activate themes on-the-fly</p>
+  <p>Click on a theme to preview.</p>
+  <div ng-repeat="theme in themes" class="col col-sm-4">
+    <h4>{{theme.title}}</h4><img src="./img/{{theme.name}}.png" ng-click="setTheme(theme.name)" class="thumbnail"/>
+  </div>
+  <div class="clearfix"></div>
+  <p><em>* Courtesy of Thomas Park and <a href="http://bootswatch.com/">Bootswatch.com</a></em></p>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Your Website has an App Store</h1>
+  </div>
+  <div class="col col-md-6">
+    <p class="lead">Keeping track of and staying up to date on your static resources (JS, CSS, fonts, images...) and their dependencies is painful.</p>
+    <p>Kickstrap's partnership with JSPM.io provides a strong front-end package dependency manager built on Require.js.</p>
+    <p>Kickstrap apps are unit JSPM bundles of static resources that can be run at any time in the web app's lifetime. </p>
+    <p>JSPM also allows for loading resources from npm, CDNJS, and GitHub via its CDN registry.</p>
+  </div>
+  <div class="col col-md-6">
+    <div id="pong">
+      <div style="height: 300px" class="well"> 
+        <p><em>Waiting for JSPM package</em></p>
+      </div>
+    </div>
+    <p>Try it here:</p>
+    <p>
+      <pre>&lt;script type='text/javascript'&gt;
+  jspm.import('ks:pong');
+&lt;/script&gt;</pre>
+    </p>
+    <p><a ng-click="setPong()" class="btn btn-primary">Run Code</a></p>
+  </div>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Bootstrap 3</h1>
+  </div>
+  <p class="lead">The most popular CSS framework, now extended.</p>
+  <p>Bootstrap 3 is a mobile-first CSS and JS framework making UI creation a snap on any screen.</p>
+  <p><em><a href="http://getbootstrap.com/">Bootstrap Homepage</a></em></p>
+</article>
+<article>
+  <div class="page-header">
+    <h1>JSPM</h1>
+  </div>
+  <p class="lead">An app store for your website</p>
+  <p>JSPM is a browser module loader that will load any module format (ES6 / AMD / CJS) locally or even directly from NPM and Github utilising SPDY push.</p>
+  <p><em><a href="http://jspm.io/">JSPM Homepage</a></em></p>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Roots.cx</h1>
+  </div>
+  <p class="lead">Powerful compilation, live testing, and deployment</p>
+  <p>No more third-party less compilers or requirement to deploy your own server. Kickstrap is now a custom Roots template. This means it utilizes Roots" native CoffeeScript, Jade, and Stylus compilation, Heroku deployment, watch mode, plugins, and live reloading.</p>
+  <p><em><a href="http://roots.cx/">Roots Homepage</a></em></p>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Angular.js</h1>
+  </div>
+  <p class="lead">Google's front-end MVC for blindingly fast web apps</p>
+  <p>HTML is great for declaring static documents, but it falters when we try to use it for declaring dynamic views in web-applications. AngularJS lets you extend HTML vocabulary for your application. The resulting environment is extraordinarily expressive, readable, and quick to develop....</p>
+  <p><em><a href="http://angularjs.org/">Angular Homepage</a></em></p>
+</article>
+<article>
+  <div class="page-header">
+    <h1>Included templates</h1>
+  </div>
+  <p class="lead">Hack away at our included example pages</p>
+  <p>In version 1 of Kickstrap, I realized users much prefered pre-built templates over blank slates. I"ve included several simple templates for common application page types--already wired up with Angular.js. Check them out in the navbar at the top.</p>
+</article>

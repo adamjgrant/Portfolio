@@ -1,0 +1,50 @@
+$brown = rgba(242, 239, 235, 0.9)
+
+article
+	margin-top: 150px
+	margin-bottom: 150px
+.pointer
+	cursor: pointer
+
+// CSS PRERENDERING
+.pr-img
+	background-image: url('data:image/gif;base64,R0lGODlhKwALAPEAAP///wAAAIKCggAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAKwALAAACMoSOCMuW2diD88UKG95W88uF4DaGWFmhZid93pq+pwxnLUnXh8ou+sSz+T64oCAyTBUAACH5BAkKAAAALAAAAAArAAsAAAI9xI4IyyAPYWOxmoTHrHzzmGHe94xkmJifyqFKQ0pwLLgHa82xrekkDrIBZRQab1jyfY7KTtPimixiUsevAAAh+QQJCgAAACwAAAAAKwALAAACPYSOCMswD2FjqZpqW9xv4g8KE7d54XmMpNSgqLoOpgvC60xjNonnyc7p+VKamKw1zDCMR8rp8pksYlKorgAAIfkECQoAAAAsAAAAACsACwAAAkCEjgjLltnYmJS6Bxt+sfq5ZUyoNJ9HHlEqdCfFrqn7DrE2m7Wdj/2y45FkQ13t5itKdshFExC8YCLOEBX6AhQAADsAAAAAAAAAAAA=')
+	background-color: #F5F5F5
+	background-repeat: no-repeat
+	background-position: 50%
+	&_featured
+		width: 300px
+		height: 250px
+
+$footerHeight = 50px
+body
+	padding-top: 70px // For fixed navbar
+	.ks-beforeload
+		display: block
+	.ks-afterload
+		display: none
+	&.loaded
+		.ks-beforeload
+			display: none
+		.ks-afterload
+			display: block
+
+// Sticky Footer
+
+html
+, body
+	height: 100%
+
+#sf-wrap
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin 0 auto (-1 * $footerHeight)
+	padding: 0 0 $footerHeight
+
+#sf-footer
+	height: $footerHeight
+
+#sf-push
+	padding-top: $footerHeight
+	display: block
