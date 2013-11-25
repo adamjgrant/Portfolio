@@ -21,6 +21,9 @@ h4,
 h5 {
   font-family: "jaf-lapture";
 }
+h1 {
+  font-size: 30px;
+}
 .hover-grp .show-hover {
   display: none;
 }
@@ -117,14 +120,16 @@ article {
   margin: 0px auto;
   display: block;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 5px #555;
-  -moz-box-shadow: 0px 0px 5px #555;
-  -o-box-shadow: 0px 0px 5px #555;
-  -ms-box-shadow: 0px 0px 5px #555;
-  box-shadow: 0px 0px 5px #555;
+  -webkit-box-shadow: 0px 5px 5px #555;
+  -moz-box-shadow: 0px 5px 5px #555;
+  -o-box-shadow: 0px 5px 5px #555;
+  -ms-box-shadow: 0px 5px 5px #555;
+  box-shadow: 0px 5px 5px #555;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
 }
 .jumbotron {
-  background-image: url("/img/tg_cropped_blurred.jpg");
+  background-image: url("/img/tg_cropped_blurred_blue.png");
   -webkit-background-size: 320px auto;
   -moz-background-size: 320px auto;
   -o-background-size: 320px auto;
@@ -136,6 +141,20 @@ article {
 .jumbotron * {
   text-align: center;
 }
+.jumbotron h1,
+.jumbotron a,
+.jumbotron p {
+  color: #fff;
+}
+.jumbotron h1 {
+  font-size: 18pt;
+}
+.jumbotron p.lead {
+  font-size: 14px;
+}
+.page-header-img {
+  width: 50px;
+}
 @media (min-width: 321px) {
   .jumbotron {
     -webkit-background-size: 768px auto;
@@ -145,8 +164,18 @@ article {
     background-size: 768px auto;
     height: 382px;
   }
+  .jumbotron h1 {
+    font-size: 40pt;
+    margin-top: 60px;
+  }
+  .page-header-img {
+    width: 107px;
+  }
 }
 @media (min-width: 768px) {
+  h1 {
+    font-size: 39px;
+  }
   .jumbotron {
     -webkit-background-size: 992px auto;
     -moz-background-size: 992px auto;
@@ -154,6 +183,18 @@ article {
     -ms-background-size: 992px auto;
     background-size: 992px auto;
     height: 494px;
+  }
+  .jumbotron h1 {
+    margin-top: 45px;
+  }
+  .jumbotron p.lead {
+    font-size: 30px;
+  }
+  .jumbotron p.small {
+    font-size: 12px;
+  }
+  .page-header-img {
+    width: 125px;
   }
 }
 @media (min-width: 992px) {
@@ -164,6 +205,38 @@ article {
     -ms-background-size: 1200px auto;
     background-size: 1200px auto;
     height: 598px;
+  }
+  .jumbotron h1 {
+    font-size: 70pt;
+    margin-top: 75px;
+  }
+  .jumbotron img {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    width: 125px;
+  }
+  .jumbotron img:hover {
+    -webkit-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -moz-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -o-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+  .jumbotron p.small {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1201px) {
+  body {
+    background-color: #eee;
+  }
+  .jumbotron {
+    margin-top: 10px;
   }
 }
 .pr-img {
@@ -177,7 +250,6 @@ article {
   height: 250px;
 }
 body {
-  background-color: #eee;
   padding-top: 60px;
 }
 body .ks-beforeload {
@@ -209,4 +281,5 @@ body {
 #sf-push {
   padding-top: 50px;
   display: block;
+  background-color: #eee;
 }

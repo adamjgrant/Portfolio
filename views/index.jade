@@ -6,10 +6,10 @@ block variables
 block content
 	include _header
 
-	.container
-		section.ks-beforeload
+	section.ks-beforeload
+		.container
 			img.center-block(src="/img/loading.gif")
-		section.ks-afterload(ng-view)
+	section.ks-afterload(ng-view)
 
 	:coffeescript
 		k$.ready ->  

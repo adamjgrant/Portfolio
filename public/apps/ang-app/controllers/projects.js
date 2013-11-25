@@ -2,27 +2,44 @@
   define(['./module'], function(controllers) {
     return controllers.controller('ProjectsCtrl', [
       '$scope', 'angularFire', 'ngProgress', '$location', function($scope, angularFire, ngProgress, $location) {
+        $scope.categories = [
+          {
+            name: 'Delights',
+            slug: 'delights'
+          }, {
+            name: 'Mobile Experiences',
+            slug: 'mobile'
+          }, {
+            name: 'Full Stack Development',
+            slug: 'development'
+          }, {
+            name: 'UX Design',
+            slug: 'ux'
+          }
+        ];
         $scope.setLocation = function(path) {
           return $location.path(path);
         };
         $scope.selectedCategorySlug = $location.path().substr(1, $location.path().length);
         $scope.selectedCategory = function() {
-          var title;
-          title = '';
+          $scope.title = '';
           switch ($scope.selectedCategorySlug) {
+            case 'home':
+              $scope.title = 'Home';
+              break;
             case 'delights':
-              title = 'Delights';
+              $scope.title = 'Delights';
               break;
             case 'mobile':
-              title = 'Mobile Experiences';
+              $scope.title = 'Mobile Experiences';
               break;
             case 'development':
-              title = 'Full Stack Development';
+              $scope.title = 'Full Stack Development';
               break;
             case 'ux':
-              title = 'UX Design';
+              $scope.title = 'UX Design';
           }
-          return title;
+          return $scope.title;
         };
         $scope.slug = function(string) {
           var slug;

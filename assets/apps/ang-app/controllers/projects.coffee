@@ -1,16 +1,30 @@
 define ['./module'], (controllers) ->
 	controllers.controller 'ProjectsCtrl', ['$scope', 'angularFire', 'ngProgress', '$location', ($scope, angularFire, ngProgress, $location) ->
+		$scope.categories = [
+			name: 'Delights'
+			slug: 'delights'
+		,
+			name: 'Mobile Experiences'
+			slug: 'mobile'
+		,
+			name: 'Full Stack Development'
+			slug: 'development'
+		,
+			name: 'UX Design'
+			slug: 'ux'
+		]
 		$scope.setLocation = (path) ->
 			$location.path(path)
 		$scope.selectedCategorySlug = $location.path().substr 1, $location.path().length
 		$scope.selectedCategory = () ->
-			title = ''
+			$scope.title = ''
 			switch $scope.selectedCategorySlug
-				when 'delights' then title = 'Delights'
-				when 'mobile' then title = 'Mobile Experiences'
-				when 'development' then title = 'Full Stack Development'
-				when 'ux' then title = 'UX Design'
-			title
+				when 'home' then $scope.title = 'Home'
+				when 'delights' then $scope.title = 'Delights'
+				when 'mobile' then $scope.title = 'Mobile Experiences'
+				when 'development' then $scope.title = 'Full Stack Development'
+				when 'ux' then $scope.title = 'UX Design'
+			$scope.title
 		$scope.slug = (string) ->
 			slug = (str) ->
 				str = str.replace(/^\s+|\s+$/g, "") # trim

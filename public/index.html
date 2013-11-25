@@ -37,15 +37,6 @@
   <body>
     <div id="sf-wrap">
       <div class="container_max">
-        <div class="jumbotron">
-          <div class="container">
-            <div class="row">
-              <div class="col col-lg-12">
-                <h1>Adam Kochanowicz</h1>
-              </div>
-            </div>
-          </div>
-        </div>
         <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
@@ -62,10 +53,10 @@
             </div>
           </div>
         </nav>
-        <div class="container">
-          <section class="ks-beforeload"><img src="/img/loading.gif" class="center-block"></section>
-          <section ng-view class="ks-afterload"></section>
-        </div><script type="text/javascript">
+        <section class="ks-beforeload">
+          <div class="container"><img src="/img/loading.gif" class="center-block"></div>
+        </section>
+        <section ng-view class="ks-afterload"></section><script type="text/javascript">
 (function() {
   k$.ready(function() {});
 
