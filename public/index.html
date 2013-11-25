@@ -70,10 +70,11 @@
           <li><a href="http://getkickstrap.com">Powered by <span class="kickstrap-logo">Kickstrap</span></a></li>
         </ul>
       </div>
-    </section>
-    <link rel="stylesheet" href="/css/featured-images.css"><script type="text/javascript">
+    </section><script type="text/javascript">
 (function() {
-  k$.ready(function() {});
+  k$.ready(function() {
+    return jspm["import"]('ks:featuredimages');
+  });
 
 }).call(this);
 </script>

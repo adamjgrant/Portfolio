@@ -35,6 +35,6 @@ html(lang='en')
           li
             a(href="http://getkickstrap.com") Powered by 
               span.kickstrap-logo Kickstrap
-    link(rel="stylesheet", href="/css/featured-images.css")
     :coffeescript
       k$.ready ->  
+        jspm.import 'ks:featuredimages'

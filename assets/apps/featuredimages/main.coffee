@@ -1,0 +1,1 @@
+define ['./featured-images.css!', './featured-images2.css!'], () ->
