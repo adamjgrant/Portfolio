@@ -1,3 +1,47 @@
+.tl-spine {
+  border-left: 5px solid #ddd;
+}
+.tl-spine-dot {
+  display: inherit;
+  padding: 50px;
+}
+.tl-spine-dot-marker {
+  padding: 4px;
+  background-color: #ccc;
+  display: inline-block;
+  position: relative;
+  border: 3px solid #fff;
+  margin-left: -60px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px;
+  float: left;
+  clear: right;
+}
+.tl-spine-dot-marker:before {
+  position: absolute;
+  display: block;
+  content: '';
+  border: 1px solid #c2c2c2;
+  height: 16px;
+  width: 16px;
+  top: -4px;
+  left: -4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
 article {
   margin-top: 150px;
   margin-bottom: 150px;

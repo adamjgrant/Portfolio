@@ -223,7 +223,7 @@ define ['./module'], (controllers) ->
 			category: 'mobile'
 			duplicate: true
 		,
-			name: 'ComedyCellar'
+			name: 'Comedy Cellar'
 			year: 2013
 			employer: false
 			shortDesc: 'Created a reservation ticket screen similar to iOS\'s Passbook. Increased sales to owner\'s neighboring bar.'
@@ -303,4 +303,6 @@ define ['./module'], (controllers) ->
 			category: 'ux'
 			duplicate: true
 		]
+		# For the timeline plugin
+		k$.projects = $scope.projects
 	]

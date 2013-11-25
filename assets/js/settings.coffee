@@ -2,7 +2,7 @@
 
 window.k$ =
 	apps: [
-		'ks:sample-app'
+		'ks:timeline'
 		'ks:tinygrowl'
 		'ks:ang-app'
 		'ks:kickstrap-logo'

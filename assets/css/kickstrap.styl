@@ -1,4 +1,29 @@
 $brown = rgba(242, 239, 235, 0.9)
+$spine-color = #CCC
+.tl-spine
+	border-left: 5px solid #DDD
+	&-dot
+		display: inherit
+		padding: 50px
+		&-marker
+			padding: 4px
+			background-color: $spine-color
+			display: inline-block
+			position: relative
+			border: 3px solid white
+			margin-left: -60px
+			border-radius: 10px
+			float: left
+			clear: right
+			&:before
+				position: absolute; display: block; content: ''
+				border: 1px solid darken($spine-color, 5%)
+				height: 16px
+				width: 16px
+				top: -4px
+				left: -4px
+				box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box
+				border-radius(50%)
 
 article
 	margin-top: 150px

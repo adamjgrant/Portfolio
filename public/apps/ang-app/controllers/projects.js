@@ -43,7 +43,7 @@
         $scope.projectLongDesc = function(project) {
           return "partials/" + project.category + "/" + ($scope.slug(project.name)) + ".html";
         };
-        return $scope.projects = [
+        $scope.projects = [
           {
             name: 'Edupedia',
             year: 1998,
@@ -237,7 +237,7 @@
             category: 'mobile',
             duplicate: true
           }, {
-            name: 'ComedyCellar',
+            name: 'Comedy Cellar',
             year: 2013,
             employer: false,
             shortDesc: 'Created a reservation ticket screen similar to iOS\'s Passbook. Increased sales to owner\'s neighboring bar.',
@@ -318,6 +318,7 @@
             duplicate: true
           }
         ];
+        return k$.projects = $scope.projects;
       }
     ]);
   });
