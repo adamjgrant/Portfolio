@@ -1,3 +1,50 @@
+p,
+a,
+label,
+em,
+strong,
+table,
+ul,
+li {
+  font-family: "ff-meta-serif-web-pro";
+}
+p {
+  font-size: 21px;
+}
+p.lead {
+  font-size: 28px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "jaf-lapture";
+}
+.hover-grp .show-hover {
+  display: none;
+}
+.hover-grp .hide-hover {
+  display: inherit;
+}
+.hover-grp .visible-hover {
+  visibility: hidden;
+}
+.hover-grp .hidden-hover {
+  visibility: visible;
+}
+.hover-grp:hover .show-hover {
+  display: block;
+}
+.hover-grp:hover .hide-hover {
+  display: none;
+}
+.hover-grp:hover .visible-hover {
+  visibility: visible;
+}
+.hover-grp:hover .hidden-hover {
+  visibility: hidden;
+}
 .tl-spine {
   border-left: 5px solid #ddd;
 }
@@ -65,9 +112,63 @@ article {
 .pointer {
   cursor: pointer;
 }
+.container_max {
+  max-width: 1200px;
+  margin: 0px auto;
+  display: block;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px #555;
+  -moz-box-shadow: 0px 0px 5px #555;
+  -o-box-shadow: 0px 0px 5px #555;
+  -ms-box-shadow: 0px 0px 5px #555;
+  box-shadow: 0px 0px 5px #555;
+}
+.jumbotron {
+  background-image: url("/img/tg_cropped_blurred.jpg");
+  -webkit-background-size: 320px auto;
+  -moz-background-size: 320px auto;
+  -o-background-size: 320px auto;
+  -ms-background-size: 320px auto;
+  background-size: 320px auto;
+  height: 160px;
+  background-repeat: no-repeat;
+}
+.jumbotron * {
+  text-align: center;
+}
+@media (min-width: 321px) {
+  .jumbotron {
+    -webkit-background-size: 768px auto;
+    -moz-background-size: 768px auto;
+    -o-background-size: 768px auto;
+    -ms-background-size: 768px auto;
+    background-size: 768px auto;
+    height: 382px;
+  }
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    -webkit-background-size: 992px auto;
+    -moz-background-size: 992px auto;
+    -o-background-size: 992px auto;
+    -ms-background-size: 992px auto;
+    background-size: 992px auto;
+    height: 494px;
+  }
+}
+@media (min-width: 992px) {
+  .jumbotron {
+    -webkit-background-size: 1200px auto;
+    -moz-background-size: 1200px auto;
+    -o-background-size: 1200px auto;
+    -ms-background-size: 1200px auto;
+    background-size: 1200px auto;
+    height: 598px;
+  }
+}
 .pr-img {
   background-image: url("data:image/gif;base64,R0lGODlhKwALAPEAAP///wAAAIKCggAAACH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAKwALAAACMoSOCMuW2diD88UKG95W88uF4DaGWFmhZid93pq+pwxnLUnXh8ou+sSz+T64oCAyTBUAACH5BAkKAAAALAAAAAArAAsAAAI9xI4IyyAPYWOxmoTHrHzzmGHe94xkmJifyqFKQ0pwLLgHa82xrekkDrIBZRQab1jyfY7KTtPimixiUsevAAAh+QQJCgAAACwAAAAAKwALAAACPYSOCMswD2FjqZpqW9xv4g8KE7d54XmMpNSgqLoOpgvC60xjNonnyc7p+VKamKw1zDCMR8rp8pksYlKorgAAIfkECQoAAAAsAAAAACsACwAAAkCEjgjLltnYmJS6Bxt+sfq5ZUyoNJ9HHlEqdCfFrqn7DrE2m7Wdj/2y45FkQ13t5itKdshFExC8YCLOEBX6AhQAADsAAAAAAAAAAAA=");
-  background-color: #f5f5f5;
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: 50%;
 }
@@ -76,6 +177,7 @@ article {
   height: 250px;
 }
 body {
+  background-color: #eee;
   padding-top: 60px;
 }
 body .ks-beforeload {

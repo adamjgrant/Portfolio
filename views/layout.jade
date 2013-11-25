@@ -20,16 +20,20 @@ html(lang='en')
         a.href= 'themes/' + k$.settings.theme + '.css'
       document.head.appendChild a
     title #{title}
-    link(rel="stylesheet", href="css/kickstrap.css")
+    link(rel='stylesheet' href="/css/kickstrap.css")
+    script(src="//use.typekit.net/pvn6abu.js")
+    script.
+      try{Typekit.load();}catch(e){}
   body
     #sf-wrap
-      .jumbotron
-        .container
-          .row
-            .col.col-lg-8.col-lg-offset-2
-              h1 Adam Kochanowicz
-      block variables
-      block content
+      .container_max
+        .jumbotron
+          .container
+            .row
+              .col.col-lg-12
+                h1 Adam Kochanowicz
+        block variables
+        block content
       #sf-push
     section#sf-footer.navbar.navbar-inverse.navbar-static-top
       .container
