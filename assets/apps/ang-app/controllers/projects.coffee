@@ -1,5 +1,7 @@
 define ['./module'], (controllers) ->
 	controllers.controller 'ProjectsCtrl', ['$scope', 'angularFire', 'ngProgress', '$location', ($scope, angularFire, ngProgress, $location) ->
+		$scope.setLocation = (path) ->
+			$location.path(path)
 		$scope.selectedCategorySlug = $location.path().substr 1, $location.path().length
 		$scope.selectedCategory = () ->
 			title = ''
@@ -124,7 +126,7 @@ define ['./module'], (controllers) ->
 			employer: true
 			shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
 			technologies: 'HTML, CSS, AdobeCS, Cinema4D'
-			category: 'branding'
+			category: 'ux'
 			duplicate: false
 		,
 			name: 'PriorKnowledge'
@@ -148,7 +150,7 @@ define ['./module'], (controllers) ->
 			employer: false
 			shortDesc: ''
 			technologies: ''
-			category: 'branding'
+			category: 'ux'
 			duplicate: true
 		,
 			name: 'Ske.dj'
@@ -231,7 +233,7 @@ define ['./module'], (controllers) ->
 			category: 'mobile'
 			duplicate: false
 		,
-			name: 'ComedyCellar'
+			name: 'Comedy Cellar'
 			year: 2013
 			employer: false
 			shortDesc: ''

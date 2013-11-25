@@ -2,6 +2,9 @@
   define(['./module'], function(controllers) {
     return controllers.controller('ProjectsCtrl', [
       '$scope', 'angularFire', 'ngProgress', '$location', function($scope, angularFire, ngProgress, $location) {
+        $scope.setLocation = function(path) {
+          return $location.path(path);
+        };
         $scope.selectedCategorySlug = $location.path().substr(1, $location.path().length);
         $scope.selectedCategory = function() {
           var title;
@@ -138,7 +141,7 @@
             employer: true,
             shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API',
             technologies: 'HTML, CSS, AdobeCS, Cinema4D',
-            category: 'branding',
+            category: 'ux',
             duplicate: false
           }, {
             name: 'PriorKnowledge',
@@ -162,7 +165,7 @@
             employer: false,
             shortDesc: '',
             technologies: '',
-            category: 'branding',
+            category: 'ux',
             duplicate: true
           }, {
             name: 'Ske.dj',
@@ -245,7 +248,7 @@
             category: 'mobile',
             duplicate: false
           }, {
-            name: 'ComedyCellar',
+            name: 'Comedy Cellar',
             year: 2013,
             employer: false,
             shortDesc: '',

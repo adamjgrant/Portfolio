@@ -3,24 +3,23 @@ div(ng-controller='ProjectsCtrl')
 	.row(ng-repeat="project in projects | filter: {duplicate: false}")
 
 		.col-lg-8.col-lg-offset-2
-			.tl-spine
-				.tl-spine-dot
+			.tl-spine.pointer(ng-click="setLocation(slug(project.category))")
+				.tl-spine-dot(ng-hide="project.employer") 
 					.tl-spine-dot-marker.img-rounded
-					h4 
+					h4
 						a.pointer(href="#/{{slug(project.category)}}") {{project.name}}
-			.clearfix
+						br
+						small {{project.year}}
+				.tl-spine-dot.tl-spine-dot_employer(ng-show="project.employer") 
+					.tl-spine-dot-marker.img-rounded
+					.pr-img.pr-img_featured.img-responsive(
+						class="pr-img_{{slug(project.name)}}"
+					)
+					h1
+						a.pointer(href="#/{{slug(project.category)}}") {{project.name}}
+						br
+						small {{project.year}}
+					p {{project.shortDesc}}
+					p.text-muted {{project.technologies}}
 
-	article
-		.col.col-lg-4.col-lg-offset-2.col-md-6
-			.pr-img.pr-img_featured.img-responsive(
-				style="margin-top: 42px"
-				class="pr-img_{{slug(project.name)}}"
-			)
-		.col.col-lg-4.col-md-6
-			.page-header
-				h1
-					a.pointer(href="#/{{slug(project.category)}}") {{project.name}}
-					br
-					small {{project.year}}
-			p {{project.shortDesc}}
-			p.text-muted {{project.technologies}}
+			.clearfix

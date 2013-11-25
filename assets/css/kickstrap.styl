@@ -2,9 +2,18 @@ $brown = rgba(242, 239, 235, 0.9)
 $spine-color = #CCC
 .tl-spine
 	border-left: 5px solid #DDD
+	&:hover
+		outline: 1px solid #CCC
+		box-shadow: 0px 0px 5px #BBB
+		margin-left: -25px
+		padding-left: 25px
+		.tl-spine-dot-marker
+			margin-left: -85px
 	&-dot
 		display: inherit
-		padding: 50px
+		padding: 10px 50px
+		&_employer
+			padding: 50px
 		&-marker
 			padding: 4px
 			background-color: $spine-color
@@ -43,7 +52,7 @@ article
 
 $footerHeight = 50px
 body
-	padding-top: 70px // For fixed navbar
+	padding-top: 60px // For fixed navbar
 	.ks-beforeload
 		display: block
 	.ks-afterload
