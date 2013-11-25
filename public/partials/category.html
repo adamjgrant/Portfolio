@@ -2,18 +2,24 @@
 <div class="container">
   <div ng-controller="ProjectsCtrl">
     <div class="row">
-      <div class="col col-lg-12">
+      <div class="col col-md-8 col-md-offset-2">
         <div class="page-header"><img src="/img/hex-{{selectedCategorySlug}}.png" class="img-responsive pull-right page-header-img"/>
           <h1>{{selectedCategory()}}</h1>
         </div>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
+        <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div>
     <article ng-repeat="project in projects | filter: {category: selectedCategorySlug}" class="row">
-      <div class="col col-md-6 col-lg-4">
+      <div class="col col-md-4 col-md-offset-2">
         <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
       </div>
-      <div class="col col-md-6 col-lg-8">
+      <div class="col col-md-4">
         <h2>{{project.name}}</h2>
+        <p class="lead">{{project.shortDesc}}</p>
+      </div>
+      <div class="clearfix"></div><br/>
+      <div class="col col-md-8 col-md-offset-2">
         <div ng-include="projectLongDesc(project)"></div>
       </div>
     </article>
