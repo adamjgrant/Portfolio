@@ -167,8 +167,8 @@ article {
     height: 382px;
   }
   .jumbotron h1 {
-    font-size: 40pt;
-    margin-top: 60px;
+    font-size: 22pt;
+    margin-top: 125px;
   }
   .page-header-img {
     width: 107px;
@@ -178,6 +178,10 @@ article {
   .navbar-default {
     background-color: rgba(221,221,221,0.25);
     border-color: transparent;
+  }
+  .navbar-default:hover {
+    background-color: #fff;
+    border-color: #ccc;
   }
   .navbar-default .navbar-brand,
   .navbar-default .navbar-nav > li > a {
