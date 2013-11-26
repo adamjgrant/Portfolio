@@ -24,9 +24,9 @@
 							p {{project.shortDesc}}
 							p.text-muted Technology: {{project.technologies}}
 							p(ng-show="alternateArticles(project.id).length") More information about {{project.name}} in 
-								a.pointer(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") 
+								span(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") 
 									span(ng-show="$last && !$first") and 
-									| {{getNameForCategorySlug(article.category)}}
+									a.pointer {{getNameForCategorySlug(article.category)}}
 									span(ng-hide="$last || {{alternateArticles(project.id).length < 3}}") , 
 
 						div(ng-include="projectLongDesc(project)")

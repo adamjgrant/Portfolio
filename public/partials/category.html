@@ -22,7 +22,7 @@
               <h1 id="{{slug(project.name)}}">{{project.name}}<br/><small>{{project.year}}</small></h1><br/>
               <p>{{project.shortDesc}}</p>
               <p class="text-muted">Technology: {{project.technologies}}</p>
-              <p ng-show="alternateArticles(project.id).length">More information about {{project.name}} in <a ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)" class="pointer"> <span ng-show="$last &amp;&amp; !$first">and </span>{{getNameForCategorySlug(article.category)}}<span ng-hide="$last || {{alternateArticles(project.id).length &lt; 3}}">, </span></a></p>
+              <p ng-show="alternateArticles(project.id).length">More information about {{project.name}} in <span ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)"> <span ng-show="$last &amp;&amp; !$first">and </span><a class="pointer">{{getNameForCategorySlug(article.category)}}</a><span ng-hide="$last || {{alternateArticles(project.id).length &lt; 3}}">, </span></span></p>
             </div>
             <div ng-include="projectLongDesc(project)"></div>
             <div class="clearfix"></div>

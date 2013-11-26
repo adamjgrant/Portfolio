@@ -17,26 +17,26 @@ define ['./module'], (controllers) ->
 			id: 0
 			name: 'Delights'
 			slug: 'delights'
-			lead: 'Lorem ipsum dolor sit amet'
-			desc: 'blah blah blah, latin is a dead language anyway.'
+			lead: 'Here are some of my just-for-fun projects.'
+			desc: 'Every once in a while, I like to work on small, quick projects for my own amusement.'
 		,
 			id: 1
 			name: 'Mobile Experiences'
 			slug: 'mobile'
-			lead: 'Lorem ipsum dolor sit amet'
-			desc: 'blah blah blah, latin is a dead language anyway.'
+			lead: 'I try to do projects mobile-friendly and mobile-first.'
+			desc: 'Lately I\'ve found it more challenging to anticipate the user experience of a mobile device and not just making the parts fit on the screen.'
 		,
 			id: 2
 			name: 'Full Stack Development'
 			slug: 'development'
-			lead: 'Lorem ipsum dolor sit amet'
-			desc: 'blah blah blah, latin is a dead language anyway.'
+			lead: 'I\'ve built several websites from top to bottom.'
+			desc: 'While I prefer to work as close to the design side of projects as possible, when the job needs to be done, I\'m happy to pick up on the latest and greatest back- and front-end frameworks. Most of my earlier projects were written in PHP while more recently I\'ve worked in .NET, Django, and Ruby on Rails.'
 		,
 			id: 3
 			name: 'UX Design'
 			slug: 'ux'
-			lead: 'Lorem ipsum dolor sit amet'
-			desc: 'blah blah blah, latin is a dead language anyway.'
+			lead: 'My motivation to get into UX started with an experience most of us have...'
+			desc: '...the experience of poor UX. I would collect and blog about simple UI mistakes with horrible consequences and gradually came to realize I could develop great UX for a living.'
 		]
 		$scope.$on '$locationChangeSuccess', ->
 			setTimeout ->
@@ -168,7 +168,7 @@ define ['./module'], (controllers) ->
 			year: 2008
 			employer: true
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
 			category: 'ux'
 			showOnHomePage: false
 		,
@@ -213,7 +213,7 @@ define ['./module'], (controllers) ->
 			year: 2011
 			employer: true
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, AdobeCS, Cinema4D'
 			category: 'development'
 			showOnHomePage: false
 		,
@@ -249,7 +249,7 @@ define ['./module'], (controllers) ->
 			year: 2011
 			employer: true
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
 			category: 'ux'
 			showOnHomePage: false
 		,
@@ -267,7 +267,7 @@ define ['./module'], (controllers) ->
 			year: 2012
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
 			category: 'development'
 			showOnHomePage: false
 		,
@@ -312,7 +312,7 @@ define ['./module'], (controllers) ->
 			year: 2013
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -330,7 +330,7 @@ define ['./module'], (controllers) ->
 			year: 2013
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'Hype2, JavaScript, PHP'
 			category: 'ux'
 			showOnHomePage: false
 		,
@@ -393,7 +393,7 @@ define ['./module'], (controllers) ->
 			year: 2013
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -402,7 +402,7 @@ define ['./module'], (controllers) ->
 			year: 2013
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
 			category: 'ux'
 			showOnHomePage: false
 		]
