@@ -198,7 +198,7 @@ define ['./module'], (controllers) ->
 			year: 2011
 			employer: false
 			shortDesc: ''
-			technologies: ''
+			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
 			category: 'ux'
 			duplicate: true
 		,

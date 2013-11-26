@@ -32,7 +32,7 @@
     </div>
     <div class="col col-md-2 visible-lg visible-md">
       <div data-spy="affix" data-offset-top="200" class="affixer">
-        <h4>On this page</h4><br/>
+        <h4>{{selectedCategory().name}}</h4><br/>
         <ul class="list-unstyled">
           <li ng-repeat="project in projects | filter: {category: selectedCategory().slug}"> <a ng-click="setLocation(slug(project.category), slug(project.name), true)" class="pointer">{{project.name}}</a></li>
         </ul>
