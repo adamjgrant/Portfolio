@@ -187,6 +187,12 @@ article {
   .navbar-default .navbar-nav > li > a {
     color: #555;
   }
+  .navbar-default .navbar-nav > .active > a,
+  .navbar-default .navbar-nav > .active > a:hover,
+  .navbar-default .navbar-nav > .active > a:focus {
+    color: #18bc9c;
+    background-color: transparent;
+  }
   h1 {
     font-size: 39px;
   }

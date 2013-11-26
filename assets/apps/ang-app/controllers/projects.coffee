@@ -1,30 +1,47 @@
 define ['./module'], (controllers) ->
-	controllers.controller 'ProjectsCtrl', ['$scope', 'angularFire', 'ngProgress', '$location', ($scope, angularFire, ngProgress, $location) ->
+	controllers.controller 'ProjectsCtrl', ['$scope', 'angularFire', 'ngProgress', '$location', '$anchorScroll', ($scope, angularFire, ngProgress, $location, $anchorScroll) ->
 		$scope.categories = [
 			name: 'Delights'
 			slug: 'delights'
+			lead: 'Lorem ipsum dolor sit amet'
+			desc: 'blah blah blah, latin is a dead language anyway.'
 		,
 			name: 'Mobile Experiences'
 			slug: 'mobile'
+			lead: 'Lorem ipsum dolor sit amet'
+			desc: 'blah blah blah, latin is a dead language anyway.'
 		,
 			name: 'Full Stack Development'
 			slug: 'development'
+			lead: 'Lorem ipsum dolor sit amet'
+			desc: 'blah blah blah, latin is a dead language anyway.'
 		,
 			name: 'UX Design'
 			slug: 'ux'
+			lead: 'Lorem ipsum dolor sit amet'
+			desc: 'blah blah blah, latin is a dead language anyway.'
 		]
-		$scope.setLocation = (path) ->
+		$scope.setLocation = (path, id) ->
 			$location.path(path)
-		$scope.selectedCategorySlug = $location.path().substr 1, $location.path().length
+			$('html, body').animate
+        		scrollTop: $('body').offset().top
+        	, 0
+			setTimeout ->
+				$('html, body').animate
+        			scrollTop: $('#' + id).offset().top - 150
+        		, 200
+			, 750
 		$scope.selectedCategory = () ->
-			$scope.title = ''
-			switch $scope.selectedCategorySlug
-				when 'home' then $scope.title = 'Home'
-				when 'delights' then $scope.title = 'Delights'
-				when 'mobile' then $scope.title = 'Mobile Experiences'
-				when 'development' then $scope.title = 'Full Stack Development'
-				when 'ux' then $scope.title = 'UX Design'
-			$scope.title
+			if $location.path() == '/'
+				a = 
+					slug: 'home' 
+					name: 'Home'
+				a
+			else
+				catSlug = $location.path().substr 1, $location.path().length
+				catIndex = 0
+				$.grep($scope.categories, (e, i) -> catIndex = i if e.slug == catSlug )
+				$scope.categories[catIndex]
 		$scope.slug = (string) ->
 			slug = (str) ->
 				str = str.replace(/^\s+|\s+$/g, "") # trim
@@ -212,7 +229,7 @@ define ['./module'], (controllers) ->
 			employer: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
 			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
-			category: 'delights'
+			category: 'development'
 			duplicate: false
 		,
 			name: 'TinyGrowl'
@@ -319,6 +336,4 @@ define ['./module'], (controllers) ->
 			category: 'ux'
 			duplicate: true
 		]
-		# For the timeline plugin
-		k$.projects = $scope.projects
 	]

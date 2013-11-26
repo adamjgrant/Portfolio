@@ -1,45 +1,59 @@
 (function() {
   define(['./module'], function(controllers) {
     return controllers.controller('ProjectsCtrl', [
-      '$scope', 'angularFire', 'ngProgress', '$location', function($scope, angularFire, ngProgress, $location) {
+      '$scope', 'angularFire', 'ngProgress', '$location', '$anchorScroll', function($scope, angularFire, ngProgress, $location, $anchorScroll) {
         $scope.categories = [
           {
             name: 'Delights',
-            slug: 'delights'
+            slug: 'delights',
+            lead: 'Lorem ipsum dolor sit amet',
+            desc: 'blah blah blah, latin is a dead language anyway.'
           }, {
             name: 'Mobile Experiences',
-            slug: 'mobile'
+            slug: 'mobile',
+            lead: 'Lorem ipsum dolor sit amet',
+            desc: 'blah blah blah, latin is a dead language anyway.'
           }, {
             name: 'Full Stack Development',
-            slug: 'development'
+            slug: 'development',
+            lead: 'Lorem ipsum dolor sit amet',
+            desc: 'blah blah blah, latin is a dead language anyway.'
           }, {
             name: 'UX Design',
-            slug: 'ux'
+            slug: 'ux',
+            lead: 'Lorem ipsum dolor sit amet',
+            desc: 'blah blah blah, latin is a dead language anyway.'
           }
         ];
-        $scope.setLocation = function(path) {
-          return $location.path(path);
+        $scope.setLocation = function(path, id) {
+          $location.path(path);
+          $('html, body').animate({
+            scrollTop: $('body').offset().top
+          }, 0);
+          return setTimeout(function() {
+            return $('html, body').animate({
+              scrollTop: $('#' + id).offset().top - 150
+            }, 200);
+          }, 750);
         };
-        $scope.selectedCategorySlug = $location.path().substr(1, $location.path().length);
         $scope.selectedCategory = function() {
-          $scope.title = '';
-          switch ($scope.selectedCategorySlug) {
-            case 'home':
-              $scope.title = 'Home';
-              break;
-            case 'delights':
-              $scope.title = 'Delights';
-              break;
-            case 'mobile':
-              $scope.title = 'Mobile Experiences';
-              break;
-            case 'development':
-              $scope.title = 'Full Stack Development';
-              break;
-            case 'ux':
-              $scope.title = 'UX Design';
+          var a, catIndex, catSlug;
+          if ($location.path() === '/') {
+            a = {
+              slug: 'home',
+              name: 'Home'
+            };
+            return a;
+          } else {
+            catSlug = $location.path().substr(1, $location.path().length);
+            catIndex = 0;
+            $.grep($scope.categories, function(e, i) {
+              if (e.slug === catSlug) {
+                return catIndex = i;
+              }
+            });
+            return $scope.categories[catIndex];
           }
-          return $scope.title;
         };
         $scope.slug = function(string) {
           var slug;
@@ -63,7 +77,7 @@
         $scope.projectLongDesc = function(project) {
           return "partials/" + project.category + "/" + ($scope.slug(project.name)) + ".html";
         };
-        $scope.projects = [
+        return $scope.projects = [
           {
             name: 'Edupedia',
             year: 1998,
@@ -230,7 +244,7 @@
             employer: true,
             shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.',
             technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion',
-            category: 'delights',
+            category: 'development',
             duplicate: false
           }, {
             name: 'TinyGrowl',
@@ -338,7 +352,6 @@
             duplicate: true
           }
         ];
-        return k$.projects = $scope.projects;
       }
     ]);
   });

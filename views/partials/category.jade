@@ -1,20 +1,27 @@
 .container
-	div(ng-controller='ProjectsCtrl')
-		.row
-			.col.col-md-8.col-md-offset-2
-				br
-				.page-header
-					img.img-responsive.pull-right.page-header-img(src="/img/hex-{{selectedCategorySlug}}.png")
-					h1 {{selectedCategory()}}
-				p.lead Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-				p sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		article.row(ng-repeat="project in projects | filter: {category: selectedCategorySlug}")
-			.col.col-md-4.col-md-offset-2
-				.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
-			.col.col-md-4
-				h2 {{project.name}}
-				p.lead {{project.shortDesc}}
-			.clearfix
+	.row
+		.col.col-md-10.col-md-offset-1
 			br
-			.col.col-md-8.col-md-offset-2
-				div(ng-include="projectLongDesc(project)")
+			.page-header
+				img.img-responsive.pull-right.page-header-img(src="/img/hex-{{selectedCategory().slug}}.png")
+				h1 {{selectedCategory().name}}
+			p.lead {{selectedCategory().lead}} 
+			p {{selectedCategory().desc}}
+	br
+	.row(ng-repeat="project in projects | filter: {category: selectedCategory().slug}")
+
+		.col.col-md-8.col-md-offset-1
+			.tl-spine(ng-click="setLocation(slug(project.category))")
+				.tl-spine-dot.tl-spine-dot_employer
+					.tl-spine-dot-marker.img-rounded
+					h1(id="{{slug(project.name)}}") {{project.name}}
+						br
+						small {{project.year}}
+					.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
+					.clearfix
+					br
+					p {{project.shortDesc}}
+					p.text-muted {{project.technologies}}
+					div(ng-include="projectLongDesc(project)")
+
+			.clearfix

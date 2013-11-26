@@ -7,8 +7,10 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 				span.icon-bar
 			a.navbar-brand.hidden-sm(href="/") Adam Kochanowicz
-		.navbar-collapse.collapse.navbar-ex1-collapse
-			ul.nav.navbar-nav
-				each menuItem in [{title: 'Delights', url: '#/delights', slug: 'delights'}, {title: 'Mobile Experiences', url: '#/mobile', slug: 'mobile'}, {title: 'Full Stack Development', url: '#/development', slug: 'development'}, {title: 'UX Design', url: '#/ux', slug: 'ux'}]
-					li(class=(active === menuItem.slug ? 'active' : ''))
-						a(href=menuItem.url) #{menuItem.title}		
+		.ks-afterload
+			.navbar-collapse.collapse.navbar-ex1-collapse
+				ul.nav.navbar-nav
+					li(class="{{selectedCategory().slug == 'home' ? 'active' : ''}}")
+						a(href="/") Home
+					li(class="{{selectedCategory().slug == category.slug ? 'active' : ''}}", ng-repeat="category in categories")
+						a(href="{{'#/' + category.slug}}") {{category.name}}	

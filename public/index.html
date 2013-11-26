@@ -36,19 +36,19 @@
   </head>
   <body>
     <div id="sf-wrap">
-      <div class="container_max">
+      <div ng-controller="ProjectsCtrl" class="container_max">
         <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
               <button type="button" data-toggle="collapse" data-target=".navbar-ex1-collapse" class="navbar-toggle"><span class="sr-only">Toggle Navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="/" class="navbar-brand hidden-sm">Adam Kochanowicz</a>
             </div>
-            <div class="navbar-collapse collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#/delights">Delights		</a></li>
-                <li><a href="#/mobile">Mobile Experiences		</a></li>
-                <li><a href="#/development">Full Stack Development		</a></li>
-                <li><a href="#/ux">UX Design		</a></li>
-              </ul>
+            <div class="ks-afterload">
+              <div class="navbar-collapse collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                  <li class="{{selectedCategory().slug == 'home' ? 'active' : ''}}"><a href="/">Home</a></li>
+                  <li ng-repeat="category in categories" class="{{selectedCategory().slug == category.slug ? 'active' : ''}}"><a href="{{'#/' + category.slug}}">{{category.name}}	</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
