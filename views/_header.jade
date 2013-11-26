@@ -8,7 +8,7 @@ nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
 				span.icon-bar
 			a.navbar-brand.hidden-sm(href="/") Adam Kochanowicz
 		.ks-afterload
-			.navbar-collapse.collapse.navbar-ex1-collapse
+			.navbar-collapse.collapse.navbar-ex1-collapse(onclick="$('.navbar-collapse').collapse('hide')")
 				ul.nav.navbar-nav
 					li(class="{{selectedCategory().slug == 'home' ? 'active' : ''}}")
 						a(href="/") Home

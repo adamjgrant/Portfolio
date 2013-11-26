@@ -23,7 +23,7 @@
 							br
 							p {{project.shortDesc}}
 							p.text-muted Technology: {{project.technologies}}
-							p(ng-show="alternateArticles(project.id).length") More information about {{project.name}} in 
+							p(ng-show="alternateArticles(project.id).length") I've also written about {{project.name}} in 
 								span(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") 
 									span(ng-show="$last && !$first") and 
 									a.pointer {{getNameForCategorySlug(article.category)}}
