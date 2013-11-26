@@ -13,6 +13,7 @@
 .container
 	.row
 		.col.col-md-8.col-md-offset-2
+			.timeline-icon.hidden-xs
 			h1 Timeline
 			br
 			.tl-spine.tl-spine_hoverable.pointer(ng-repeat="project in projects | filter: {duplicate: false}" ng-click="setLocation(slug(project.category), slug(project.name))")

@@ -31,6 +31,14 @@ h1
 		.hidden-hover
 			visibility: hidden
 
+.timeline-icon
+	position: absolute
+	background-image: url('/img/timeline-icon.png')
+	background-repeat: no-repeat
+	background-size: 100%
+	width: 60px
+	height: 60px
+
 .tl-spine
 	border-left: 5px solid #DDD
 	&_hoverable:hover
@@ -108,6 +116,8 @@ article
 	.page-header
 		&-img
 			width: 107px
+	.timeline-icon
+		top: -101px
 @media (min-width: 768px)
 	.navbar-default
 		background-color: rgba(238, 238, 238, 0.9)
@@ -152,6 +162,9 @@ article
 				opacity: 1.0
 		p.small
 			font-size: 16px
+	.timeline-icon
+		top: -80px
+		left: -5px
 @media (min-width: 1201px)
 	body
 		background-color: #EEEEEE

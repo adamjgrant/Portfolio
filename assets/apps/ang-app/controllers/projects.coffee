@@ -76,7 +76,7 @@ define ['./module'], (controllers) ->
 		$scope.projects = [
 			name: 'Edupedia'
 			year: 1998
-			employer: false
+			employer: true
 			shortDesc: 'An online encylclopedia anyone can edit. Sound familiar? I had the idea way before the other guys, but trust me--it was much worse.'
 			technologies: 'HTML, VisualPage'
 			category: 'delights'
