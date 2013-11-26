@@ -53,7 +53,7 @@ h1 {
 .tl-spine {
   border-left: 5px solid #ddd;
 }
-.tl-spine:hover {
+.tl-spine_hoverable:hover {
   outline: 1px solid #ccc;
   -webkit-box-shadow: 0px 0px 5px #bbb;
   -moz-box-shadow: 0px 0px 5px #bbb;
@@ -63,7 +63,7 @@ h1 {
   margin-left: -25px;
   padding-left: 25px;
 }
-.tl-spine:hover .tl-spine-dot-marker {
+.tl-spine_hoverable:hover .tl-spine-dot-marker {
   margin-left: -85px;
 }
 .tl-spine-dot {
@@ -179,7 +179,7 @@ article {
 }
 @media (min-width: 768px) {
   .navbar-default {
-    background-color: rgba(221,221,221,0.25);
+    background-color: rgba(238,238,238,0.9);
     -webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;

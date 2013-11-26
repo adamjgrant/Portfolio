@@ -11,10 +11,11 @@
 				img.img-responsive.pointer.center-block(src="/img/hex-{{category.slug}}.png")
 				p.small {{category.name}}
 .container
-	.row(ng-repeat="project in projects | filter: {duplicate: false}")
-
+	.row
 		.col.col-md-8.col-md-offset-2
-			.tl-spine.pointer(ng-click="setLocation(slug(project.category), slug(project.name))")
+			h1 Timeline
+			br
+			.tl-spine.tl-spine_hoverable.pointer(ng-repeat="project in projects | filter: {duplicate: false}" ng-click="setLocation(slug(project.category), slug(project.name))")
 				.tl-spine-dot.hover-grp(ng-hide="project.employer") 
 					.tl-spine-dot-marker.img-rounded
 					.row

@@ -162,6 +162,14 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			duplicate: false
 		,
+			name: 'LED Media'
+			year: 2010
+			employer: true
+			shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.'
+			technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
+			category: 'ux'
+			duplicate: false
+		,
 			name: 'PriorKnowledge'
 			year: 2011
 			employer: true

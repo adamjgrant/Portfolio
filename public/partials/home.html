@@ -16,9 +16,10 @@
   </div>
 </div>
 <div class="container">
-  <div ng-repeat="project in projects | filter: {duplicate: false}" class="row">
+  <div class="row">
     <div class="col col-md-8 col-md-offset-2">
-      <div ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine pointer">
+      <h1>Timeline</h1><br/>
+      <div ng-repeat="project in projects | filter: {duplicate: false}" ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine tl-spine_hoverable pointer">
         <div ng-hide="project.employer" class="tl-spine-dot hover-grp"> 
           <div class="tl-spine-dot-marker img-rounded"></div>
           <div class="row">
