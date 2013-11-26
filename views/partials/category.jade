@@ -14,15 +14,17 @@
 				.tl-spine(ng-click="setLocation(slug(project.category))")
 					.tl-spine-dot.tl-spine-dot_employer
 						.tl-spine-dot-marker.img-rounded
-						h1(id="{{slug(project.name)}}") {{project.name}}
+						.col.col-md-6
+							.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
+						.col.col-md-6
+							h1(id="{{slug(project.name)}}") {{project.name}}
+								br
+								small {{project.year}}
 							br
-							small {{project.year}}
-						.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
-						.clearfix
-						br
-						p {{project.shortDesc}}
-						p.text-muted {{project.technologies}}
+							p {{project.shortDesc}}
+							p.text-muted Technology: {{project.technologies}}
 						div(ng-include="projectLongDesc(project)")
+						.clearfix
 
 				.clearfix
 		.col.col-md-2.visible-lg.visible-md

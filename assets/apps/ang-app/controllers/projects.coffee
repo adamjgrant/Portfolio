@@ -27,7 +27,6 @@ define ['./module'], (controllers) ->
 					offset:
 						top: 250
 			, 500
-			console.log 'ping'
 			true
 		$scope.setLocation = (path, id, immediate) ->
 			waitTime = 0
@@ -36,7 +35,7 @@ define ['./module'], (controllers) ->
 				$('html, body').animate
 	        		scrollTop: $('body').offset().top
 	        	, 0
-	        	waitTime = 750
+	        	waitTime = 500
 			setTimeout ->
 				$('html, body').animate
         			scrollTop: $('#' + id).offset().top - 150

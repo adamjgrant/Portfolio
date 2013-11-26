@@ -33,7 +33,6 @@
               }
             });
           }, 500);
-          console.log('ping');
           return true;
         });
         $scope.setLocation = function(path, id, immediate) {
@@ -44,7 +43,7 @@
             $('html, body').animate({
               scrollTop: $('body').offset().top
             }, 0);
-            waitTime = 750;
+            waitTime = 500;
           }
           return setTimeout(function() {
             return $('html, body').animate({
