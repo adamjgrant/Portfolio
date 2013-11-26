@@ -20,7 +20,7 @@
     <div class="col col-md-8 col-md-offset-2">
       <div class="timeline-icon hidden-xs"></div>
       <h1>Timeline</h1><br/>
-      <div ng-repeat="project in projects | filter: {duplicate: false}" ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine tl-spine_hoverable pointer">
+      <div ng-repeat="project in projects | filter: {showOnHomePage: true}" ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine tl-spine_hoverable pointer">
         <div ng-hide="project.employer" class="tl-spine-dot hover-grp"> 
           <div class="tl-spine-dot-marker img-rounded"></div>
           <div class="row">

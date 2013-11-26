@@ -16,7 +16,7 @@
 			.timeline-icon.hidden-xs
 			h1 Timeline
 			br
-			.tl-spine.tl-spine_hoverable.pointer(ng-repeat="project in projects | filter: {duplicate: false}" ng-click="setLocation(slug(project.category), slug(project.name))")
+			.tl-spine.tl-spine_hoverable.pointer(ng-repeat="project in projects | filter: {showOnHomePage: true}" ng-click="setLocation(slug(project.category), slug(project.name))")
 				.tl-spine-dot.hover-grp(ng-hide="project.employer") 
 					.tl-spine-dot-marker.img-rounded
 					.row

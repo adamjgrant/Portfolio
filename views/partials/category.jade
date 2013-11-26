@@ -23,6 +23,8 @@
 							br
 							p {{project.shortDesc}}
 							p.text-muted Technology: {{project.technologies}}
+							p(ng-show="alternateArticles(project.id).length") More information about {{project.name}} in 
+								a.pointer(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") {{getNameForCategorySlug(article.category)}} 
 						div(ng-include="projectLongDesc(project)")
 						.clearfix
 
