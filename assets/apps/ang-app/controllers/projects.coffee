@@ -31,8 +31,8 @@ define ['./module'], (controllers) ->
 			true
 		$scope.setLocation = (path, id, immediate) ->
 			waitTime = 0
+			$location.path(path)
 			if !immediate
-				$location.path(path)
 				$('html, body').animate
 	        		scrollTop: $('body').offset().top
 	        	, 0

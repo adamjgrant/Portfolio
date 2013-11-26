@@ -36,7 +36,7 @@
   </head>
   <body>
     <div id="sf-wrap">
-      <div ng-controller="ProjectsCtrl" class="container_max">
+      <div id="top" ng-controller="ProjectsCtrl" class="container_max">
         <nav role="navigation" class="navbar navbar-default navbar-fixed-top">
           <div class="container">
             <div class="navbar-header">
@@ -46,7 +46,7 @@
               <div class="navbar-collapse collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
                   <li class="{{selectedCategory().slug == 'home' ? 'active' : ''}}"><a href="/">Home</a></li>
-                  <li ng-repeat="category in categories" class="{{selectedCategory().slug == category.slug ? 'active' : ''}}"><a href="{{'#/' + category.slug}}">{{category.name}}	</a></li>
+                  <li ng-repeat="category in categories" class="{{selectedCategory().slug == category.slug ? 'active' : ''}}"><a ng-click="setLocation(category.slug, 'top', true)" class="pointer">{{category.name}}	</a></li>
                 </ul>
               </div>
             </div>

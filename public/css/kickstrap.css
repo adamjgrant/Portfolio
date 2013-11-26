@@ -180,6 +180,11 @@ article {
 @media (min-width: 768px) {
   .navbar-default {
     background-color: rgba(221,221,221,0.25);
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    transition: background-color 0.5s;
     border-color: transparent;
   }
   .navbar-default:hover {
@@ -262,9 +267,6 @@ article {
 @media (min-width: 1201px) {
   body {
     background-color: #eee;
-  }
-  .jumbotron {
-    margin-top: 10px;
   }
 }
 .pr-img {

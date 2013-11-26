@@ -39,8 +39,8 @@
         $scope.setLocation = function(path, id, immediate) {
           var waitTime;
           waitTime = 0;
+          $location.path(path);
           if (!immediate) {
-            $location.path(path);
             $('html, body').animate({
               scrollTop: $('body').offset().top
             }, 0);
