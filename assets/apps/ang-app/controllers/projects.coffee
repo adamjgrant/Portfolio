@@ -21,16 +21,27 @@ define ['./module'], (controllers) ->
 			lead: 'Lorem ipsum dolor sit amet'
 			desc: 'blah blah blah, latin is a dead language anyway.'
 		]
-		$scope.setLocation = (path, id) ->
-			$location.path(path)
-			$('html, body').animate
-        		scrollTop: $('body').offset().top
-        	, 0
+		$scope.$on '$locationChangeSuccess', ->
+			setTimeout ->
+				$('.affixer').affix
+					offset:
+						top: 250
+			, 500
+			console.log 'ping'
+			true
+		$scope.setLocation = (path, id, immediate) ->
+			waitTime = 0
+			if !immediate
+				$location.path(path)
+				$('html, body').animate
+	        		scrollTop: $('body').offset().top
+	        	, 0
+	        	waitTime = 750
 			setTimeout ->
 				$('html, body').animate
         			scrollTop: $('#' + id).offset().top - 150
         		, 200
-			, 750
+			, waitTime
 		$scope.selectedCategory = () ->
 			if $location.path() == '/'
 				a = 

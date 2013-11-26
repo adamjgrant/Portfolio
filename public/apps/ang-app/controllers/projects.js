@@ -25,16 +25,32 @@
             desc: 'blah blah blah, latin is a dead language anyway.'
           }
         ];
-        $scope.setLocation = function(path, id) {
-          $location.path(path);
-          $('html, body').animate({
-            scrollTop: $('body').offset().top
-          }, 0);
+        $scope.$on('$locationChangeSuccess', function() {
+          setTimeout(function() {
+            return $('.affixer').affix({
+              offset: {
+                top: 250
+              }
+            });
+          }, 500);
+          console.log('ping');
+          return true;
+        });
+        $scope.setLocation = function(path, id, immediate) {
+          var waitTime;
+          waitTime = 0;
+          if (!immediate) {
+            $location.path(path);
+            $('html, body').animate({
+              scrollTop: $('body').offset().top
+            }, 0);
+            waitTime = 750;
+          }
           return setTimeout(function() {
             return $('html, body').animate({
               scrollTop: $('#' + id).offset().top - 150
             }, 200);
-          }, 750);
+          }, waitTime);
         };
         $scope.selectedCategory = function() {
           var a, catIndex, catSlug;

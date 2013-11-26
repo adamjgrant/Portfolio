@@ -114,6 +114,9 @@ article {
   margin-top: 150px;
   margin-bottom: 150px;
 }
+.affix {
+  top: 80px;
+}
 .pointer {
   cursor: pointer;
 }
@@ -183,9 +186,13 @@ article {
     background-color: #fff;
     border-color: #ccc;
   }
+  .navbar-default:hover .navbar-brand,
+  .navbar-default:hover .navbar-nav > li > a {
+    color: #555;
+  }
   .navbar-default .navbar-brand,
   .navbar-default .navbar-nav > li > a {
-    color: #555;
+    color: #888;
   }
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > .active > a:hover,

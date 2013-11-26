@@ -9,20 +9,30 @@
       <p>{{selectedCategory().desc}}</p>
     </div>
   </div><br/>
-  <div ng-repeat="project in projects | filter: {category: selectedCategory().slug}" class="row">
+  <div class="row">
     <div class="col col-md-8 col-md-offset-1">
-      <div ng-click="setLocation(slug(project.category))" class="tl-spine">
-        <div class="tl-spine-dot tl-spine-dot_employer">
-          <div class="tl-spine-dot-marker img-rounded"></div>
-          <h1 id="{{slug(project.name)}}">{{project.name}}<br/><small>{{project.year}}</small></h1>
-          <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
-          <div class="clearfix"></div><br/>
-          <p>{{project.shortDesc}}</p>
-          <p class="text-muted">{{project.technologies}}</p>
-          <div ng-include="projectLongDesc(project)"></div>
+      <div ng-repeat="project in projects | filter: {category: selectedCategory().slug}">
+        <div ng-click="setLocation(slug(project.category))" class="tl-spine">
+          <div class="tl-spine-dot tl-spine-dot_employer">
+            <div class="tl-spine-dot-marker img-rounded"></div>
+            <h1 id="{{slug(project.name)}}">{{project.name}}<br/><small>{{project.year}}</small></h1>
+            <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
+            <div class="clearfix"></div><br/>
+            <p>{{project.shortDesc}}</p>
+            <p class="text-muted">{{project.technologies}}</p>
+            <div ng-include="projectLongDesc(project)"></div>
+          </div>
         </div>
+        <div class="clearfix"></div>
       </div>
-      <div class="clearfix"></div>
+    </div>
+    <div class="col col-md-2 visible-lg visible-md">
+      <div data-spy="affix" data-offset-top="200" class="affixer">
+        <h4>On this page</h4><br/>
+        <ul class="list-unstyled">
+          <li ng-repeat="project in projects | filter: {category: selectedCategory().slug}"> <a ng-click="setLocation(slug(project.category), slug(project.name), true)" class="pointer">{{project.name}}</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>

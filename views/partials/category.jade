@@ -8,20 +8,27 @@
 			p.lead {{selectedCategory().lead}} 
 			p {{selectedCategory().desc}}
 	br
-	.row(ng-repeat="project in projects | filter: {category: selectedCategory().slug}")
-
+	.row
 		.col.col-md-8.col-md-offset-1
-			.tl-spine(ng-click="setLocation(slug(project.category))")
-				.tl-spine-dot.tl-spine-dot_employer
-					.tl-spine-dot-marker.img-rounded
-					h1(id="{{slug(project.name)}}") {{project.name}}
+			div(ng-repeat="project in projects | filter: {category: selectedCategory().slug}")
+				.tl-spine(ng-click="setLocation(slug(project.category))")
+					.tl-spine-dot.tl-spine-dot_employer
+						.tl-spine-dot-marker.img-rounded
+						h1(id="{{slug(project.name)}}") {{project.name}}
+							br
+							small {{project.year}}
+						.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
+						.clearfix
 						br
-						small {{project.year}}
-					.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
-					.clearfix
-					br
-					p {{project.shortDesc}}
-					p.text-muted {{project.technologies}}
-					div(ng-include="projectLongDesc(project)")
+						p {{project.shortDesc}}
+						p.text-muted {{project.technologies}}
+						div(ng-include="projectLongDesc(project)")
 
-			.clearfix
+				.clearfix
+		.col.col-md-2.visible-lg.visible-md
+			div.affixer(data-spy="affix" data-offset-top="200")
+				h4 On this page
+				br
+				ul.list-unstyled
+					li(ng-repeat="project in projects | filter: {category: selectedCategory().slug}") 
+						a.pointer(ng-click="setLocation(slug(project.category), slug(project.name), true)") {{project.name}}
