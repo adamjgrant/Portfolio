@@ -6,7 +6,7 @@ strong,
 table,
 ul,
 li {
-  font-family: "ff-meta-serif-web-pro";
+  font-family: "proxima nova";
 }
 p {
   font-size: 21px;
@@ -18,8 +18,10 @@ h1,
 h2,
 h3,
 h4,
-h5 {
-  font-family: "jaf-lapture";
+h5,
+.jumbotron p,
+.navbar a {
+  font-family: "museo-sans";
 }
 h1 {
   font-size: 30px;
@@ -173,6 +175,14 @@ article {
   }
 }
 @media (min-width: 768px) {
+  .navbar-default {
+    background-color: rgba(221,221,221,0.25);
+    border-color: transparent;
+  }
+  .navbar-default .navbar-brand,
+  .navbar-default .navbar-nav > li > a {
+    color: #555;
+  }
   h1 {
     font-size: 39px;
   }
@@ -186,6 +196,7 @@ article {
   }
   .jumbotron h1 {
     margin-top: 45px;
+    font-weight: 100;
   }
   .jumbotron p.lead {
     font-size: 30px;

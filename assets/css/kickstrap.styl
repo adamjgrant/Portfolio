@@ -2,13 +2,13 @@ $brown = rgba(242, 239, 235, 0.9)
 $spine-color = #CCC
 
 p, a, label, em, strong, table, ul, li
-	font-family: "ff-meta-serif-web-pro"
+	font-family: "proxima nova"
 p
 	font-size: 21px
 	&.lead
 		font-size: 28px
-h1, h2, h3, h4, h5
-	font-family: "jaf-lapture"
+h1, h2, h3, h4, h5, .jumbotron p, .navbar a
+	font-family: "museo-sans"
 h1
 	font-size: 30px
 
@@ -107,6 +107,11 @@ article
 		&-img
 			width: 107px
 @media (min-width: 768px)
+	.navbar-default
+		background-color: rgba(221, 221, 221, 0.25)
+		.navbar-brand, .navbar-nav > li > a
+			color: #555
+		border-color: transparent
 	h1
 		font-size: 39px
 	.jumbotron
@@ -114,6 +119,7 @@ article
 		height: 494px
 		h1
 			margin-top: 45px
+			font-weight: 100
 		p.lead
 			font-size: 30px
 		p.small

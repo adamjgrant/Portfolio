@@ -25,8 +25,7 @@ div(ng-controller='ProjectsCtrl')
 									br
 									small {{project.year}}
 							.col.col-md-6
-								p.show-hover
-									small {{project.shortDesc}}
+								p.show-hover {{project.shortDesc}}
 								p.show-hover
 									small.text-muted {{project.technologies}}
 					.tl-spine-dot.tl-spine-dot_employer(ng-show="project.employer") 
