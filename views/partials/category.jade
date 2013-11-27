@@ -20,17 +20,18 @@
 							h1(id="{{slug(project.name)}}") {{project.name}}
 							p {{project.shortDesc}}
 							p.text-muted Technology: {{project.technologies}}
-							p(ng-show="alternateArticles(project.id).length") I've also written about {{project.name}} in 
-								span(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") 
-									span(ng-show="$last && !$first") and 
-									a.pointer {{getNameForCategorySlug(article.category)}}
-									span(ng-hide="$last || {{alternateArticles(project.id).length < 3}}") , 
 						.col.col-md-6
 							.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
 						.clearfix
 						br
 						.col.col-lg-12
 							div(ng-include="projectLongDesc(project)")
+							br
+							p(ng-show="alternateArticles(project.id).length") I've also written about {{project.name}} in 
+								span(ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)") 
+									span(ng-show="$last && !$first") and 
+									a.pointer {{getNameForCategorySlug(article.category)}}
+									span(ng-hide="$last || {{alternateArticles(project.id).length < 3}}") , 
 						
 
 				.clearfix

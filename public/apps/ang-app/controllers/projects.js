@@ -417,7 +417,7 @@
             name: 'Everything.io',
             year: 2013,
             big: false,
-            shortDesc: '',
+            shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.',
             technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails',
             category: 'mobile',
             showOnHomePage: false
@@ -426,7 +426,7 @@
             name: 'Everything.io',
             year: 2013,
             big: false,
-            shortDesc: '',
+            shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.',
             technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails',
             category: 'design',
             showOnHomePage: false

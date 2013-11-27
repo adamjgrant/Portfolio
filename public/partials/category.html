@@ -21,14 +21,14 @@
               <h1 id="{{slug(project.name)}}">{{project.name}}</h1>
               <p>{{project.shortDesc}}</p>
               <p class="text-muted">Technology: {{project.technologies}}</p>
-              <p ng-show="alternateArticles(project.id).length">I've also written about {{project.name}} in <span ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)"> <span ng-show="$last &amp;&amp; !$first">and </span><a class="pointer">{{getNameForCategorySlug(article.category)}}</a><span ng-hide="$last || {{alternateArticles(project.id).length &lt; 3}}">, </span></span></p>
             </div>
             <div class="col col-md-6">
               <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
             </div>
             <div class="clearfix"></div><br/>
             <div class="col col-lg-12">
-              <div ng-include="projectLongDesc(project)"></div>
+              <div ng-include="projectLongDesc(project)"></div><br/>
+              <p ng-show="alternateArticles(project.id).length">I've also written about {{project.name}} in <span ng-click="setLocation(slug(article.category), slug(article.name))" ng-repeat="article in alternateArticles(project.id)"> <span ng-show="$last &amp;&amp; !$first">and </span><a class="pointer">{{getNameForCategorySlug(article.category)}}</a><span ng-hide="$last || {{alternateArticles(project.id).length &lt; 3}}">, </span></span></p>
             </div>
           </div>
         </div>
