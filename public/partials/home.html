@@ -20,12 +20,14 @@
     <div class="col col-md-8 col-md-offset-2">
       <div class="timeline-icon hidden-xs"></div>
       <h1>Timeline</h1><br/>
-      <div ng-repeat="project in projects | filter: {showOnHomePage: true}" ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine tl-spine_hoverable pointer">
-        <div ng-hide="project.employer" class="tl-spine-dot hover-grp"> 
-          <div class="tl-spine-dot-marker img-rounded"></div>
+      <div ng-repeat="project in projects | filter: {showOnHomePage: true} | orderBy: 'id':true" ng-click="setLocation(slug(project.category), slug(project.name))" class="tl-spine tl-spine_hoverable pointer">
+        <div ng-hide="project.big" class="tl-spine-dot hover-grp"> 
+          <div class="tl-spine-dot-marker img-rounded">
+            <div class="tl-spine-dot-marker-yearFlag">{{project.year}}</div>
+          </div><br/>
           <div class="row">
             <div class="col col-md-6">
-              <h4><a href="#/{{slug(project.category)}}" class="pointer">{{project.name}}</a><br/><small>{{project.year}}</small></h4>
+              <h4><a href="#/{{slug(project.category)}}" class="pointer">{{project.name}}</a></h4>
             </div>
             <div class="col col-md-6">
               <p class="show-hover">{{project.shortDesc}}</p>
@@ -33,12 +35,20 @@
             </div>
           </div>
         </div>
-        <div ng-show="project.employer" class="tl-spine-dot tl-spine-dot_employer"> 
-          <div class="tl-spine-dot-marker img-rounded"></div>
-          <h1><a href="#/{{slug(project.category)}}" class="pointer">{{project.name}}</a><br/><small>{{project.year}}</small></h1>
-          <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
-          <p>{{project.shortDesc}}</p>
-          <p class="text-muted">{{project.technologies}}</p>
+        <div ng-show="project.big" class="tl-spine-dot tl-spine-dot_employer"> 
+          <div class="tl-spine-dot-marker img-rounded">
+            <div class="tl-spine-dot-marker-yearFlag">{{project.year}}</div>
+          </div><br/>
+          <div class="row">
+            <div class="col col-md-6">
+              <h1><a href="#/{{slug(project.category)}}" class="pointer">{{project.name}}</a></h1>
+              <p>{{project.shortDesc}}</p>
+              <p class="text-muted">{{project.technologies}}</p>
+            </div>
+            <div class="col col-md-6">
+              <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="clearfix"></div>

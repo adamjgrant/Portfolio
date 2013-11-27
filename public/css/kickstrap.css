@@ -72,25 +72,16 @@ h1 {
 .tl-spine {
   border-left: 5px solid #ddd;
 }
-.tl-spine_hoverable:hover {
-  outline: 1px solid #ccc;
-  -webkit-box-shadow: 0px 0px 5px #bbb;
-  -moz-box-shadow: 0px 0px 5px #bbb;
-  -o-box-shadow: 0px 0px 5px #bbb;
-  -ms-box-shadow: 0px 0px 5px #bbb;
-  box-shadow: 0px 0px 5px #bbb;
-  margin-left: -25px;
-  padding-left: 25px;
-}
-.tl-spine_hoverable:hover .tl-spine-dot-marker {
-  margin-left: -85px;
-}
 .tl-spine-dot {
   display: inherit;
-  padding: 10px 50px;
+  padding: 20px;
 }
 .tl-spine-dot_employer {
-  padding: 50px;
+  padding: 50px 20px;
+}
+.tl-spine-dot_employer .tl-spine-dot-marker-yearFlag {
+  background-color: #18bc9c;
+  color: #fff;
 }
 .tl-spine-dot-marker {
   padding: 4px;
@@ -98,7 +89,7 @@ h1 {
   display: inline-block;
   position: relative;
   border: 3px solid #fff;
-  margin-left: -60px;
+  margin-left: -29px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
@@ -128,6 +119,20 @@ h1 {
   -o-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+}
+.tl-spine-dot-marker-yearFlag {
+  position: absolute;
+  padding: 3px 15px;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  top: -11px;
+  left: 15px;
+  z-index: 1;
+  color: #a1a1a1;
 }
 article {
   margin-top: 150px;
@@ -226,6 +231,33 @@ article {
   .navbar-default .navbar-nav > .active > a:focus {
     color: #18bc9c;
     background-color: transparent;
+  }
+  .tl-spine_hoverable:hover {
+    outline: 1px solid #ccc;
+    -webkit-box-shadow: 0px 0px 5px #bbb;
+    -moz-box-shadow: 0px 0px 5px #bbb;
+    -o-box-shadow: 0px 0px 5px #bbb;
+    -ms-box-shadow: 0px 0px 5px #bbb;
+    box-shadow: 0px 0px 5px #bbb;
+    margin-left: -25px;
+    padding-left: 25px;
+    border-color: #18bc9c;
+  }
+  .tl-spine_hoverable:hover .tl-spine-dot-marker {
+    margin-left: -85px;
+    background-color: #18bc9c;
+  }
+  .tl-spine_hoverable:hover .tl-spine-dot-marker:before {
+    border-color: #18bc9c;
+  }
+  .tl-spine-dot {
+    padding: 20px 50px;
+  }
+  .tl-spine-dot-marker {
+    margin-left: -60px;
+  }
+  .tl-spine-dot_employer {
+    padding: 50px;
   }
   h1 {
     font-size: 39px;
