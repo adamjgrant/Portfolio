@@ -54,10 +54,15 @@ define ['./module'], (controllers) ->
 	        	, 0
 	        	waitTime = 500
 			setTimeout ->
-				$('html, body').animate
-        			scrollTop: $('#' + id).offset().top - 150
-        		, 200
+				$scope.scrollToId id, 150, 200
 			, waitTime
+		$scope.scrollToId = (id, offset, duration) ->
+			offset = (offset || 0)
+			duration = (duration || 0)
+			$('html, body').animate
+				scrollTop: $('#' + id).offset().top - offset
+			, duration
+			true
 		$scope.selectedCategory = () ->
 			if $location.path() == '/'
 				a = 

@@ -68,10 +68,16 @@
             waitTime = 500;
           }
           return setTimeout(function() {
-            return $('html, body').animate({
-              scrollTop: $('#' + id).offset().top - 150
-            }, 200);
+            return $scope.scrollToId(id, 150, 200);
           }, waitTime);
+        };
+        $scope.scrollToId = function(id, offset, duration) {
+          offset = offset || 0;
+          duration = duration || 0;
+          $('html, body').animate({
+            scrollTop: $('#' + id).offset().top - offset
+          }, duration);
+          return true;
         };
         $scope.selectedCategory = function() {
           var a, catIndex, catSlug;
