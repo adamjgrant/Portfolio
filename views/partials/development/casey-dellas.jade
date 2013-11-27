@@ -1,0 +1,88 @@
+p Fitness trainer and nutrional counselor Casey Dellas wanted to upgrade the experience of his website, pictured below:
+p
+	.row
+		.col.col-md-8.col-md-offset-2
+			.thumbnail
+				img.img-responsive(src="/img/cd_oldsite.png")
+				.caption Dellas's old site was plagued with poor design and navigation.
+p We set out to create a consistent look and feel for the site while making it easy for users to navigate on any device. The result is pictured below.
+p
+	img.img-responsive(src="/img/cd_desktop1.png")
+p Here is a demonstration of the different behavior on a variety of device types:
+.row
+	.thumbnail
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_mobile1.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_mobile2.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_mobile3.png")
+		.clearfix
+		br
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_tablet1.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_tablet2.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_tablet3.png")
+		.clearfix
+		br
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_desktop1.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_desktop4.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_desktop3.png")
+		.clearfix
+		br
+		.caption Using jQuery UI, we were able to create an appearance similar to a native app.
+p I used Kickstrap 1 with jQuery mobile exclusively for mobile devices. Keeping the two sites separate is not noramlly something I do, but we had some stellar design tricks that really worked best on desktop.
+h3 User Testing
+p Before setting out too far, I did some user testing with my product,  
+	a.pointer(ng-click="setLocation('delights', 'lab95')") Lab95
+	| , on the current site to identify user's initial impressions.
+p
+	.row
+		.col.col-md-8.col-md-offset-2
+			.thumbnail
+				img.img-responsive(src="/img/cd_graph1.png")
+
+				img.img-responsive(src="/img/cd_graph2.png")
+
+				img.img-responsive(src="/img/cd_graph3.png")
+				.caption I used my own product, 
+					a.pointer(ng-click="setLocation('delights', 'lab95')") Lab95 
+					| to test users' memories to Five Second Tests--showing the website only briefly.
+p Overall the numbers weren't the worst I've seen, but there was certainly some confusion about what Casey was offering and whether he was a reputable source of business.
+p We agreed on some basic design improvements--Testimonials should be embedded into the content, not separated onto one page. There should only be submenus for content within a page. The home page should have a clear call to action with a secondary action.
+p To keep the navigation clear and consistent, I also wrote some custom code for desktop to fix headers above the page and glide content under a soft gradient as the user scrolled.
+.row
+	.thumbnail
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_fadeeffect1.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_fadeeffect2.png")
+		.col.col-md-4
+			img.img-responsive(src="/img/cd_fadeeffect3.png")
+		.clearfix
+		br
+		.caption Content appears in a large, readable font and slides under the header of the currently viewed section.
+p In the long run, the numbers turned out in our favor:
+p
+	.thumbnail
+		.row
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph1.png")
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph4.png")
+		.row
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph2.png")
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph5.png")
+		.row
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph3.png")
+			.col.col-md-6
+				img.img-responsive(src="/img/cd_graph6.png")
+		.caption Huge improvements in results in each of the three tests.
