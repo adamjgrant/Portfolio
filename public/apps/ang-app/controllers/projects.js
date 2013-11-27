@@ -51,7 +51,7 @@
           setTimeout(function() {
             return $('.affixer').affix({
               offset: {
-                top: 300
+                top: 285
               }
             });
           }, 500);

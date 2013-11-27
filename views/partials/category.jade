@@ -1,6 +1,6 @@
 .container
 	.row
-		.col.col-md-10.col-md-offset-1
+		.col.col-md-10.col-md-offset-1(style="min-height: 284px")
 			br
 			.page-header
 				img.img-responsive.pull-right.page-header-img(src="/img/hex-{{selectedCategory().slug}}.png")
@@ -34,10 +34,10 @@
 						
 
 				.clearfix
-		.col.col-md-2.visible-lg.visible-md
+		.col.col-md-3.visible-lg.visible-md
 			div.affixer(data-spy="affix" data-offset-top="200")
 				h4 {{selectedCategory().name}}
 				br
 				ul.list-unstyled
-					li(ng-repeat="project in projects | filter: {category: selectedCategory().slug}") 
+					li(ng-repeat="project in projects | filter: {category: selectedCategory().slug} | orderBy: 'id':true") 
 						a.pointer(ng-click="setLocation(slug(project.category), slug(project.name), true)") {{project.name}}

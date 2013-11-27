@@ -26,10 +26,12 @@ h5,
 h1 {
   font-size: 30px;
 }
-.thumbnail {
+.thumbnail,
+.img-thumbnail {
   border-color: transparent;
 }
-.thumbnail .caption {
+.thumbnail .caption,
+.img-thumbnail .caption {
   color: #555;
   font-size: 85%;
 }

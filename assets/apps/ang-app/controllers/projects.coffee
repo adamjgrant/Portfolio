@@ -42,7 +42,7 @@ define ['./module'], (controllers) ->
 			setTimeout ->
 				$('.affixer').affix
 					offset:
-						top: 300
+						top: 285
 			, 500
 			true
 		$scope.setLocation = (path, id, immediate) ->
