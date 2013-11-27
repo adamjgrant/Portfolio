@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col col-md-8 col-md-offset-1">
       <div ng-repeat="project in projects | filter: {category: selectedCategory().slug} | orderBy: 'id':true">
-        <div ng-click="setLocation(slug(project.category))" class="tl-spine">
+        <div class="tl-spine">
           <div class="tl-spine-dot tl-spine-dot_employer">
             <div class="tl-spine-dot-marker img-rounded">
               <div class="tl-spine-dot-marker-yearFlag">{{project.year}}	</div>

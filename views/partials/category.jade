@@ -11,7 +11,7 @@
 	.row
 		.col.col-md-8.col-md-offset-1
 			div(ng-repeat="project in projects | filter: {category: selectedCategory().slug} | orderBy: 'id':true")
-				.tl-spine(ng-click="setLocation(slug(project.category))")
+				.tl-spine
 					.tl-spine-dot.tl-spine-dot_employer
 						.tl-spine-dot-marker.img-rounded
 							.tl-spine-dot-marker-yearFlag {{project.year}}	
