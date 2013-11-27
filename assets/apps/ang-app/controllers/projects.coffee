@@ -157,7 +157,7 @@ define ['./module'], (controllers) ->
 			id: 7
 			name: 'CreativeWorks'
 			year: 2008
-			big: false
+			big: true
 			shortDesc: 'CW was a turning point for my experience in full stack development. Helped in the creation of many websites for CW clients.'
 			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
 			category: 'development'
@@ -166,7 +166,7 @@ define ['./module'], (controllers) ->
 			id: 8
 			name: 'CreativeWorks'
 			year: 2008
-			big: true
+			big: false
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
 			category: 'design'
