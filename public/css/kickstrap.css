@@ -26,6 +26,13 @@ h5,
 h1 {
   font-size: 30px;
 }
+.thumbnail {
+  border-color: transparent;
+}
+.thumbnail .caption {
+  color: #555;
+  font-size: 85%;
+}
 .hover-grp .show-hover {
   display: none;
 }

@@ -28,9 +28,11 @@
 									span(ng-show="$last && !$first") and 
 									a.pointer {{getNameForCategorySlug(article.category)}}
 									span(ng-hide="$last || {{alternateArticles(project.id).length < 3}}") , 
-
-						div(ng-include="projectLongDesc(project)")
 						.clearfix
+						br
+						.col.col-lg-12
+							div(ng-include="projectLongDesc(project)")
+						
 
 				.clearfix
 		.col.col-md-2.visible-lg.visible-md

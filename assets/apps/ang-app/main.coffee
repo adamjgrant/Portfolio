@@ -25,6 +25,6 @@ define [
 				templateUrl: '/partials/category.html'
 			.when '/development', 
 				templateUrl: '/partials/category.html'
-			.when '/ux', 
+			.when '/design', 
 				templateUrl: '/partials/category.html'
 	]

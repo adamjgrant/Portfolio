@@ -41,8 +41,8 @@
             desc: 'While I prefer to work as close to the design side of projects as possible, when the job needs to be done, I\'m happy to pick up on the latest and greatest back- and front-end frameworks. Most of my earlier projects were written in PHP while more recently I\'ve worked in .NET, Django, and Ruby on Rails.'
           }, {
             id: 3,
-            name: 'UX Design',
-            slug: 'ux',
+            name: 'Design',
+            slug: 'design',
             lead: 'My motivation to get into UX started with an experience most of us have...',
             desc: '...the experience of poor UX. I would collect and blog about simple UI mistakes with horrible consequences and gradually came to realize I could develop great UX for a living.'
           }
@@ -194,7 +194,7 @@
             employer: true,
             shortDesc: '',
             technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: false
           }, {
             id: 9,
@@ -221,7 +221,7 @@
             employer: true,
             shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.',
             technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: true
           }, {
             id: 12,
@@ -230,7 +230,7 @@
             employer: true,
             shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API',
             technologies: 'HTML, CSS, AdobeCS, Cinema4D',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: true
           }, {
             id: 13,
@@ -257,7 +257,7 @@
             employer: false,
             shortDesc: '',
             technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: false
           }, {
             id: 16,
@@ -275,7 +275,7 @@
             employer: true,
             shortDesc: '',
             technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: false
           }, {
             id: 18,
@@ -356,7 +356,7 @@
             employer: false,
             shortDesc: '',
             technologies: 'Hype2, JavaScript, PHP',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: false
           }, {
             id: 27,
@@ -365,7 +365,7 @@
             employer: false,
             shortDesc: 'A zen-like daily affirmation of good UX.',
             techologies: 'Wordpress, HTML, CSS, JavaScript',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: true
           }, {
             id: 28,
@@ -374,7 +374,7 @@
             employer: true,
             shortDesc: 'Complete rebranding and interaction redesign of this email campaign creation tool.',
             technologies: 'Axure RP, Adobe CS, in-person usability testing.',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: true
           }, {
             id: 29,
@@ -401,7 +401,7 @@
             employer: false,
             shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.',
             technologies: '',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: true
           }, {
             id: 32,
@@ -428,7 +428,7 @@
             employer: false,
             shortDesc: '',
             technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails',
-            category: 'ux',
+            category: 'design',
             showOnHomePage: false
           }
         ];
