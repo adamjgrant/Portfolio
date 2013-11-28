@@ -266,15 +266,6 @@
             category: 'design',
             showOnHomePage: false
           }, {
-            id: 16,
-            name: 'Ske.dj',
-            year: 2011,
-            big: false,
-            shortDesc: 'UI/UX Designer/Developer for this social event calendar startup.',
-            technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS',
-            category: 'development',
-            showOnHomePage: true
-          }, {
             id: 17,
             name: 'Ske.dj',
             year: 2011,
@@ -282,7 +273,7 @@
             shortDesc: '',
             technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS',
             category: 'design',
-            showOnHomePage: false
+            showOnHomePage: true
           }, {
             id: 18,
             name: 'VeganKit',
