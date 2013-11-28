@@ -321,6 +321,15 @@
             showOnHomePage: true
           }, {
             id: 22,
+            name: 'Ipreo',
+            year: 2012,
+            big: true,
+            shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.',
+            technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion',
+            category: 'design',
+            showOnHomePage: true
+          }, {
+            id: 23,
             name: 'TinyGrowl',
             year: 2012,
             big: false,
@@ -329,7 +338,7 @@
             category: 'development',
             showOnHomePage: true
           }, {
-            id: 23,
+            id: 24,
             name: 'Casey Dellas',
             year: 2013,
             big: false,
@@ -338,7 +347,7 @@
             category: 'development',
             showOnHomePage: true
           }, {
-            id: 24,
+            id: 25,
             name: 'Casey Dellas',
             year: 2013,
             big: false,
@@ -347,7 +356,7 @@
             category: 'mobile',
             showOnHomePage: false
           }, {
-            id: 25,
+            id: 26,
             name: 'Comedy Cellar',
             year: 2013,
             big: false,
@@ -356,7 +365,7 @@
             category: 'mobile',
             showOnHomePage: true
           }, {
-            id: 26,
+            id: 27,
             name: 'Comedy Cellar',
             year: 2013,
             big: false,
@@ -365,7 +374,7 @@
             category: 'design',
             showOnHomePage: false
           }, {
-            id: 27,
+            id: 28,
             name: 'UX Zen',
             year: 2013,
             big: true,
@@ -374,7 +383,7 @@
             category: 'design',
             showOnHomePage: true
           }, {
-            id: 28,
+            id: 29,
             name: 'Campaign Breeze',
             year: 2013,
             big: false,
@@ -383,7 +392,7 @@
             category: 'design',
             showOnHomePage: true
           }, {
-            id: 29,
+            id: 30,
             name: 'KBash',
             year: 2013,
             big: false,
@@ -392,7 +401,7 @@
             category: 'development',
             showOnHomePage: true
           }, {
-            id: 30,
+            id: 31,
             name: 'CSS Post Rendering',
             year: 2013,
             big: false,
@@ -401,7 +410,7 @@
             category: 'development',
             showOnHomePage: true
           }, {
-            id: 31,
+            id: 32,
             name: 'Email meta',
             year: 2013,
             big: false,
@@ -410,7 +419,7 @@
             category: 'design',
             showOnHomePage: true
           }, {
-            id: 32,
+            id: 33,
             name: 'Everything.io',
             year: 2013,
             big: true,
@@ -419,7 +428,7 @@
             category: 'development',
             showOnHomePage: true
           }, {
-            id: 33,
+            id: 34,
             name: 'Everything.io',
             year: 2013,
             big: false,
@@ -428,7 +437,7 @@
             category: 'mobile',
             showOnHomePage: false
           }, {
-            id: 34,
+            id: 35,
             name: 'Everything.io',
             year: 2013,
             big: false,
