@@ -224,6 +224,10 @@ article {
   .navbar-default:hover .navbar-nav > li > a {
     color: #555;
   }
+  .navbar-default:hover .navbar-brand li > a:hover,
+  .navbar-default:hover .navbar-nav > li > a:hover {
+    color: #18bc9c;
+  }
   .navbar-default:hover .navbar-brand li.active > a,
   .navbar-default:hover .navbar-nav > li.active > a {
     color: #18bc9c;
