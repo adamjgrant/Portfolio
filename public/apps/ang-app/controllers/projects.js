@@ -398,7 +398,7 @@
             big: false,
             shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.',
             technologies: '',
-            category: 'design',
+            category: 'development',
             showOnHomePage: true
           }, {
             id: 33,

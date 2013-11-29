@@ -31,7 +31,7 @@
             </div>
             <div class="col col-md-6">
               <p class="show-hover">{{project.shortDesc}}</p>
-              <p class="show-hover"><small class="text-muted">{{project.technologies}}</small></p>
+              <p class="show-hover"><small ng-hide="project.technologies == ''" class="text-muted">{{project.technologies}}</small></p>
             </div>
           </div>
         </div>

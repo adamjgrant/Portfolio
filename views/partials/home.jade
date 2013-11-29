@@ -28,7 +28,7 @@
 						.col.col-md-6
 							p.show-hover {{project.shortDesc}}
 							p.show-hover
-								small.text-muted {{project.technologies}}
+								small.text-muted(ng-hide="project.technologies == ''") {{project.technologies}}
 				.tl-spine-dot.tl-spine-dot_employer(ng-show="project.big") 
 					.tl-spine-dot-marker.img-rounded
 						.tl-spine-dot-marker-yearFlag {{project.year}}
