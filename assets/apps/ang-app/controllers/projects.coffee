@@ -213,15 +213,6 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: true
 		,
-			id: 13
-			name: 'PriorKnowledge'
-			year: 2011
-			big: false
-			shortDesc: ''
-			technologies: 'HTML, CSS, AdobeCS, Cinema4D'
-			category: 'development'
-			showOnHomePage: false
-		,
 			id: 14
 			name: 'Kickstrap'
 			year: 2011
