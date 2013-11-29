@@ -168,15 +168,6 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 8
-			name: 'CreativeWorks'
-			year: 2008
-			big: false
-			shortDesc: ''
-			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
-			category: 'design'
-			showOnHomePage: false
-		,
 			id: 9
 			name: 'Miscellarious'
 			year: 2008
