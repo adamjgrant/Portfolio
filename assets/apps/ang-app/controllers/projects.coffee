@@ -102,6 +102,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'An online encylclopedia anyone can edit. Sound familiar? I had the idea way before the other guys, but trust me--it was much worse.'
 			technologies: 'HTML, VisualPage'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,
@@ -111,6 +113,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'This early project stemmed from my excitement of learning how to do rollover image effects after reading through my father\'s computer books.'
 			technologies: 'HTML, CSS, JavaScript'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,
@@ -120,6 +124,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Adeus was a command-line NLP bot inspired by A.L.I.C.E, an Artificial Intelligence conversation program.'
 			technologies: 'QBASIC, DOS'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,
@@ -129,6 +135,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'My first program written for the Sharp Wizard, a hinged digital organizer that could run apps.'
 			technologies: 'BASIC'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,
@@ -138,6 +146,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A new obsession with Flash, drawing cartoons, banjo, and mandolin led this website and 4 minute animated cartoon.'
 			technologies: 'Macromedia/Adobe Flash, ActionScript, Adobe Premiere Pro'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,	
@@ -147,6 +157,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'My first mobile website was on this WindowsCE 1.0 device.'
 			technologies: 'HTML, CSS, JavaScript'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'mobile'
 			showOnHomePage: true
 		,
@@ -156,6 +168,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'This was both a website, social network, and native iPhone app that helped vegans look up any conceivable thing to determine if it\'s vegan (What the heck is ambergris?)'
 			technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -165,6 +179,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'CW was a turning point for my experience in full stack development. Helped in the creation of many websites for CW clients.'
 			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -174,6 +190,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Create rooms and post PostIt notes on the wall. Anyone can add or edit anything. Recently brought back to life with new code.'
 			technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -183,6 +201,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'While working at a vegan spa in the South of France, I worked as a developer for the spa owners\' side project.'
 			technologies: 'Java Spring MVC, HTML, CSS, JavaScript, Flash'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -192,6 +212,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.'
 			technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -201,6 +223,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
 			technologies: 'HTML, CSS, AdobeCS, Cinema4D'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -210,6 +234,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -219,6 +245,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: false
 		,
@@ -228,6 +256,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -237,6 +267,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'Another of my most successful projects so far is this all-in-one and multilingual responsive website for vegans and those interested in going vegan.'
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'mobile'
 			showOnHomePage: true
 		,
@@ -246,6 +278,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: false
 		,
@@ -254,7 +288,9 @@ define ['./module'], (controllers) ->
 			year: 2012
 			big: false
 			shortDesc: 'This advanced data-collection tool allows researchers to create individual collection "modules" which can be used alone or as clusters of other modules.'
-			technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing'
+			technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing' 
+			linkUrl: ''
+			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
 		,
@@ -263,7 +299,9 @@ define ['./module'], (controllers) ->
 			year: 2012
 			big: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
-			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
+			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -272,7 +310,9 @@ define ['./module'], (controllers) ->
 			year: 2012
 			big: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
-			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
+			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: false
 		,
@@ -282,6 +322,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A very simple jQuery plugin to create Growl-like messages in Bootstrap.'
 			technologies: 'JavaScript/jQuery'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -291,6 +333,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'I created this static and responsive website for a Fitness trainer'
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -300,6 +344,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -309,6 +355,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Created a reservation ticket screen similar to iOS\'s Passbook. Increased sales to owner\'s neighboring bar.'
 			technologies: 'Hype2, JavaScript, PHP'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'mobile'
 			showOnHomePage: true
 		,
@@ -318,6 +366,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'Hype2, JavaScript, PHP'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: false
 		,
@@ -336,6 +386,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'Complete rebranding and interaction redesign of this email campaign creation tool.'
 			technologies: 'Axure RP, Adobe CS, in-person usability testing.'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -345,6 +397,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A UNIX shell for the web. KBash creates a realistic-looking collapsible terminal that translates UNIX syntax to JavaScript.'
 			technologies: 'HTML, CSS, JavaScript'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -354,6 +408,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A concept for loading pages quickly and elegantly by delaying non-essential CSS and images until after page load.'
 			technologies: 'HTML, CSS, JavaScript, Kickstrap'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -363,6 +419,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.'
 			technologies: ''
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -372,6 +430,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -380,7 +440,9 @@ define ['./module'], (controllers) ->
 			year: 2013
 			big: false
 			shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
-			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
+			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails' 
+			linkUrl: ''
+			linkLabel: ''
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -390,6 +452,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
+			linkUrl: ''
+			linkLabel: ''
 			category: 'design'
 			showOnHomePage: false
 		]
