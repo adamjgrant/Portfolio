@@ -13,6 +13,7 @@
 </div>
 <h3>The hook</h3>
 <p>While there are many suites and one-off tools around to run data-collection studies, Lab95 provides a toolbelt of one-off data collectors (surveys, A/B tests, voting units, Five-second tests, etc.) which can either be used alone or pieced together like legos. </p>
+<p>If I expected users to make many of these modules to ultimately create a larger data-collection unit, it was important each bit of modification worked very quickly. I worked for several days perfecting a JavaScript "debouncer" which would save the user's changes locally, and only send HTTP requests to the server to save when a few idle seconds had passed.</p>
 <div class="thumbnail"><img src="/img/l95_rollover.png" class="img-responsive"/>
   <div class="caption">In order to maintain the complexity of the application, I used progressive disclosure techniques--hiding some information while the user was not actively working in a pane.</div>
 </div>
@@ -23,8 +24,8 @@
 <h4>Plain Surveys</h4>
 <p>As the name implies, these are barebone surveys. Each question you create automatically generates a chart to summarize the collected data.</p>
 <h4>Five second tests</h4>
-<p>Upload an image to display to the user for five seconds. After the five seconds have elapsed, the user is presented with survey questions you provide.</p>
+<p>Upload an image to display to the user for five seconds. After the five seconds have elapsed, the user is presented with survey questions you provide or with another module.</p>
 <h4>AB Tests</h4>
-<p>Compare the survey results of two different images. This is great for testing two slightly different designs. Each survey participant is shown only one or the other image (A or B) and each group gets the same set of questions.</p>
+<p>Compare the survey results of two different images. This is great for testing two slightly different designs. Each survey participant is shown only one or the other image (A or B) and each group gets the same set of questions or is led to the same module.</p>
 <h4>Vote bubbles</h4>
 <p>These look much like the posts on StackOverflow or one of the many other StackExchange sites. I can create a "bubble" with a title and some text inside it and allow users to vote the idea up or down. One vote per person. This is great to test feature ideas and see which ones the community likes best. </p>
