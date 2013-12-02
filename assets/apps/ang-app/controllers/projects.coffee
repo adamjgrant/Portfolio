@@ -257,7 +257,7 @@ define ['./module'], (controllers) ->
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
 			linkUrl: 'http://ske.dj/'
-			linkLabel: 'Ske.dj'
+			linkLabel: 'Go to Ske.dj'
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -267,8 +267,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'Another of my most successful projects so far is this all-in-one and multilingual responsive website for vegans and those interested in going vegan.'
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://vegankit.com'
+			linkLabel: 'See VeganKit'
 			category: 'mobile'
 			showOnHomePage: true
 		,
@@ -322,8 +322,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A very simple jQuery plugin to create Growl-like messages in Bootstrap.'
 			technologies: 'JavaScript/jQuery'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'https://github.com/ajkochanowicz/tinygrowl/'
+			linkLabel: 'TinyGrowl on GitHub'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -333,8 +333,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'I created this static and responsive website for a Fitness trainer'
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://caseydellas.com'
+			linkLabel: 'CaseyDellas.com'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -342,10 +342,10 @@ define ['./module'], (controllers) ->
 			name: 'Casey Dellas'
 			year: 2013
 			big: false
-			shortDesc: ''
+			shortDesc: 'I created this static and responsive website for a Fitness trainer'
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://caseydellas.com'
+			linkLabel: 'CaseyDellas.com'
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -377,6 +377,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'A zen-like daily affirmation of good UX.'
 			techologies: 'Wordpress, HTML, CSS, JavaScript'
+			linkUrl: 'http://adamkochanowicz.com/uxzen/'
+			linkLabel: 'UX Zen'
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -397,8 +399,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A UNIX shell for the web. KBash creates a realistic-looking collapsible terminal that translates UNIX syntax to JavaScript.'
 			technologies: 'HTML, CSS, JavaScript'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://ajkochanowicz.github.io/kbash/'
+			linkLabel: 'Demo on GitHub'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -408,8 +410,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'A concept for loading pages quickly and elegantly by delaying non-essential CSS and images until after page load.'
 			technologies: 'HTML, CSS, JavaScript, Kickstrap'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://ajkochanowicz.github.io/CSS-Post-Rendering/'
+			linkLabel: 'Demo on GitHub'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -418,9 +420,9 @@ define ['./module'], (controllers) ->
 			year: 2013
 			big: false
 			shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.'
-			technologies: ''
-			linkUrl: ''
-			linkLabel: ''
+			technologies: 'On GitHub'
+			linkUrl: 'https://github.com/ajkochanowicz/Email-Meta'
+			linkLabel: 'See the specs on GitHub'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -430,8 +432,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://everything.io'
+			linkLabel: 'Everything.io Splash Page'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -441,8 +443,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails' 
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://everything.io'
+			linkLabel: 'Everything.io Splash Page'
 			category: 'mobile'
 			showOnHomePage: false
 		,
@@ -452,8 +454,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://everything.io'
+			linkLabel: 'Everything.io Splash Page'
 			category: 'design'
 			showOnHomePage: false
 		]

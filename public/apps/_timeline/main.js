@@ -1,1 +1,9 @@
-(function(){define(["./timeline.min","./timeline_light.css!","./timeline.css!","ks:ang-app/controllers/projects"],function(a){var b;return console.log(a),b=new a($("#timeline"),k$.projects),b.display()})}).call(this)
+(function() {
+  define(['./timeline.min', './timeline_light.css!', './timeline.css!', 'ks:ang-app/controllers/projects'], function(Timeline) {
+    var timeline;
+    console.log(Timeline);
+    timeline = new Timeline($('#timeline'), k$.projects);
+    return timeline.display();
+  });
+
+}).call(this);
