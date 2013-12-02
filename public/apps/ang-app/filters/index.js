@@ -1,4 +1,1 @@
-(function() {
-  define(['./startFrom'], function() {});
-
-}).call(this);
+(function(){define(["./startFrom"],function(){})}).call(this)

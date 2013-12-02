@@ -1,4 +1,1 @@
-(function() {
-  define(['./projects'], function() {});
-
-}).call(this);
+(function(){define(["./projects"],function(){})}).call(this)

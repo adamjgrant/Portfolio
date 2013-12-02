@@ -1,4 +1,1 @@
-(function() {
-  define(['jquery'], function($) {});
-
-}).call(this);
+(function(){define(["jquery"],function(a){})}).call(this)
