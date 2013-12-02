@@ -1,1 +1,6 @@
-(function(){define(["./markup.txt!text","jquery"],function(a,b){return b("#ads").html("<br>"+a)})}).call(this)
+(function() {
+  define(['./markup.txt!text', 'jquery'], function(markup, $) {
+    return $('#ads').html('<br>' + markup);
+  });
+
+}).call(this);

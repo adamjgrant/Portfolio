@@ -1,1 +1,14 @@
-(function(){define(["./module"],function(a){return a.directive("ksVisible",[function(){return function(a,b,c){return a.$watch(c.ksVisible,function(a){return b.css("visibility",a?"visible":"hidden")})}}])})}).call(this)
+(function() {
+  define(['./module'], function(directives) {
+    return directives.directive('ksVisible', [
+      function() {
+        return function(scope, element, attrs) {
+          return scope.$watch(attrs.ksVisible, function(visible) {
+            return element.css('visibility', visible ? 'visible' : 'hidden');
+          });
+        };
+      }
+    ]);
+  });
+
+}).call(this);

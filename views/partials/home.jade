@@ -16,7 +16,7 @@
 			.timeline-icon.hidden-xs(ng-click="scrollToId('timeline', 100, 200)")
 			h1#timeline Timeline
 			br
-			.tl-spine.tl-spine_hoverable.pointer(ng-repeat="project in projects | filter: {showOnHomePage: true} | orderBy: 'id':true" ng-click="setLocation(slug(project.category), slug(project.name))")
+			.tl-spine.tl-spine_hoverable.pointer(sly-repeat="project in projects | filter: {showOnHomePage: true} | orderBy: 'id':true" ng-click="setLocation(slug(project.category), slug(project.name))")
 				.tl-spine-dot.hover-grp(ng-hide="project.big") 
 					.tl-spine-dot-marker.img-rounded
 						.tl-spine-dot-marker-yearFlag {{project.year}}

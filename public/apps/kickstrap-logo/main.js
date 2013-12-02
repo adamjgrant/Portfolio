@@ -1,1 +1,4 @@
-(function(){define(["./stylesheet.css!"],function(){})}).call(this)
+(function() {
+  define(['./stylesheet.css!'], function() {});
+
+}).call(this);

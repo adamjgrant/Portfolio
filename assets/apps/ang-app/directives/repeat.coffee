@@ -1,28 +1,29 @@
-###
-@fileoverview
-Module:  slyRepeat
+define ['./module', '../resources/scalyr-helpers'], (directives) ->
+  directives.directive 'slyRepeat', ['$animate', '$parse', ($animate, $parse) ->
 
-Contains the slyRepeat directive, which is is a modified version of the
-ngRepeat directive that is meant to be more efficient for creating and
-recreating large lists of bound elements.  In particular, it has an
-optimization that will prevent DOM elements from being constantly created
-and destroyed as the contents of the repeated elements change.  It does this
-by not destroying DOM elements when they are no longer needed, but instead,
-just hiding them. This might not work for all use cases, but for it does
-for the ones we do wish to heavily optimize.  For eample, through profiling,
-we found that destroying DOM elements when flipping through log view pages
-represented a large chunk of CPU time.
 
-Cavaets:  The collection expression must evaluate to an array.  Animators
-will not work.  Track By does not work.  Use at your own peril.
+    ###
+    @fileoverview
+    Module:  slyRepeat
 
-@author Steven Czerwinski <czerwin@scalyr.com>, Adam Kochanowicz <ajkochanowicz@gmail.com>
+    Contains the slyRepeat directive, which is is a modified version of the
+    ngRepeat directive that is meant to be more efficient for creating and
+    recreating large lists of bound elements.  In particular, it has an
+    optimization that will prevent DOM elements from being constantly created
+    and destroyed as the contents of the repeated elements change.  It does this
+    by not destroying DOM elements when they are no longer needed, but instead,
+    just hiding them. This might not work for all use cases, but for it does
+    for the ones we do wish to heavily optimize.  For eample, through profiling,
+    we found that destroying DOM elements when flipping through log view pages
+    represented a large chunk of CPU time.
 
-defineScalyrAngularModule("slyRepeat", ["gatedScope"]).directive "slyRepeat", ["$animate", "$parse", ($animate, $parse) ->
-###
+    Cavaets:  The collection expression must evaluate to an array.  Animators
+    will not work.  Track By does not work.  Use at your own peril.
 
-define ['./module'], (directives) ->
-  directives.directive 'ksRepeat', [->
+    @author Steven Czerwinski <czerwin@scalyr.com>, Adam Kochanowicz <ajkochanowicz@gmail.com>
+
+    defineScalyrAngularModule("slyRepeat", ["gatedScope"]).directive "slyRepeat", ["$animate", "$parse", ($animate, $parse) ->
+    ###
 
     ###
     Sets the scope contained in elementScope to gate all its
@@ -31,6 +32,7 @@ define ['./module'], (directives) ->
     @param {Object} elementScope The object containing the
     scope and isActiveForRepeat properties.
     ###
+
     gateWatchersForScope = (elementScope) ->
       elementScope.scope.$addWatcherGate ->
         elementScope.isActiveForRepeat
@@ -71,7 +73,7 @@ define ['./module'], (directives) ->
         # We keep this in case the length increases again.
         previousElementBuffer = []
         deregisterCallback = $scope.$watchCollection(collectionExpr, (collection) ->
-          throw Error("'collection' did not evaluate to an array.  expression was " + collectionExpr)  unless isArray(collection)
+          throw Error("'collection' did not evaluate to an array.  expression was " + collectionExpr)  unless k$.isArray(collection)
           originalPreviousElementsLength = previousElements.length
           
           # First, reconcile previousElements and collection with respect to the previousElementBuffer.

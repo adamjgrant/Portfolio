@@ -1,1 +1,17 @@
-body{font-size:2;color:#5182a3;background-color:#aaa;font-style:italic}body a{color:#5182a3;background-color:#aaa;font-style:italic}body a:hover{color:#b44326}body a span.important{text-decoration:underline}
+body {
+  font-size: 2;
+  color: #5182a3;
+  background-color: #aaa;
+  font-style: italic;
+}
+body a {
+  color: #5182a3;
+  background-color: #aaa;
+  font-style: italic;
+}
+body a:hover {
+  color: #b44326;
+}
+body a span.important {
+  text-decoration: underline;
+}

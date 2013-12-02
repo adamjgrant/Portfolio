@@ -1,1 +1,61 @@
-(function(){var a,b,c,d,e,f,g,h={}.hasOwnProperty,i=function(a,b){function d(){this.constructor=a}for(var c in b)h.call(b,c)&&(a[c]=b[c]);return d.prototype=b.prototype,a.prototype=new d,a.__super__=b.prototype,a};a=function(){function a(a){this.name=a}return a.prototype.move=function(a){return alert(this.name+(" moved "+a+"m"))},a}(),c=function(a){function b(){return f=b.__super__.constructor.apply(this,arguments),f}return i(b,a),b.prototype.move=function(){return alert("slithering"),b.__super__.move.call(this,5)},b}(a),b=function(a){function b(){return g=b.__super__.constructor.apply(this,arguments),g}return i(b,a),b.prototype.move=function(){return alert("Galloping..."),b.__super__.move.call(this,45)},b}(a),d=new c("Sammy the python"),e=new b("Tommy the horse"),d.move(),e.move()}).call(this)
+(function() {
+  var Animal, Horse, Snake, sam, tom, _ref, _ref1,
+    __hasProp = {}.hasOwnProperty,
+    __extends = function(child, parent) { for (var key in parent) { if (__hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; };
+
+  Animal = (function() {
+    function Animal(name) {
+      this.name = name;
+    }
+
+    Animal.prototype.move = function(meters) {
+      return alert(this.name + (" moved " + meters + "m"));
+    };
+
+    return Animal;
+
+  })();
+
+  Snake = (function(_super) {
+    __extends(Snake, _super);
+
+    function Snake() {
+      _ref = Snake.__super__.constructor.apply(this, arguments);
+      return _ref;
+    }
+
+    Snake.prototype.move = function() {
+      alert('slithering');
+      return Snake.__super__.move.call(this, 5);
+    };
+
+    return Snake;
+
+  })(Animal);
+
+  Horse = (function(_super) {
+    __extends(Horse, _super);
+
+    function Horse() {
+      _ref1 = Horse.__super__.constructor.apply(this, arguments);
+      return _ref1;
+    }
+
+    Horse.prototype.move = function() {
+      alert('Galloping...');
+      return Horse.__super__.move.call(this, 45);
+    };
+
+    return Horse;
+
+  })(Animal);
+
+  sam = new Snake("Sammy the python");
+
+  tom = new Horse("Tommy the horse");
+
+  sam.move();
+
+  tom.move();
+
+}).call(this);
