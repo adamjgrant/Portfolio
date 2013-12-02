@@ -24,7 +24,7 @@
 									a(href="{{project.linkUrl}}" target="_blank") 
 										span.glyphicon.glyphicon-share-alt
 										|  {{project.linkLabel}}
-							p.text-muted(ng-hide="project.technologies == ''") Technology: {{project.technologies}}
+							p.text-muted(ng-show="project.technologies.length > 0") Technology: {{project.technologies}}
 						.col.col-md-6(ng-show="project.thumbnail")
 							a(href="{{project.linkUrl}}" target="_blank" ng-show="project.linkUrl.length > 0")
 								.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
