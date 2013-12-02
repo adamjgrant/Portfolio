@@ -17,12 +17,13 @@
             <div class="tl-spine-dot-marker img-rounded">
               <div class="tl-spine-dot-marker-yearFlag">{{project.year}}	</div>
             </div><br/>
-            <div class="col col-md-6">
+            <div class="col {{ project.thumbnail ? 'col-md-6' : 'col-md-12' }}">
               <h1 id="{{slug(project.name)}}">{{project.name}}</h1>
               <p>{{project.shortDesc}}</p>
+              <p ng-show="project.linkUrl.length &gt; 0 &amp;&amp; !project.thumbnail"><em><a href="{{project.linkUrl}}" target="_blank"> <span class="glyphicon glyphicon-share-alt"></span> {{project.linkLabel}}</a></em></p>
               <p ng-hide="project.technologies == ''" class="text-muted">Technology: {{project.technologies}}</p>
             </div>
-            <div class="col col-md-6"><a href="{{project.linkUrl}}" target="_blank" ng-show="project.linkUrl.length &gt; 0">
+            <div ng-show="project.thumbnail" class="col col-md-6"><a href="{{project.linkUrl}}" target="_blank" ng-show="project.linkUrl.length &gt; 0">
                 <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div></a>
               <div ng-hide="project.linkUrl.length &gt; 0" class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div><br/>
               <p ng-show="project.linkUrl.length &gt; 0" class="text-center"><em><a href="{{project.linkUrl}}" target="_blank"> <span class="glyphicon glyphicon-share-alt"></span> {{project.linkLabel}}</a></em></p>

@@ -16,11 +16,16 @@
 						.tl-spine-dot-marker.img-rounded
 							.tl-spine-dot-marker-yearFlag {{project.year}}	
 						br
-						.col.col-md-6
+						.col(class="{{ project.thumbnail ? 'col-md-6' : 'col-md-12' }}")
 							h1(id="{{slug(project.name)}}") {{project.name}}
 							p {{project.shortDesc}}
+							p(ng-show="project.linkUrl.length > 0 && !project.thumbnail")
+								em
+									a(href="{{project.linkUrl}}" target="_blank") 
+										span.glyphicon.glyphicon-share-alt
+										|  {{project.linkLabel}}
 							p.text-muted(ng-hide="project.technologies == ''") Technology: {{project.technologies}}
-						.col.col-md-6
+						.col.col-md-6(ng-show="project.thumbnail")
 							a(href="{{project.linkUrl}}" target="_blank" ng-show="project.linkUrl.length > 0")
 								.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
 							.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}" ng-hide="project.linkUrl.length > 0")

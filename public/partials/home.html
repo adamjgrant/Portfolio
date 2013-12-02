@@ -46,7 +46,7 @@
               <p class="text-muted">{{project.technologies}}</p>
             </div>
             <div class="col col-md-6">
-              <div class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
+              <div ng-show="project.thumbnail" class="pr-img pr-img_featured img-responsive pr-img_{{slug(project.name)}}"></div>
             </div>
           </div>
         </div>

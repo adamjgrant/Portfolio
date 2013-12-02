@@ -40,6 +40,6 @@
 							p {{project.shortDesc}}
 							p.text-muted {{project.technologies}}
 						.col.col-md-6
-							.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}")
+							.pr-img.pr-img_featured.img-responsive(class="pr-img_{{slug(project.name)}}" ng-show="project.thumbnail")
 
 			.clearfix

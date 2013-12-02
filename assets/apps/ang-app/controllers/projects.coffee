@@ -100,6 +100,7 @@ define ['./module'], (controllers) ->
 			name: 'Edupedia'
 			year: 1998
 			big: true
+			thumbnail: true
 			shortDesc: 'An online encylclopedia anyone can edit. Sound familiar? I had the idea way before the other guys, but trust me--it was much worse.'
 			technologies: 'HTML, VisualPage'
 			linkUrl: ''
@@ -111,6 +112,7 @@ define ['./module'], (controllers) ->
 			name: 'Coolpages2000'
 			year: 1999
 			big: false
+			thumbnail: true
 			shortDesc: 'This early project stemmed from my excitement of learning how to do rollover image effects after reading through my father\'s computer books.'
 			technologies: 'HTML, CSS, JavaScript'
 			linkUrl: ''
@@ -122,6 +124,7 @@ define ['./module'], (controllers) ->
 			name: 'Adeus'
 			year: 2000
 			big: false
+			thumbnail: true
 			shortDesc: 'Adeus was a command-line NLP bot inspired by A.L.I.C.E, an Artificial Intelligence conversation program.'
 			technologies: 'QBASIC, DOS'
 			linkUrl: ''
@@ -133,6 +136,7 @@ define ['./module'], (controllers) ->
 			name: 'Fake Chat'
 			year: 2001
 			big: false
+			thumbnail: true
 			shortDesc: 'My first program written for the Sharp Wizard, a hinged digital organizer that could run apps.'
 			technologies: 'BASIC'
 			linkUrl: ''
@@ -144,6 +148,7 @@ define ['./module'], (controllers) ->
 			name: 'Rogertoons'
 			year: 2002
 			big: false
+			thumbnail: true
 			shortDesc: 'A new obsession with Flash, drawing cartoons, banjo, and mandolin led this website and 4 minute animated cartoon.'
 			technologies: 'Macromedia/Adobe Flash, ActionScript, Adobe Premiere Pro'
 			linkUrl: ''
@@ -155,6 +160,7 @@ define ['./module'], (controllers) ->
 			name: 'A21S'
 			year: 2002
 			big: false
+			thumbnail: true
 			shortDesc: 'My first mobile website was on this WindowsCE 1.0 device.'
 			technologies: 'HTML, CSS, JavaScript'
 			linkUrl: ''
@@ -166,6 +172,7 @@ define ['./module'], (controllers) ->
 			name: 'Vegan.FM'
 			year: 2006
 			big: false
+			thumbnail: true
 			shortDesc: 'This was both a website, social network, and native iPhone app that helped vegans look up any conceivable thing to determine if it\'s vegan (What the heck is ambergris?)'
 			technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
 			linkUrl: ''
@@ -177,6 +184,7 @@ define ['./module'], (controllers) ->
 			name: 'CreativeWorks'
 			year: 2008
 			big: true
+			thumbnail: true
 			shortDesc: 'CW was a turning point for my experience in full stack development. Helped in the creation of many websites for CW clients.'
 			technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
 			linkUrl: ''
@@ -188,6 +196,7 @@ define ['./module'], (controllers) ->
 			name: 'Miscellarious'
 			year: 2008
 			big: false
+			thumbnail: true
 			shortDesc: 'Create rooms and post PostIt notes on the wall. Anyone can add or edit anything. Recently brought back to life with new code.'
 			technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
 			linkUrl: ''
@@ -199,6 +208,7 @@ define ['./module'], (controllers) ->
 			name: 'Powabunga'
 			year: 2010
 			big: false
+			thumbnail: true
 			shortDesc: 'While working at a vegan spa in the South of France, I worked as a developer for the spa owners\' side project.'
 			technologies: 'Java Spring MVC, HTML, CSS, JavaScript, Flash'
 			linkUrl: 'http://powabunga.com'
@@ -210,6 +220,7 @@ define ['./module'], (controllers) ->
 			name: 'LED Media'
 			year: 2010
 			big: false
+			thumbnail: true
 			shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.'
 			technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
 			linkUrl: ''
@@ -217,10 +228,23 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: true
 		,
+			id: 50
+			name: 'The 5 Biggest Interface Screwups of 2010'
+			year: 2010
+			big: false
+			thumbnail: false
+			shortDesc: 'Guest article for UX Movement'
+			technologies: ''
+			linkUrl: 'http://uxmovement.com/thinking/the-5-biggest-interface-screw-ups-of-2010/'
+			linkLabel: 'Read Article'
+			category: 'design'
+			showOnHomePage: true
+		,
 			id: 12
 			name: 'PriorKnowledge'
 			year: 2011
 			big: false
+			thumbnail: true
 			shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
 			technologies: 'HTML, CSS, AdobeCS, Cinema4D'
 			linkUrl: ''
@@ -232,6 +256,7 @@ define ['./module'], (controllers) ->
 			name: 'Kickstrap'
 			year: 2011
 			big: false
+			thumbnail: true
 			shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
 			linkUrl: 'http://getkickstrap.com'
@@ -243,6 +268,7 @@ define ['./module'], (controllers) ->
 			name: 'Kickstrap'
 			year: 2011
 			big: true
+			thumbnail: true
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
 			linkUrl: 'http://getkickstrap.com'
@@ -254,6 +280,7 @@ define ['./module'], (controllers) ->
 			name: 'Ske.dj'
 			year: 2011
 			big: false
+			thumbnail: true
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
 			linkUrl: 'http://ske.dj/'
@@ -265,6 +292,7 @@ define ['./module'], (controllers) ->
 			name: 'VeganKit'
 			year: 2012
 			big: true
+			thumbnail: true
 			shortDesc: 'Another of my most successful projects so far is this all-in-one and multilingual responsive website for vegans and those interested in going vegan.'
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
 			linkUrl: 'http://vegankit.com'
@@ -276,6 +304,7 @@ define ['./module'], (controllers) ->
 			name: 'VeganKit'
 			year: 2012
 			big: false
+			thumbnail: true
 			shortDesc: ''
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
 			linkUrl: 'http://vegankit.com'
@@ -287,6 +316,7 @@ define ['./module'], (controllers) ->
 			name: 'Lab95'
 			year: 2012
 			big: false
+			thumbnail: true
 			shortDesc: 'This advanced data-collection tool allows researchers to create individual collection "modules" which can be used alone or as clusters of other modules.'
 			technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing' 
 			linkUrl: ''
@@ -298,6 +328,7 @@ define ['./module'], (controllers) ->
 			name: 'Ipreo'
 			year: 2012
 			big: true
+			thumbnail: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
 			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
 			linkUrl: ''
@@ -309,6 +340,7 @@ define ['./module'], (controllers) ->
 			name: 'Ipreo'
 			year: 2012
 			big: true
+			thumbnail: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
 			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
 			linkUrl: ''
@@ -320,6 +352,7 @@ define ['./module'], (controllers) ->
 			name: 'TinyGrowl'
 			year: 2012
 			big: false
+			thumbnail: true
 			shortDesc: 'A very simple jQuery plugin to create Growl-like messages in Bootstrap.'
 			technologies: 'JavaScript/jQuery'
 			linkUrl: 'https://github.com/ajkochanowicz/tinygrowl/'
@@ -328,9 +361,22 @@ define ['./module'], (controllers) ->
 			showOnHomePage: true
 		,
 			id: 24
+			name: '10 High Impact Usability Improvements'
+			year: 2012
+			big: false
+			thumbnail: false
+			shortDesc: 'Article written as guest expert for UserTesting.com'
+			technologies: ''
+			linkUrl: 'http://www.usertesting.com/blog/2012/04/24/10-high-impact-usability-improvements-part-1/'
+			linkLabel: 'Read Article'
+			category: 'design'
+			showOnHomePage: true
+		,
+			id: 25
 			name: 'Casey Dellas'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'I created this static and responsive website for a Fitness trainer'
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
 			linkUrl: 'http://caseydellas.com'
@@ -338,10 +384,11 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 25
+			id: 26
 			name: 'Casey Dellas'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'I created this static and responsive website for a Fitness trainer'
 			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
 			linkUrl: 'http://caseydellas.com'
@@ -349,10 +396,11 @@ define ['./module'], (controllers) ->
 			category: 'mobile'
 			showOnHomePage: false
 		,
-			id: 26
+			id: 27
 			name: 'Comedy Cellar'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'Created a reservation ticket screen similar to iOS\'s Passbook. Increased sales to owner\'s neighboring bar.'
 			technologies: 'Hype2, JavaScript, PHP'
 			linkUrl: ''
@@ -360,10 +408,11 @@ define ['./module'], (controllers) ->
 			category: 'mobile'
 			showOnHomePage: true
 		,
-			id: 27
+			id: 28
 			name: 'Comedy Cellar'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: ''
 			technologies: 'Hype2, JavaScript, PHP'
 			linkUrl: ''
@@ -371,10 +420,11 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: false
 		,
-			id: 28
+			id: 29
 			name: 'UX Zen'
 			year: 2013
 			big: true
+			thumbnail: true
 			shortDesc: 'A zen-like daily affirmation of good UX.'
 			techologies: 'Wordpress, HTML, CSS, JavaScript'
 			linkUrl: 'http://adamkochanowicz.com/uxzen/'
@@ -382,10 +432,11 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: true
 		,
-			id: 29
+			id: 30
 			name: 'Campaign Breeze'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'Complete rebranding and interaction redesign of this email campaign creation tool.'
 			technologies: 'Axure RP, Adobe CS, in-person usability testing.'
 			linkUrl: ''
@@ -393,10 +444,11 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: true
 		,
-			id: 30
+			id: 31
 			name: 'KBash'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'A UNIX shell for the web. KBash creates a realistic-looking collapsible terminal that translates UNIX syntax to JavaScript.'
 			technologies: 'HTML, CSS, JavaScript'
 			linkUrl: 'http://ajkochanowicz.github.io/kbash/'
@@ -404,10 +456,11 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 31
+			id: 32
 			name: 'CSS Post Rendering'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'A concept for loading pages quickly and elegantly by delaying non-essential CSS and images until after page load.'
 			technologies: 'HTML, CSS, JavaScript, Kickstrap'
 			linkUrl: 'http://ajkochanowicz.github.io/CSS-Post-Rendering/'
@@ -415,10 +468,11 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 32
+			id: 33
 			name: 'Email meta'
 			year: 2013
 			big: false
+			thumbnail: false
 			shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.'
 			technologies: 'On GitHub'
 			linkUrl: 'https://github.com/ajkochanowicz/Email-Meta'
@@ -426,10 +480,11 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 33
+			id: 34
 			name: 'Everything.io'
 			year: 2013
 			big: true
+			thumbnail: true
 			shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
 			linkUrl: 'http://everything.io'
@@ -437,10 +492,11 @@ define ['./module'], (controllers) ->
 			category: 'development'
 			showOnHomePage: true
 		,
-			id: 34
+			id: 35
 			name: 'Everything.io'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails' 
 			linkUrl: 'http://everything.io'
@@ -448,10 +504,11 @@ define ['./module'], (controllers) ->
 			category: 'mobile'
 			showOnHomePage: false
 		,
-			id: 35
+			id: 36
 			name: 'Everything.io'
 			year: 2013
 			big: false
+			thumbnail: true
 			shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
 			linkUrl: 'http://everything.io'
