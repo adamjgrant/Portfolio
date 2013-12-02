@@ -2,16 +2,10 @@
 
 window.k$ =
 	apps: [
-		'ks:timeline'
+		# 'ks:timeline'
 		'ks:tinygrowl'
 		'ks:ang-app'
 		'ks:kickstrap-logo'
 	]
-	mode: 'dev'
+	mode: 'prod'
 	theme: 'flatly'
-
-# ANGULAR RESOURCES
-
-	controllers: [
-		'features'
-	]

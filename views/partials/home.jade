@@ -7,7 +7,7 @@
 		br
 		.row.hidden-xs
 			.col.col-sm-2 &nbsp;
-			.col.col-sm-2(ng-click="setLocation(category.slug)", ng-repeat="category in categories")
+			.col.col-sm-2(ng-click="setLocation(category.slug)", sly-repeat="category in categories")
 				img.img-responsive.pointer.center-block(src="/img/hex-{{category.slug}}.png")
 				p.small {{category.name}}
 .container

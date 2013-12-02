@@ -21,9 +21,6 @@ html(lang='en')
       document.head.appendChild a
     title #{title}
     link(rel='stylesheet' href="/css/kickstrap.css")
-    script(src="//use.typekit.net/pvn6abu.js")
-    script.
-      try{Typekit.load();}catch(e){}
   body
     #sf-wrap
       .container_max#top(ng-controller='ProjectsCtrl')
@@ -41,7 +38,9 @@ html(lang='en')
               span.kickstrap-logo Kickstrap
     :coffeescript
       k$.ready ->  
-        jspm.import 'ks:featuredimages'
+        setTimeout ->
+          jspm.import 'ks:featuredimages'
+        , 700
   script.
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-1315296-16']);
@@ -52,3 +51,6 @@ html(lang='en')
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+  script(src="//use.typekit.net/pvn6abu.js")
+  script.
+    try{Typekit.load();}catch(e){}

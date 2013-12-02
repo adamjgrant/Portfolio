@@ -9,7 +9,7 @@
     </div><br/>
     <div class="row hidden-xs">
       <div class="col col-sm-2">&nbsp;</div>
-      <div ng-click="setLocation(category.slug)" ng-repeat="category in categories" class="col col-sm-2"><img src="/img/hex-{{category.slug}}.png" class="img-responsive pointer center-block"/>
+      <div ng-click="setLocation(category.slug)" sly-repeat="category in categories" class="col col-sm-2"><img src="/img/hex-{{category.slug}}.png" class="img-responsive pointer center-block"/>
         <p class="small">{{category.name}}</p>
       </div>
     </div>

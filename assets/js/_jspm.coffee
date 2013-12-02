@@ -23,4 +23,3 @@ jspm.config
 		'ks:ang-app/resources/angular-route': 	['angular@1.2.1/angular']
 		'ks:ang-app/resources/gatedScope': 		['angular@1.2.1/angular', 'ks:ang-app/resources/scalyr-helpers']
 		'ks:ang-app/resources/ng-progress': 	['angular@1.2.1/angular']
-		# 'ks:timeline/main': ['cdnjs:jquery/2.0.3/jquery']

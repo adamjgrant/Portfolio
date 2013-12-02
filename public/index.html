@@ -31,8 +31,6 @@
 </script>
     <title>Adam Kochanowicz, UX Designer</title>
     <link rel="stylesheet" href="/css/kickstrap.css">
-    <script src="//use.typekit.net/pvn6abu.js"></script>
-    <script>try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
     <div id="sf-wrap">
@@ -76,7 +74,9 @@
     </section><script type="text/javascript">
 (function() {
   k$.ready(function() {
-    return jspm["import"]('ks:featuredimages');
+    return setTimeout(function() {
+      return jspm["import"]('ks:featuredimages');
+    }, 700);
   });
 
 }).call(this);
@@ -93,4 +93,6 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <script src="//use.typekit.net/pvn6abu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
 </html>
