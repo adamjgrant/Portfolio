@@ -1,13 +1,1 @@
-(function() {
-  define(['./module'], function(filters) {
-    return filters.filter('startFrom', [
-      function() {
-        return function(input, start) {
-          start = +start;
-          return input.slice(start);
-        };
-      }
-    ]);
-  });
-
-}).call(this);
+(function(){define(["./module"],function(a){return a.filter("startFrom",[function(){return function(a,b){return b=+b,a.slice(b)}}])})}).call(this)

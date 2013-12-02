@@ -201,8 +201,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'While working at a vegan spa in the South of France, I worked as a developer for the spa owners\' side project.'
 			technologies: 'Java Spring MVC, HTML, CSS, JavaScript, Flash'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://powabunga.com'
+			linkLabel: 'Go to Powabunga'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -234,8 +234,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://getkickstrap.com'
+			linkLabel: 'Kickstrap Homepage'
 			category: 'development'
 			showOnHomePage: true
 		,
@@ -245,8 +245,8 @@ define ['./module'], (controllers) ->
 			big: true
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://getkickstrap.com'
+			linkLabel: 'Kickstrap Homepage'
 			category: 'design'
 			showOnHomePage: false
 		,
@@ -256,8 +256,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://ske.dj/'
+			linkLabel: 'Ske.dj'
 			category: 'design'
 			showOnHomePage: true
 		,
@@ -278,8 +278,8 @@ define ['./module'], (controllers) ->
 			big: false
 			shortDesc: ''
 			technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
-			linkUrl: ''
-			linkLabel: ''
+			linkUrl: 'http://vegankit.com'
+			linkLabel: 'See VeganKit'
 			category: 'development'
 			showOnHomePage: false
 		,

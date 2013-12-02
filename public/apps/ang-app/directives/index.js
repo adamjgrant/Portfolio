@@ -1,4 +1,1 @@
-(function() {
-  define(['./enter', './visible'], function() {});
-
-}).call(this);
+(function(){define(["./enter","./visible"],function(){})}).call(this)
