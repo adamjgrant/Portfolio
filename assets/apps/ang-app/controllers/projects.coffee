@@ -372,30 +372,6 @@ define ['./module'], (controllers) ->
 			category: 'design'
 			showOnHomePage: true
 		,
-			id: 230
-			name: 'Casey Dellas'
-			year: 2013
-			big: false
-			thumbnail: true
-			shortDesc: 'I created this static and responsive website for a Fitness trainer'
-			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
-			linkUrl: 'http://caseydellas.com'
-			linkLabel: 'CaseyDellas.com'
-			category: 'development'
-			showOnHomePage: true
-		,
-			id: 240
-			name: 'Casey Dellas'
-			year: 2013
-			big: false
-			thumbnail: true
-			shortDesc: 'I created this static and responsive website for a Fitness trainer'
-			technologies: 'HTML, CSS, JavaScript, jQuery UI, Kickstrap, Remote and in-person usability testing, Axure RP'
-			linkUrl: 'http://caseydellas.com'
-			linkLabel: 'CaseyDellas.com'
-			category: 'mobile'
-			showOnHomePage: false
-		,
 			id: 250
 			name: 'Comedy Cellar'
 			year: 2013
