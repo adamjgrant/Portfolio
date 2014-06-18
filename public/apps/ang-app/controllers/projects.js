@@ -1,7 +1,7 @@
 (function() {
   define(['./module'], function(controllers) {
     return controllers.controller('ProjectsCtrl', [
-      '$scope', 'angularFire', 'ngProgress', '$location', '$anchorScroll', function($scope, angularFire, ngProgress, $location, $anchorScroll) {
+      '$scope', 'ngProgress', '$location', '$anchorScroll', function($scope, ngProgress, $location, $anchorScroll) {
         $scope.alternateArticles = function(id) {
           var dupes, thisProj;
           thisProj = $scope.projects.filter(function(el) {

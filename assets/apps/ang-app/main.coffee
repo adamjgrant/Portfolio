@@ -1,30 +1,27 @@
 define [
-	'angular' 
-	'./controllers/index'
-	'./directives/index'
-	'./filters/index'
-	'angularFire'
+	'angular'
+	# 'angularFire'
 	'angular-route'
-	'ng-progress'
-	'./resources/ng-progress.css!'
+	'ngProgress'
+	# './resources/ng-progress.css!'
 ], (angular) ->
 	angular.module('app', [
 		'app.controllers'
 		'app.directives'
 		'app.filters'
-		'firebase'
+		# 'firebase'
 		'ngRoute'
 		'ngProgress'
 	]).config ['$routeProvider', '$locationProvider', ($routeProvider, $locationProvider) ->
 		$routeProvider
-			.when '/', 
+			.when '/',
 				templateUrl: '/partials/home.html'
-			.when '/delights', 
+			.when '/delights',
 				templateUrl: '/partials/category.html'
-			.when '/mobile', 
+			.when '/mobile',
 				templateUrl: '/partials/category.html'
-			.when '/development', 
+			.when '/development',
 				templateUrl: '/partials/category.html'
-			.when '/design', 
+			.when '/design',
 				templateUrl: '/partials/category.html'
 	]

@@ -1,6 +1,6 @@
 (function() {
-  define(['angular', './controllers/index', './directives/index', './filters/index', 'angularFire', 'angular-route', 'ng-progress', './resources/ng-progress.css!'], function(angular) {
-    return angular.module('app', ['app.controllers', 'app.directives', 'app.filters', 'firebase', 'ngRoute', 'ngProgress']).config([
+  define(['angular', 'angular-route', 'ngProgress'], function(angular) {
+    return angular.module('app', ['app.controllers', 'app.directives', 'app.filters', 'ngRoute', 'ngProgress']).config([
       '$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
         return $routeProvider.when('/', {
           templateUrl: '/partials/home.html'

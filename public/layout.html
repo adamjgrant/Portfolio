@@ -6,31 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta name="description" content="The Elegant Frontend Framework">
     <meta name="author" content="Adam Kochanowicz">
-    <script src="js/loader.js"></script>
-    <script src="//cdn.firebase.com/v0/firebase.js"></script>
-    <script src="js/settings.js"></script>
-    <script src="js/kickstrap.js"></script><script type="text/javascript">
-(function() {
-  var a;
-
-  a = document.createElement('link');
-
-  a.id = 'main-stylesheet';
-
-  a.rel = 'stylesheet';
-
-  if (k$.settings.theme === 'bootstrap') {
-    a.href = "https://github.jspm.io/twbs/bootstrap@3.0.2/css/bootstrap.css";
-  } else {
-    a.href = 'themes/' + k$.settings.theme + '.css';
-  }
-
-  document.head.appendChild(a);
-
-}).call(this);
-</script>
-    <title>Adam Kochanowicz, UX Designer</title>
-    <link rel="stylesheet" href="/css/kickstrap.css">
+    <script src="https://jspm.io/system@0.4.js"></script>
+    <link rel="stylesheet" href="css/kickstrap.css">
   </head>
   <body>
     <div id="sf-wrap">
@@ -44,20 +21,13 @@
           <li><a href="#">&copy; Adam Kochanowicz</a></li>
         </ul>
         <ul class="nav navbar-nav pull-right">
-          <li><a href="http://getkickstrap.com">Powered by <span class="kickstrap-logo">Kickstrap</span></a></li>
+          <li><a href="http://getkickstrap.com">Powered by<span class="kickstrap-logo">Kickstrap</span></a></li>
         </ul>
       </div>
-    </section><script type="text/javascript">
-(function() {
-  k$.ready(function() {
-    return setTimeout(function() {
-      return jspm["import"]('ks:featuredimages');
-    }, 700);
-  });
-
-}).call(this);
-</script>
+    </section>
   </body>
+  <script src="//cdn.firebase.com/v0/firebase.js"></script>
+  <script src="js/kickstrap.js"></script>
   <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-1315296-16']);
@@ -70,5 +40,17 @@
     })();
   </script>
   <script src="//use.typekit.net/pvn6abu.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <script>
+    try{Typekit.load();}catch(e){}
+    
+  </script><script type="text/javascript">
+(function() {
+  k$.ready(function() {
+    return setTimeout(function() {
+      return jspm["import"]('ks:featuredimages');
+    }, 700);
+  });
+
+}).call(this);
+</script>
 </html>

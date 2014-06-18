@@ -1,5 +1,5 @@
 define ['./module'], (controllers) ->
-	controllers.controller 'ProjectsCtrl', ['$scope', 'angularFire', 'ngProgress', '$location', '$anchorScroll', ($scope, angularFire, ngProgress, $location, $anchorScroll) ->
+	controllers.controller 'ProjectsCtrl', ['$scope', 'ngProgress', '$location', '$anchorScroll', ($scope, ngProgress, $location, $anchorScroll) ->
 		$scope.alternateArticles = (id) ->
 			# Looks for duplicates of a project and returns array for "also see" links.
 			thisProj = $scope.projects.filter (el) ->
@@ -65,8 +65,8 @@ define ['./module'], (controllers) ->
 			true
 		$scope.selectedCategory = () ->
 			if $location.path() == '/'
-				a = 
-					slug: 'home' 
+				a =
+					slug: 'home'
 					name: 'Home'
 				a
 			else
@@ -78,7 +78,7 @@ define ['./module'], (controllers) ->
 			slug = (str) ->
 				str = str.replace(/^\s+|\s+$/g, "") # trim
 				str = str.toLowerCase()
-			  
+
 				# remove accents, swap ñ for n, etc
 				from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;"
 				to = "aaaaaeeeeeiiiiooooouuuunc------"
@@ -155,7 +155,7 @@ define ['./module'], (controllers) ->
 			linkLabel: ''
 			category: 'delights'
 			showOnHomePage: true
-		,	
+		,
 			id: 50
 			name: 'A21S'
 			year: 2002
@@ -318,7 +318,7 @@ define ['./module'], (controllers) ->
 			big: false
 			thumbnail: true
 			shortDesc: 'This advanced data-collection tool allows researchers to create individual collection "modules" which can be used alone or as clusters of other modules.'
-			technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing' 
+			technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing'
 			linkUrl: ''
 			linkLabel: ''
 			category: 'delights'
@@ -330,7 +330,7 @@ define ['./module'], (controllers) ->
 			big: true
 			thumbnail: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
-			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
+			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
 			linkUrl: ''
 			linkLabel: ''
 			category: 'development'
@@ -342,7 +342,7 @@ define ['./module'], (controllers) ->
 			big: true
 			thumbnail: true
 			shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
-			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion' 
+			technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
 			linkUrl: ''
 			linkLabel: ''
 			category: 'design'
@@ -498,7 +498,7 @@ define ['./module'], (controllers) ->
 			big: false
 			thumbnail: true
 			shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
-			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails' 
+			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
 			linkUrl: 'http://everything.io'
 			linkLabel: 'Everything.io Splash Page'
 			category: 'mobile'
