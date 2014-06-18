@@ -519,6 +519,42 @@
             showOnHomePage: false
           }, {
             id: 350,
+            name: 'Neo',
+            year: 2014,
+            big: false,
+            thumbnail: false,
+            shortDesc: 'Just started at this amazing company. More on this later.',
+            technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift',
+            linkUrl: 'http://neo.com',
+            linkLabel: 'Neo Homepage',
+            category: 'development',
+            showOnHomePage: true
+          }, {
+            id: 360,
+            name: 'Neo',
+            year: 2014,
+            big: false,
+            thumbnail: false,
+            shortDesc: 'Just started at this amazing company. More on this later.',
+            technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift',
+            linkUrl: 'http://neo.com',
+            linkLabel: 'Neo Homepage',
+            category: 'mobile',
+            showOnHomePage: false
+          }, {
+            id: 370,
+            name: 'Neo',
+            year: 2014,
+            big: false,
+            thumbnail: false,
+            shortDesc: 'Just started at this amazing company. More on this later.',
+            technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift',
+            linkUrl: 'http://neo.com',
+            linkLabel: 'Neo Homepage',
+            category: 'design',
+            showOnHomePage: false
+          }, {
+            id: 380,
             name: 'Bitcoin Currency',
             year: 2014,
             big: false,
