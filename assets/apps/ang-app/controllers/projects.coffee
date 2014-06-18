@@ -515,5 +515,17 @@ define ['./module'], (controllers) ->
 			linkLabel: 'Everything.io Splash Page'
 			category: 'design'
 			showOnHomePage: false
+		,
+			id: 350
+			name: 'Bitcoin Currency'
+			year: 2014
+			big: false
+			thumbnail: false
+			shortDesc: 'I created a functional set of denominational Bitcoin bills featuring great men and women of science.'
+			technologies: 'Adobe CS'
+			linkUrl: 'http://ajkochanowicz.github.io/bitcoinbills/'
+			linkLabel: 'Bitcoin Denominational Currency'
+			category: 'design'
+			showOnHomePage: true
 		]
 	]
