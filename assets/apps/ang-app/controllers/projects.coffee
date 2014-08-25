@@ -539,5 +539,29 @@ define ['./module'], (controllers) ->
 			linkLabel: 'Bitcoin Denominational Currency'
 			category: 'design'
 			showOnHomePage: true
+		,
+			id: 390
+			name: 'Everything is a Bottle Opener'
+			year: 2014
+			big: false
+			thumbnail: false
+			shortDesc: 'A blog dedicated simply to the many things that can be used as a bottle opener'
+			technologies: 'Bottles, Chainsaws, Helicopters, Pens, etc.'
+			linkUrl: 'http://everythingisabottleopener.tumblr.com/'
+			linkLabel: 'everythingisabottleopener.tumblr.com'
+			category: 'delights'
+			showOnHomePage: true
+		,
+			id: 400
+			name: 'mailto.ninja'
+			year: 2014
+			big: true
+			thumbnail: false
+			shortDesc: 'A stupidly simple solution to adding email sending to html'
+			technologies: 'node.js, Coffeescript, Jade, Sass, Mailgun'
+			linkUrl: 'http://mailto.ninja'
+			linkLabel: 'mailto.ninja'
+			category: 'development'
+			showOnHomePage: true
 		]
 	]
