@@ -1,6 +1,1 @@
-(function() {
-  define(['angular'], function(angular) {
-    return angular.module('app.filters', []);
-  });
-
-}).call(this);
+../../../../apps/ang-app/filters/module.js

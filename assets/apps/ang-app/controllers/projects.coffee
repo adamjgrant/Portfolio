@@ -463,7 +463,7 @@ define ['./module'], (controllers) ->
 			thumbnail: true
 			shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-			linkUrl: 'http://everything.io'
+			linkUrl: 'http://cdn.everything.io/archive/'
 			linkLabel: 'Everything.io Splash Page'
 			category: 'development'
 			showOnHomePage: true
@@ -475,7 +475,7 @@ define ['./module'], (controllers) ->
 			thumbnail: true
 			shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-			linkUrl: 'http://everything.io'
+			linkUrl: 'http://cdn.everything.io/archive'
 			linkLabel: 'Everything.io Splash Page'
 			category: 'mobile'
 			showOnHomePage: false
@@ -487,7 +487,7 @@ define ['./module'], (controllers) ->
 			thumbnail: true
 			shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
 			technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-			linkUrl: 'http://everything.io'
+			linkUrl: 'http://cdn.everything.io/archive'
 			linkLabel: 'Everything.io Splash Page'
 			category: 'design'
 			showOnHomePage: false
