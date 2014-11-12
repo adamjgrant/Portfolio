@@ -1,1 +1,1 @@
-../../../../apps/ang-app/directives/module.js
+(function(){define(["angular","gatedScope"],function(a){return a.module("app.directives",["gatedScope"])})}).call(this)

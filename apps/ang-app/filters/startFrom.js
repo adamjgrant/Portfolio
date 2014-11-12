@@ -1,1 +1,1 @@
-../../../../apps/ang-app/filters/startFrom.js
+(function(){define(["./module"],function(a){return a.filter("startFrom",[function(){return function(a,b){return b=+b,a.slice(b)}}])})}).call(this)

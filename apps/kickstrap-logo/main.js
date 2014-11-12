@@ -1,1 +1,1 @@
-../../../apps/kickstrap-logo/main.js
+(function(){define(["./stylesheet.css!"],function(){})}).call(this)

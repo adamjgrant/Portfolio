@@ -1,1 +1,1 @@
-../../../apps/ang-app/main.js
+(function(){define(["angular","angular-route","ngProgress"],function(a){return a.module("app",["app.controllers","app.directives","app.filters","ngRoute","ngProgress"]).config(["$routeProvider","$locationProvider",function(a,b){return a.when("/",{templateUrl:"/partials/home.html"}).when("/delights",{templateUrl:"/partials/category.html"}).when("/mobile",{templateUrl:"/partials/category.html"}).when("/development",{templateUrl:"/partials/category.html"}).when("/design",{templateUrl:"/partials/category.html"})}])})}).call(this)

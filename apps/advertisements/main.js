@@ -1,1 +1,1 @@
-../../../apps/advertisements/main.js
+(function(){define(["./markup.txt!text","jquery"],function(a,b){return b("#ads").html("<br>"+a)})}).call(this)

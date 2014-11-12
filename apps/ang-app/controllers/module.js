@@ -1,1 +1,1 @@
-../../../../apps/ang-app/controllers/module.js
+(function(){define(["angular"],function(a){return a.module("app.controllers",[])})}).call(this)

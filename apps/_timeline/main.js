@@ -1,1 +1,1 @@
-../../../apps/_timeline/main.js
+(function(){define(["./timeline.min","./timeline_light.css!","./timeline.css!","ks:ang-app/controllers/projects"],function(a){var b;return console.log(a),b=new a($("#timeline"),k$.projects),b.display()})}).call(this)

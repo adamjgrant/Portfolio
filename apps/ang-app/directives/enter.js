@@ -1,1 +1,1 @@
-../../../../apps/ang-app/directives/enter.js
+(function(){define(["./module"],function(a){return a.directive("ksEnter",[function(){return function(a,b,c){return b.bind("keydown keypress",function(b){if(b.which===13)return a.$apply(function(){return a.$eval(c.ksEnter)}),b.preventDefault()})}}])})}).call(this)
