@@ -37,6 +37,7 @@ bind = ->
     # Let's filter out the projects for this category.
     $projects = A$.projects.filter (v) -> v.category == $category.id
 
+  # If that is the home page
   else
     $projects = A$.projects.filter (v) -> v.showOnHomePage == true
     k$.$('.render').innerHTML = ''

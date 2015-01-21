@@ -1,2 +1,22 @@
 main.main
   +wrapper
+
+body
+  padding-top: 45px
+  background: #EEE
+
+.template
+  display: none
+
+.paper
+  +wrapper
+  background: white
+  padding: $space 0
+
+  @media screen and (min-width: $tablet)
+    padding: $space * 2
+
+  @media screen and (min-width: $tablet-landscape)
+    max-width: 1200px
+    box-shadow: 0 5px 5px #555
+

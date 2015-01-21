@@ -1,6 +1,21 @@
 .navigation
-  +navbar($collapse: true)
-  color: $default-font-color
+  +navbar($background-color: rgba(238, 238, 238, 0.9))
+  transition: background, 0.25s
 
   nav
-    +wrapper($fluid: true)
+    +wrapper
+
+    @media screen and (min-width: $tablet-landscape)
+      max-width: 1200px
+
+  +navbar-fixed
+  +navbar-collapse
+
+  &:hover
+    background-color: white
+    border-bottom-width: 1px
+    border-bottom-style: solid
+    border-bottom-color: #DDD
+
+  h1 a
+    color: $default-font-color
