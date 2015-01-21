@@ -8,7 +8,7 @@ projects = [
   technologies: 'HTML, VisualPage'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 10
@@ -20,7 +20,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 20
@@ -32,7 +32,7 @@ projects = [
   technologies: 'QBASIC, DOS'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 30
@@ -44,7 +44,7 @@ projects = [
   technologies: 'BASIC'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 40
@@ -56,7 +56,7 @@ projects = [
   technologies: 'Macromedia/Adobe Flash, ActionScript, Adobe Premiere Pro'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 50
@@ -68,7 +68,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: ''
   linkLabel: ''
-  category: 'mobile'
+  category: 1
   showOnHomePage: true
 ,
   id: 60
@@ -80,7 +80,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
   linkUrl: ''
   linkLabel: ''
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 70
@@ -92,7 +92,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
   linkUrl: ''
   linkLabel: ''
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 80
@@ -104,7 +104,7 @@ projects = [
   technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
   linkUrl: ''
   linkLabel: ''
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 90
@@ -116,7 +116,7 @@ projects = [
   technologies: 'Java Spring MVC, HTML, CSS, JavaScript, Flash'
   linkUrl: 'http://powabunga.com'
   linkLabel: 'Go to Powabunga'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 100
@@ -128,7 +128,7 @@ projects = [
   technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
   linkUrl: ''
   linkLabel: ''
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 110
@@ -140,7 +140,7 @@ projects = [
   technologies: ''
   linkUrl: 'http://uxmovement.com/thinking/the-5-biggest-interface-screw-ups-of-2010/'
   linkLabel: 'Read Article'
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 120
@@ -152,7 +152,7 @@ projects = [
   technologies: 'HTML, CSS, AdobeCS, Cinema4D'
   linkUrl: ''
   linkLabel: ''
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 130
@@ -164,7 +164,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
   linkUrl: 'http://getkickstrap.com'
   linkLabel: 'Kickstrap Homepage'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 140
@@ -176,7 +176,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
   linkUrl: 'http://getkickstrap.com'
   linkLabel: 'Kickstrap Homepage'
-  category: 'design'
+  category: 3
   showOnHomePage: false
 ,
   id: 150
@@ -188,7 +188,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
   linkUrl: 'http://ske.dj/'
   linkLabel: 'Go to Ske.dj'
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 160
@@ -200,7 +200,7 @@ projects = [
   technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
   linkUrl: 'http://vegankit.com'
   linkLabel: 'See VeganKit'
-  category: 'mobile'
+  category: 1
   showOnHomePage: true
 ,
   id: 170
@@ -212,7 +212,7 @@ projects = [
   technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
   linkUrl: 'http://vegankit.com'
   linkLabel: 'See VeganKit'
-  category: 'development'
+  category: 2
   showOnHomePage: false
 ,
   id: 180
@@ -224,7 +224,7 @@ projects = [
   technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing'
   linkUrl: ''
   linkLabel: ''
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 190
@@ -236,7 +236,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
   linkUrl: ''
   linkLabel: ''
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 200
@@ -248,7 +248,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
   linkUrl: ''
   linkLabel: ''
-  category: 'design'
+  category: 3
   showOnHomePage: false
 ,
   id: 210
@@ -260,7 +260,7 @@ projects = [
   technologies: 'JavaScript/jQuery'
   linkUrl: 'https://github.com/ajkochanowicz/tinygrowl/'
   linkLabel: 'TinyGrowl on GitHub'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 220
@@ -272,7 +272,7 @@ projects = [
   technologies: ''
   linkUrl: 'http://www.usertesting.com/blog/2012/04/24/10-high-impact-usability-improvements-part-1/'
   linkLabel: 'Read Article'
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 250
@@ -284,7 +284,7 @@ projects = [
   technologies: 'Hype2, JavaScript, PHP'
   linkUrl: ''
   linkLabel: ''
-  category: 'mobile'
+  category: 1
   showOnHomePage: true
 ,
   id: 260
@@ -296,7 +296,7 @@ projects = [
   technologies: 'Hype2, JavaScript, PHP'
   linkUrl: ''
   linkLabel: ''
-  category: 'design'
+  category: 3
   showOnHomePage: false
 ,
   id: 270
@@ -308,7 +308,7 @@ projects = [
   techologies: 'Wordpress, HTML, CSS, JavaScript'
   linkUrl: 'http://adamkochanowicz.com/uxzen/'
   linkLabel: 'UX Zen'
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 280
@@ -320,7 +320,7 @@ projects = [
   technologies: 'Axure RP, Adobe CS, in-person usability testing.'
   linkUrl: ''
   linkLabel: ''
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 290
@@ -332,7 +332,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: 'http://ajkochanowicz.github.io/kbash/'
   linkLabel: 'Demo on GitHub'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 300
@@ -344,7 +344,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Kickstrap'
   linkUrl: 'http://ajkochanowicz.github.io/CSS-Post-Rendering/'
   linkLabel: 'Demo on GitHub'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 310
@@ -356,7 +356,7 @@ projects = [
   technologies: 'On GitHub'
   linkUrl: 'https://github.com/ajkochanowicz/Email-Meta'
   linkLabel: 'See the specs on GitHub'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 320
@@ -368,7 +368,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive/'
   linkLabel: 'Everything.io Splash Page'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 330
@@ -380,7 +380,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
   linkLabel: 'Everything.io Splash Page'
-  category: 'mobile'
+  category: 1
   showOnHomePage: false
 ,
   id: 340
@@ -392,7 +392,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
   linkLabel: 'Everything.io Splash Page'
-  category: 'design'
+  category: 3
   showOnHomePage: false
 ,
   id: 350
@@ -404,7 +404,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
   linkUrl: 'http://neo.com'
   linkLabel: 'Neo Homepage'
-  category: 'development'
+  category: 2
   showOnHomePage: true
 ,
   id: 360
@@ -416,7 +416,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
   linkUrl: 'http://neo.com'
   linkLabel: 'Neo Homepage'
-  category: 'mobile'
+  category: 1
   showOnHomePage: false
 ,
   id: 370
@@ -428,7 +428,7 @@ projects = [
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
   linkUrl: 'http://neo.com'
   linkLabel: 'Neo Homepage'
-  category: 'design'
+  category: 3
   showOnHomePage: false
 ,
   id: 380
@@ -440,7 +440,7 @@ projects = [
   technologies: 'Adobe CS'
   linkUrl: 'http://ajkochanowicz.github.io/bitcoinbills/'
   linkLabel: 'Bitcoin Denominational Currency'
-  category: 'design'
+  category: 3
   showOnHomePage: true
 ,
   id: 390
@@ -452,7 +452,7 @@ projects = [
   technologies: 'Bottles, Chainsaws, Helicopters, Pens, etc.'
   linkUrl: 'http://everythingisabottleopener.tumblr.com/'
   linkLabel: 'everythingisabottleopener.tumblr.com'
-  category: 'delights'
+  category: 0
   showOnHomePage: true
 ,
   id: 400
@@ -464,7 +464,7 @@ projects = [
   technologies: 'node.js, Coffeescript, Jade, Sass, Mailgun'
   linkUrl: 'http://mailto.ninja'
   linkLabel: 'mailto.ninja'
-  category: 'development'
+  category: 2
   showOnHomePage: true 
 ]
 

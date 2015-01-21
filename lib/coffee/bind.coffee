@@ -22,8 +22,31 @@ bind = ->
   $template.querySelector('.page-details h3').innerHTML = $category.desc
 
   # Done, throw that in render.
-  render($template.querySelector('.page-details'))
+  render $template.querySelector('.page-details')
 
-  console.log $category
+  # Let's filter out the projects for this category.
+  $projects = A$.projects.filter (v) -> v.category == $category.id
+
+  # Bind project properties to appropriate fields
+  for $project in $projects
+    $_template = $template.cloneNode true
+    $project_title = $_template.querySelector('.page-content h1')
+    $project_title.innerHTML = $project.name
+
+    if $project.linkUrl.length
+      $project_link = document.createElement('a')
+      $project_link.href = $project.linkUrl
+      $project_title.parentNode.insertBefore $project_link, $project_title.parentNode.firstChild
+      $project_link.appendChild $project_title
+
+    $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
+    $_template.querySelector('.page-content .technologies').innerHTML = $project.technologies
+
+    render $_template
+
+
+  # Now that we're done, let's just remove the template div.
+  $template.parentNode.removeChild($template)
+
 
 module.exports = bind
