@@ -1,18 +1,32 @@
 doctype html
 block variables
-  - var title = "Home"
+  - var title = "Designer and Developer"
 
 html(lang='en')
   head
     link(rel="stylesheet" href="/css/style.min.css")
     meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
-    title My Website - #{title}
+    title Adam Kochanowicz - #{title}
   body
+    header.navigation
+      nav
+        ul
+          li.navbar-title
+            h1 Adam Kochanowicz
+            button(role="button") =
+          li: a(href="/") Home
+          li: a(href="/#delights") Delights
+          li: a(href="/#mobile") Mobile Experiences
+          li: a(href="/#development") Full Stack Development
+          li: a(href="/#design") Design
+
+        ul
+          li: a(href="http://adamslists.com") Adam's Lists
+
     main.main
       block content
 
     footer.main
       .wrapper
-        p Made by <a href="http://twitter.com/everythingdotio">Everything</a>
 
     script(src="/js/script.min.js")

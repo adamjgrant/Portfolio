@@ -6,9 +6,18 @@ var gulp = require('gulp'),
 var dest = './public';
 
 gulp.task('jade', function() {
+  var pages = ['mobile', 'development', 'delights', 'design'];
+  for(var $i = 0; $i < pages.length; $i++) {
+    var page = pages[$i];
+    gulp.src(['./lib/jade/template/index.jade'])
+      .pipe(jade({ locals: { page: page }}))
+      .pipe(gulp.dest(dest + "/" + page))
+  }
+
   return gulp.src(['./lib/jade/**/*.jade'])
     .pipe(changed(dest))
-    .pipe(jade({
+    .pipe(jade(
+      {
         locals: {
           fs: require('fs')
         }

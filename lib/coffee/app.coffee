@@ -1,5 +1,6 @@
-KS        = require '../../lib-core/coffee/app'
-myScript  = require './myscript'
+A$            = new Object()
+KS            = require '../../lib-core/coffee/app'
+A$.categories = require './categories'
+A$.projects   = require './projects'
 
 document.addEventListener 'DOMContentLoaded', ->
-  myScript()
