@@ -12,20 +12,34 @@ bind = ->
     when "mobile" then $category = 1
     when "development" then $category = 2
     when "design" then $category = 3
+    when "home" then $category = undefined
+    else $category = 0
 
-  # Let's filter out the category entry with that id.
-  $category = (A$.categories.filter (v) -> v.id == $category)[0]
+  # If this is not the home page...
+  if $category != undefined
+    # Set active menu item
+    for $navitem in k$.$$('.navigation li a')
+      if parseInt($navitem.dataset.category) == $category
+        $navitem.classList.add 'active'
 
-  # Now that we have the right category, we can bind our header.
-  $template.querySelector('.page-details h1').innerHTML = $category.name
-  $template.querySelector('.page-details h2').innerHTML = $category.lead
-  $template.querySelector('.page-details h3').innerHTML = $category.desc
+    # Let's filter out the category entry with that id.
+    $category = (A$.categories.filter (v) -> v.id == $category)[0]
+    
+    # Now that we have the right category, we can bind our header.
+    $template.querySelector('.page-details h1').innerHTML = $category.name
+    $template.querySelector('.page-details h2').innerHTML = $category.lead
+    $template.querySelector('.page-details h3').innerHTML = $category.desc
 
-  # Done, throw that in render.
-  render $template.querySelector('.page-details')
+    # Done, throw that in render.
+    k$.$('.render').innerHTML = ''
+    render $template.querySelector('.page-details')
 
-  # Let's filter out the projects for this category.
-  $projects = A$.projects.filter (v) -> v.category == $category.id
+    # Let's filter out the projects for this category.
+    $projects = A$.projects.filter (v) -> v.category == $category.id
+
+  else
+    $projects = A$.projects.filter (v) -> v.showOnHomePage == true
+    k$.$('.render').innerHTML = ''
 
   # Bind project properties to appropriate fields
   for $project in $projects
@@ -42,8 +56,7 @@ bind = ->
     $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
     $_template.querySelector('.page-content .technologies').innerHTML = $project.technologies
 
-    render $_template
-
+    render $_template.querySelector('.tl-spine')
 
   # Now that we're done, let's just remove the template div.
   $template.parentNode.removeChild($template)

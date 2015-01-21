@@ -14,14 +14,18 @@ gulp.task('jade', function() {
       .pipe(gulp.dest(dest + "/" + page))
   }
 
-  return gulp.src(['./lib/jade/**/*.jade'])
-    .pipe(changed(dest))
-    .pipe(jade(
-      {
-        locals: {
-          fs: require('fs')
-        }
-      })
-    )
-    .pipe(gulp.dest(dest));
+  gulp.src(['./lib/jade/template/index.jade'])
+    .pipe(jade({ locals: { page: 'home' }}))
+    .pipe(gulp.dest(dest + "/" ))
+
+  // return gulp.src(['./lib/jade/**/*.jade'])
+  //   .pipe(changed(dest))
+  //   .pipe(jade(
+  //     {
+  //       locals: {
+  //         fs: require('fs')
+  //       }
+  //     })
+  //   )
+  //   .pipe(gulp.dest(dest));
 });

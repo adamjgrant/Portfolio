@@ -453,7 +453,7 @@ projects = [
   linkUrl: 'http://everythingisabottleopener.tumblr.com/'
   linkLabel: 'everythingisabottleopener.tumblr.com'
   category: 0
-  showOnHomePage: true
+  showOnHomePage: false
 ,
   id: 400
   name: 'mailto.ninja'
