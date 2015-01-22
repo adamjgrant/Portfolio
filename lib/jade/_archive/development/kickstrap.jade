@@ -1,0 +1,21 @@
+h3 Kickstrap 1
+p I had seen a lot of Bootstrap sites before I built Kickstrap. I noticed they didn't seem to upgrade with the main repo, however. I suspected a lot of people were editing the Bootstrap CSS directly, so I created a template to keep Bootstrap loosely-coupled from the user's code.
+p The simplest way to do this would be to simply add a second CSS file after bootstrap.css. However, this creates an additional HTTP request and the second CSS file isn't able to use the variables and mixins from bootstrap.less.
+p By using the source Bootstrap.less and importing these files into a new LESS file, users could choose which parts of Bootstrap to use, upgrade it when they wanted, and use the variables and mixins.
+p
+	.thumbnail
+		img.img-responsive(src="/img/ks_schema.png")
+		.caption A schema for the Kickstrap download
+	br
+p Kickstrap 1 expanded on Bootstrap with "Themes, Extras, and Apps". The themes used the source LESS files from Bootswatch.com and the extras were snippets of LESS that inherited from Bootstrap.less to create additional "unofficial" UI elements.
+p Apps were a minimalist implementation of asynchronous module definition I coded from scratch. In K1, Users could upload either css or js files into a single folder with a ".ks" file containing a list of the resources to load. Adding a resource to the second line would mean the first line of resources should load first.
+p This was accomplished by storing unique tokens in the XHR (XML HTTP Response) header to identify ajaxed resources. Despite its primitive construction in the face of more complicated tools like CommonJS and Require.js, users thoroughly enjoyed using it.
+
+h3 Kickstrap 2
+iframe.center-block(src="//player.vimeo.com/video/79834881?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="320" height="180" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+br
+p One of the tips I learned from K1 was that users preferred starting with the code I had already given them. They were not crazy about starting off with a blank page. I decided K2 should embody the fundamental parts of most website. K2, which is set to be released in February of 2014, will have sample pages already hooked up for a simple blog, storefront, messages, and a shopping cart.
+p I also worked very closely with Guy Bedford in overhauling the "apps" of Kickstrap with his product, 
+	a(href="http://jspm.io") JSPM (JavaScript Package Manager)
+	| . Among other features, JSPM can load virtually any kind of web resource in the context of dependency management. This way, large resources can be loaded asynchronously without the risk of missing dependent scripts. This also makes it easy to program, as pieces of a website can be grouped into modules, and loaded where needed.
+p To keep Kickstrap working quickly, I used a combination of Firebase.io and Angular.js with a library provided by Firebase called AngularFire. As the video shows above, each website is supercharged with a fast front-end MVC and real-time websockets Backend as a Service via a special agreement with Firebase.

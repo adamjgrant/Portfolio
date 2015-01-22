@@ -1,0 +1,48 @@
+p Introducing modular data collection
+
+p
+	iframe.center-block(src="//www.youtube.com/embed/e8NNzDr5hhc" frameborder="0" allowfullscreen style="width: 320px; height: 200px")
+
+p Lab95 is a fast and productive dashboard to run data-collection studies. This site primarily targeted professionals in the medical, UX, and marketing industries to provide small fast tools to rapidly test and analyze data.
+
+.thumbnail
+	.row
+		.col.col-md-6
+			img.img-responsive(src="/img/l95_small_screenshot.png")
+		.col.col-md-6
+			img.img-responsive(src="/img/l95_detail.png")
+	.caption I didn't want to have "Save" buttons anywhere (with some exceptions). All editing and creation was synced in real time.
+
+h3 The hook
+
+p While there are many suites and one-off tools around to run data-collection studies, Lab95 provides a toolbelt of one-off data collectors (surveys, A/B tests, voting units, Five-second tests, etc.) which can either be used alone or pieced together like legos. 
+
+p If I expected users to make many of these modules to ultimately create a larger data-collection unit, it was important each bit of modification worked very quickly. I worked for several days perfecting a JavaScript "debouncer" which would save the user's changes locally, and only send HTTP requests to the server to save when a few idle seconds had passed.
+
+.thumbnail
+	img.img-responsive(src="/img/l95_rollover.png")
+	.caption In order to maintain the complexity of the application, I used progressive disclosure techniques--hiding some information while the user was not actively working in a pane.
+
+h3 The modular collector
+
+p For example, I may want to send out a survey to some of my clients but I also want to test two different ideas. For this, I can create an A/B test and a Survey. Each of these is a module. I can send each out to customers and review the data for them as it comes in. 
+
+p However, I also have the option to create a modular group by combining both or many. The clients see a kind of slideshow taking them from one module to the other. The user sees their data results in a clean graph on one page, sectioned off by module. 
+
+p The three module types offered in the alpha:
+
+h4 Plain Surveys
+
+p As the name implies, these are barebone surveys. Each question you create automatically generates a chart to summarize the collected data.
+
+h4 Five second tests
+
+p Upload an image to display to the user for five seconds. After the five seconds have elapsed, the user is presented with survey questions you provide or with another module.
+
+h4 AB Tests
+
+p Compare the survey results of two different images. This is great for testing two slightly different designs. Each survey participant is shown only one or the other image (A or B) and each group gets the same set of questions or is led to the same module.
+
+h4 Vote bubbles
+
+p These look much like the posts on StackOverflow or one of the many other StackExchange sites. I can create a "bubble" with a title and some text inside it and allow users to vote the idea up or down. One vote per person. This is great to test feature ideas and see which ones the community likes best. 
