@@ -48,6 +48,7 @@ build-icons:
 	@./build.rb
 
 setup:
+	@git submodule update --init --recursive
 	@make build-icons
 	@sudo npm install -g gulp
 	@sudo npm install

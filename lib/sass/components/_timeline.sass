@@ -8,6 +8,20 @@
 
 .tl-spine
   border-left: 5px solid #DDD
+
+  article
+    h1
+      font-family: $heading-font-family
+      font-weight: 300
+
+    h2
+      font-family: $default-font-family
+      +p(true)
+
+    .technologies
+      color: map-get($gray, light)
+      font-style: italic
+
   &-dot
     display: inherit
     padding: 20px

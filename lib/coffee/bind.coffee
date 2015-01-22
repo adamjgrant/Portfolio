@@ -55,7 +55,7 @@ bind = ->
       $project_link.appendChild $project_title
 
     $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
-    $_template.querySelector('.page-content .technologies').innerHTML = $project.technologies
+    $_template.querySelector('.page-content .technologies span').innerHTML = $project.technologies
 
     render $_template.querySelector('.tl-spine')
 
