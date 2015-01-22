@@ -107,6 +107,18 @@ projects = [
   category: 2
   showOnHomePage: true
 ,
+  id: 81
+  name: 'Vegan News'
+  year: 2009
+  big: false
+  thumbnail: true
+  shortDesc: 'My monthly video and audio podcast on veganism, complete with news, user voicemail, and recipes'
+  technologies: 'Adobe Premiere Pro, Adobe After Effects'
+  linkUrl: ''
+  linkLabel: ''
+  category: 1
+  showOnHomePage: true
+,
   id: 90
   name: 'Powabunga'
   year: 2010
@@ -117,6 +129,18 @@ projects = [
   linkUrl: 'http://powabunga.com'
   linkLabel: 'Go to Powabunga'
   category: 2
+  showOnHomePage: true
+,
+  id: 95
+  name: 'The French Paper'
+  year: 2010
+  big: false
+  thumbnail: true
+  shortDesc: 'A few of my photos of Southern France were published by this French magazine.'
+  technologies: 'Canon T3 DSLR, Photoshop'
+  linkUrl: ''
+  linkLabel: ''
+  category: 3
   showOnHomePage: true
 ,
   id: 100
@@ -153,6 +177,18 @@ projects = [
   linkUrl: ''
   linkLabel: ''
   category: 3
+  showOnHomePage: true
+,
+  id: 125
+  name: 'New York Times Company'
+  year: 2011
+  big: false
+  thumbnail: true
+  shortDesc: 'Created How-To videos for NYTC\'s About.com articles.'
+  technologies: 'Adobe Premiere Pro, Adobe After Effects'
+  linkUrl: ''
+  linkLabel: ''
+  category: 1
   showOnHomePage: true
 ,
   id: 130
@@ -251,6 +287,18 @@ projects = [
   category: 3
   showOnHomePage: false
 ,
+  id: 215
+  name: 'Magic Radio'
+  year: 2012
+  big: false
+  thumbnail: true
+  shortDesc: 'I created a radio that plays non-stop old-time radio programs'
+  technologies: 'Basic electronics, Arduino, Java'
+  linkUrl: ''
+  linkLabel: ''
+  category: 1
+  showOnHomePage: true
+,
   id: 210
   name: 'TinyGrowl'
   year: 2012
@@ -298,6 +346,18 @@ projects = [
   linkLabel: ''
   category: 3
   showOnHomePage: false
+,
+  id: 251
+  name: 'Watermelon Keg'
+  year: 2013
+  big: false
+  thumbnail: true
+  shortDesc: 'As proof that I\'m fun at parties, my watermelon keg delivers spiked watermelon juice and good times for all.'
+  technologies: 'Watermelon, Pure Genius'
+  linkUrl: ''
+  linkLabel: ''
+  category: 1
+  showOnHomePage: true
 ,
   id: 270
   name: 'UX Zen'
@@ -464,6 +524,42 @@ projects = [
   technologies: 'node.js, Coffeescript, Jade, Sass, Mailgun'
   linkUrl: 'http://mailto.ninja'
   linkLabel: 'mailto.ninja'
+  category: 2
+  showOnHomePage: true 
+,
+  id: 500
+  name: 'kttty'
+  year: 2015
+  big: true
+  thumbnail: false
+  shortDesc: 'My webcomic with no drawings.'
+  technologies: 'HTML, CSS, JS, Kickstart, Jekyll, Amazon S3'
+  linkUrl: 'http://kttty.com'
+  linkLabel: 'kttty'
+  category: 1
+  showOnHomePage: true 
+,
+  id: 600
+  name: 'Sketchbook'
+  year: "Various"
+  big: false
+  thumbnail: true
+  shortDesc: 'Just some selections from my sketchbook over the years.'
+  technologies: 'Boredom'
+  linkUrl: ''
+  linkLabel: ''
+  category: 1
+  showOnHomePage: false
+,
+  id: 700
+  name: 'Kickstart'
+  year: 2015
+  big: true
+  thumbnail: false
+  shortDesc: 'A full featured CSS/JS library that puts Bootstrap and Foundation to shame.'
+  technologies: 'HTML, CSS, JS, CoffeeScript, Jade, Gulp, Jekyll, Ruby on Rails'
+  linkUrl: 'http://getkickstart.com'
+  linkLabel: 'GetKickstart'
   category: 2
   showOnHomePage: true 
 ]

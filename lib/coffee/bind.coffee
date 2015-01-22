@@ -54,7 +54,7 @@ bind = ->
     if $project.linkUrl.length
       $link = $_template.querySelector('p.link')
       $link.classList.add 'show'
-      $link.innerHTML = "Go to <a href='#{$project.linkUrl}'>#{$project.name}"
+      $link.innerHTML = "<a href='#{$project.linkUrl}'>#{$project.linkLabel}</a>"
 
     $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
     $_template.querySelector('.page-content .technologies span').innerHTML = $project.technologies
