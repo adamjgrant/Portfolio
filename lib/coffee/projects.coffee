@@ -116,7 +116,7 @@ projects = [
   technologies: 'Adobe Premiere Pro, Adobe After Effects'
   linkUrl: ''
   linkLabel: ''
-  category: 1
+  category: 0
   showOnHomePage: true
 ,
   id: 90
@@ -296,7 +296,7 @@ projects = [
   technologies: 'Basic electronics, Arduino, Java'
   linkUrl: ''
   linkLabel: ''
-  category: 1
+  category: 0
   showOnHomePage: true
 ,
   id: 210
@@ -356,7 +356,7 @@ projects = [
   technologies: 'Watermelon, Pure Genius'
   linkUrl: ''
   linkLabel: ''
-  category: 1
+  category: 0
   showOnHomePage: true
 ,
   id: 270
@@ -420,38 +420,38 @@ projects = [
   showOnHomePage: true
 ,
   id: 320
-  name: 'Everything.io'
+  name: 'Everything'
   year: 2013
   big: true
   thumbnail: true
   shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive/'
-  linkLabel: 'Everything.io Splash Page'
+  linkLabel: '(former) Everything.io Splash Page'
   category: 2
   showOnHomePage: true
 ,
   id: 330
-  name: 'Everything.io'
+  name: 'Everything'
   year: 2013
   big: false
   thumbnail: true
   shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
-  linkLabel: 'Everything.io Splash Page'
+  linkLabel: '(former) Everything.io Splash Page'
   category: 1
   showOnHomePage: false
 ,
   id: 340
-  name: 'Everything.io'
+  name: 'Everything'
   year: 2013
   big: false
   thumbnail: true
   shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
-  linkLabel: 'Everything.io Splash Page'
+  linkLabel: '(former) Everything.io Splash Page'
   category: 3
   showOnHomePage: false
 ,
@@ -536,7 +536,7 @@ projects = [
   technologies: 'HTML, CSS, JS, Kickstart, Jekyll, Amazon S3'
   linkUrl: 'http://kttty.com'
   linkLabel: 'kttty'
-  category: 1
+  category: 0
   showOnHomePage: true 
 ,
   id: 600
@@ -548,7 +548,7 @@ projects = [
   technologies: 'Boredom'
   linkUrl: ''
   linkLabel: ''
-  category: 1
+  category: 0
   showOnHomePage: false
 ,
   id: 700
