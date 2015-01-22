@@ -58,11 +58,16 @@ bind = ->
 
     $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
     $_template.querySelector('.page-content .technologies span').innerHTML = $project.technologies
+    $_template.querySelector('.page-content .tl-spine-dot-marker-yearFlag').innerHTML = $project.year
 
     render $_template.querySelector('.tl-spine')
 
   # Now that we're done, let's just remove the template div.
   $template.parentNode.removeChild($template)
 
+  # supportsTouch = 'ontouchstart' in window || navigator.msMaxTouchPoints
+  # if not supportsTouch
+  #   for $spine in k$.$$('.tl-spine')
+  #     $spine.classList.add 'hoverable'
 
 module.exports = bind

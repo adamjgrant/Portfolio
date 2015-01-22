@@ -1,4 +1,44 @@
+.page-details
+  margin-bottom: $space * 2
+
+  h1
+    border-bottom: 1px solid map-get($white, darker)
+    padding-bottom: $space
+
+  h2
+    +heading-sm
+    margin-top: 0
+
+  h3
+    +p
+    font-family: $default-font-family
+
 .tl-spine
+
+  article
+    h1
+      +heading-rg
+      font-family: $heading-font-family
+      font-weight: 300
+
+      &:first-child
+        margin-top: $space
+
+        +gt($phablet)
+          margin-top: -33px
+
+    h2
+      font-family: $default-font-family
+      +p()
+      margin-top: 0
+
+    .technologies
+      color: map-get($gray, light)
+      font-style: italic
+
+  p.technologies
+    margin-bottom: 0
+
   .link
     display: none
 

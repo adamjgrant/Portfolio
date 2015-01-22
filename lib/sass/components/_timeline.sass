@@ -8,62 +8,70 @@
 
 .tl-spine
   border-left: 5px solid #DDD
+  transition: all 0.2s
+
+  &:hover
+    outline: 1px solid #CCC
+    box-shadow: 0px 0px 5px #BBB
+    margin-left: -25px
+    padding-left: 25px
+    border-color: map-get($colors, green)
+
+    .tl-spine-dot-marker
+      margin-left: -55px
+      background-color: map-get($colors, green)
+
+      &:before
+        border-color: map-get($colors, green)
+
+  +gt($phablet)
+    margin-left: 80px
 
   &:hover
     border-color: map-get($colors, green)
-
-  article
-    h1
-      font-family: $heading-font-family
-      font-weight: 300
-
-    h2
-      font-family: $default-font-family
-      +p(true)
-
-    .technologies
-      color: map-get($gray, light)
-      font-style: italic
 
   &-dot
     display: inherit
     padding: 20px
 
     &_employer
-      padding: 50px 20px
+      padding: $space*2 20px
 
       .tl-spine-dot-marker-yearFlag
         background-color: map-get($colors, green)
         color: #FFF
 
-        &-marker
-          padding: 4px
-          background-color: map-get($gray, light)
-          display: inline-block 
-          position: relative
-          border: 3px solid white
-          margin-left: -29px
-          border-radius: 10px
-          clear: right
+    &-marker
+      padding: 4px
+      background-color: map-get($gray, light)
+      display: inline-block 
+      position: relative
+      border: 3px solid white
+      margin-left: -29px
+      border-radius: 10px
+      clear: right
 
-          &:before
-            position: absolute
-            display: block
-            content: ''
-            border: 1px solid map-get($gray, light)
-            height: 16px
-            width: 16px
-            top: -4px
-            left: -4px
-            box-sizing: border-box
-            border-radius: 50%
+      &:before
+        position: absolute
+        display: block
+        content: ''
+        border: 1px solid map-get($gray, light)
+        height: 16px
+        width: 16px
+        top: -4px
+        left: -4px
+        box-sizing: border-box
+        border-radius: 50%
 
-          &-yearFlag
-            position: absolute
-            padding: 3px 15px
-            font-size: 18px
-            border-radius: 5px
-            top: -11px
-            left: 15px
-            z-index: 1
-            color: #A1A1A1
+      &-yearFlag
+        position: absolute
+        padding: 3px 15px
+        font-size: 18px
+        border-radius: 5px
+        top: -11px
+        z-index: 1
+        color: #A1A1A1
+        left: 27px
+
+        +gt($phablet)
+          left: -80px
