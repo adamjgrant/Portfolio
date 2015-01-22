@@ -45,14 +45,16 @@ bind = ->
   # Bind project properties to appropriate fields
   for $project in $projects
     $_template = $template.cloneNode true
-    $project_title = $_template.querySelector('.page-content h1')
+    $project_title = $_template.querySelector('.page-content h1 a')
     $project_title.innerHTML = $project.name
+    $category_name = (A$.categories.filter (v) -> v.id == $project.category)[0].slug
+    $project_slug = `$project.name.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'')`
+    $project_title.href = "/#{$category_name}/#{$project_slug}"
 
     if $project.linkUrl.length
-      $project_link = document.createElement('a')
-      $project_link.href = $project.linkUrl
-      $project_title.parentNode.insertBefore $project_link, $project_title.parentNode.firstChild
-      $project_link.appendChild $project_title
+      $link = $_template.querySelector('p.link')
+      $link.classList.add 'show'
+      $link.innerHTML = "Go to <a href='#{$project.linkUrl}'>#{$project.name}"
 
     $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
     $_template.querySelector('.page-content .technologies span').innerHTML = $project.technologies
