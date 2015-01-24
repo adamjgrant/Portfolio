@@ -14,7 +14,7 @@ gulp.task('jade', function() {
       .pipe(gulp.dest(dest + "/" + page))
   }
 
-  gulp.src(['./lib/jade/template/index.jade'])
+  gulp.src(['./lib/jade/index.jade'])
     .pipe(jade({ locals: { page: 'home' }}))
     .pipe(gulp.dest(dest + "/" ))
 
