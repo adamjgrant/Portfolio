@@ -1,4 +1,4 @@
-page-id=""projects = [
+projects = [
   id: 0
   name: 'Edupedia'
   year: 1998
