@@ -1,5 +1,9 @@
 extends ../layout
 
+block variables
+  - var title = page
+  - var navClass = ""
+
 block content
   .template
     header.page-details
@@ -24,6 +28,7 @@ block content
 
             .content
 
-  div(class="render" data-page="#{page}")
-    p
-      em Loading...
+  .paper
+    div(class="render" data-page="#{page}")
+      p
+        em Loading...

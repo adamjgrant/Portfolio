@@ -27,7 +27,9 @@ block content
 
   header.hero
     - var xml = fs.readFileSync('./lib/img/name.svg')
+    - var xml2 = fs.readFileSync('./lib/img/hexagons.svg')
     != xml
+    != xml2
 
   .paper
     div(class="render" data-page="#{page}")

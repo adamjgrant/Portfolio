@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="hexagons" width="650px" height="712px" viewBox="0 0 650 712" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard" sketch:type="MSArtboardGroup">
+            <polygon id="Polygon-2" fill="#51C8AF" sketch:type="MSShapeGroup" transform="translate(325.000000, 370.681935) rotate(-170.000000) translate(-325.000000, -370.681935) " points="325 305.666027 386.833803 350.590915 363.215392 423.28091 286.784608 423.28091 263.166197 350.590915 "></polygon>
+            <g id="Group" sketch:type="MSLayerGroup" stroke="#FF1A75">
+                <polygon id="Polygon-1" sketch:type="MSShapeGroup" points="87 0 169.741917 60.1155215 138.137317 157.384479 35.8626831 157.384479 4.25808308 60.1155215 "></polygon>
+                <polygon id="Polygon-1" sketch:type="MSShapeGroup" points="355 314 437.741917 374.115521 406.137317 471.384479 303.862683 471.384479 272.258083 374.115521 "></polygon>
+                <polygon id="Polygon-1" sketch:type="MSShapeGroup" transform="translate(221.089844, 130.394531) rotate(-252.000000) translate(-221.089844, -130.394531) " points="221.089844 43.3945312 303.831761 103.510053 272.227161 200.77901 169.952527 200.77901 138.347927 103.510053 "></polygon>
+                <polygon id="Polygon-1" sketch:type="MSShapeGroup" transform="translate(489.089844, 444.394531) rotate(-252.000000) translate(-489.089844, -444.394531) " points="489.089844 357.394531 571.831761 417.510053 540.227161 514.77901 437.952527 514.77901 406.347927 417.510053 "></polygon>
+                <polygon id="Polygon-3" sketch:type="MSShapeGroup" points="138 157 220.741917 217.115521 189.137317 314.384479 86.8626831 314.384479 55.2580831 217.115521 "></polygon>
+                <polygon id="Polygon-2" sketch:type="MSShapeGroup" transform="translate(272.179687, 287.394531) rotate(-252.000000) translate(-272.179687, -287.394531) " points="272.179687 200.394531 354.921604 260.510053 323.317004 357.77901 221.042371 357.77901 189.437771 260.510053 "></polygon>
+                <polygon id="Polygon-2" sketch:type="MSShapeGroup" transform="translate(540.179687, 601.394531) rotate(-252.000000) translate(-540.179687, -601.394531) " points="540.179687 514.394531 622.921604 574.510053 591.317004 671.77901 489.042371 671.77901 457.437771 574.510053 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
