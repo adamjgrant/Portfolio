@@ -1,6 +1,7 @@
 doctype html
 block variables
   - var title = "Designer and Developer"
+  - var navClass = "home"
 
 html(lang='en')
   head
@@ -10,7 +11,7 @@ html(lang='en')
     script(src="//use.typekit.net/pvn6abu.js")
     script try{Typekit.load();}catch(e){}
   body
-    header.navigation(data-ks-navbar)
+    header.navigation(data-ks-navbar class="#{navClass}")
       nav
         ul
           li.navbar-title
