@@ -1,5 +1,9 @@
 extends layout.jade
 
+block variables
+  - var title = ""
+  - var navClass = ""
+
 block content
   .template
     header.page-details
@@ -7,4 +11,5 @@ block content
       h2 ...
       h3 ...
 
-  block page-content
+  .paper
+    block page-content

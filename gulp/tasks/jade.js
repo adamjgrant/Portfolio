@@ -1,7 +1,8 @@
 var gulp = require('gulp'),
   jade = require('gulp-jade'),
   changed = require('gulp-cached'),
-  browserSync  = require('browser-sync');
+  browserSync  = require('browser-sync'),
+  fs = require('fs');
 
 var dest = './public';
 
@@ -15,7 +16,10 @@ gulp.task('jade', function() {
   }
 
   gulp.src(['./lib/jade/index.jade'])
-    .pipe(jade({ locals: { page: 'home' }}))
+    .pipe(jade({ locals: { 
+      page: 'home',
+      fs: fs
+    }}))
     .pipe(gulp.dest(dest + "/" ))
 
   return gulp.src(['./lib/jade/{delights,design,development,mobile}/**/*.jade'])

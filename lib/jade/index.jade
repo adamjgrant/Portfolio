@@ -26,8 +26,12 @@ block content
 
 
   header.hero
-    h1 Adam Kochanowicz
+    - var xml = fs.readFileSync('./lib/img/name.svg')
+    - var xml2 = fs.readFileSync('./lib/img/hexagons.svg')
+    != xml
+    != xml2
 
-  div(class="render" data-page="#{page}")
-    p
-      em Loading...
+  .paper
+    div(class="render" data-page="#{page}")
+      p
+        em Loading...

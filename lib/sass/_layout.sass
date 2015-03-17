@@ -1,8 +1,8 @@
 main.main
-  +wrapper
+  // +wrapper
 
 body
-  padding-top: 45px
+  padding-top: 42px
   background: #EEE
 
 .template
@@ -11,7 +11,7 @@ body
 .paper
   +wrapper
   background: white
-  padding: $space 0
+  padding: $space
 
   @media screen and (min-width: $tablet)
     margin-top: $space
@@ -20,9 +20,6 @@ body
     max-width: 1200px
     box-shadow: 0 5px 5px #555
     padding-top: 80px
-
-  @media screen and (min-width: $desktop)
-    padding-top: 100px
 
 img
   max-width: 100%
@@ -34,4 +31,11 @@ img
 
   .image
     +column('third')
+
+#hexagons
+  position: absolute
+  top: -50px
+  z-index: 2000
+  height: calc(20vw + 500px)
+  left: 20%
 
