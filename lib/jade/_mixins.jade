@@ -1,4 +1,4 @@
-mixin img(name)
-  .image
+mixin img(name, position)
+  .image(class="#{position}")
     a(href="http://cdn.everything.io/portfolio/img/lg/#{name}.png")
       img(src="http://cdn.everything.io/portfolio/img/#{name}.png")

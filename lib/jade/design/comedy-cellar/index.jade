@@ -1,39 +1,14 @@
 extends ../../_page
-
+include ../../_mixins
 block page-content
-  h1 Bitcoin currency 
-
-  p I've always been fascinated with the technology behind bitcoin, but frustrated by how user un-friendly it all is.
-  p
-      img(src="/img/btc0001.png")
-  p
-    a(href="http://imgur.com/a/sp1sT") See all bills
-  p I quickly learned the best way to keep my bitcoins was on cold storage--paper wallets. This means your bitcoins are associated with a set of keys that are printed on paper. This kind of storage is "cold" because these keys are not stored electronically, where they could be accessed by hackers.
-  p This method works very well, but I knew we still needed some solution for everyday spending so bitcoin could be more than a commodity; something that could actually be used at a point of sale.
-
-  .image_grid
-    .image
-      img(src="/img/btc0002.png")
-    .image
-      img(src="/img/btc0010.png")
-    .image
-      img(src="/img/btc0050.png")
-    .image
-      img(src="/img/btc0100.png")
-    .image
-      img(src="/img/btc0500.png")
-    .image
-      img(src="/img/btc1000.png")
-    .image
-      img(src="/img/btc5000.png")
-    .image
-      img(src="/img/btc10000.png")
-    .image
-      img(src="/img/btc50000.png")
-    .image
-      img(src="/img/btc.png")
-
-  p By keeping bitcoins stored over many different bills in differing denominations, it limits a theif's ability to steal your coins (In the same way carrying a bunch of 20s is better than a 100 dollar bill.)
-  p This project remains an open source project for any developers to make their own equipment that uses these designs. So far, Jeff Hockema of 
-    a(href="https://encryptedbitcoinwallet.com/") EncryptedBitcoinWallet.com
-    |  has taken me up on this, offering these designs as an option for printing.
+  :markdown
+    # The Comedy Cellar
+    
+  +img('comedycellar01', 'left')
+  +img('comedycellar02', 'left')
+  :markdown
+    The Comedy Cellar has been offering a discount to patrons of their regular stand-up comedy shows on drinks and food at the owner's neighboring bar, The Fat Black Pussycat.
+    
+    I was convinced the design and flow of the reservation process was not conduisive to getting patrons to use their discount.
+    
+    I approached the owner with a plan to send users a virtual stack of cards they could access from their phones. Patrons would bring their phones with them and would need to pull up the reservation before entering the show. At all times, they are carrying the discount card with them and have more of a feeling that it is literally in their pocket, ready to be used.

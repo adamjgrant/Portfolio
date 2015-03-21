@@ -3,6 +3,7 @@ extends ../../_page
 block page-content
   include ../../_mixins.jade
   
+  +img('mailtoninja01', 'right')
   :markdown
     # mailto.ninja
 
@@ -11,8 +12,6 @@ block page-content
     Some of our products were so (intentionally) simple, they consisted of nothing more than a landing page. Our solution to this was to create a "mailto" link. This is simply a hyperlink that triggers your default mail client to open up. These links can also prepopulate to, from, subject, and body fields.
     
     Unfortunately, lots of users including myself find this very irritating when you use a web app, rather than a native mail app to correspond.
-    
-  +img('mailtoninja01')
 
   :markdown
     After chatting with some of my colleagues, I noticed I wasn't alone, they just hated iMail opened after clicking a "contact us" link.
@@ -24,11 +23,12 @@ block page-content
   :markdown
     My approach was to allow developers to write their "mailto" link just as they had before, and let the JavaScript do the rest.
     
+  +img('mailtoninja03', 'right')
+  
+  :markdown
     The beauty of this approach was the default mailto link would still work as normal in the event something went wrong with the JavaScript implementation.
     
     When it worked, a CDN-hosted JS and CSS file were loaded that quietly transformed the link into an event trigger, opening a nice, simple mailing modal.
-    
-  +img('mailtoninja03')
   
   :markdown
     After the user sends the email, the message details are sent over https to my mailto.ninja server which processes the message for sending.
