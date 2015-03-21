@@ -5,19 +5,20 @@
     right: auto
     bottom: $space
 
-  &.left
-    float: left
-    margin-right: $space
+  &.left, &.right
+    +gt($tablet)
+      max-width: $phone
 
+  &.left
     +gt($tablet)
       margin-right: $space*2
+      float: left
+
 
   &.right
-    float: right
-    margin-left: $space
-
     +gt($tablet)
       margin-left: $space*2
+      float: right
 
   &.snug
     display: block
@@ -26,6 +27,8 @@
 
   img, a
     max-width: 100%
+    margin: 0px auto
+    display: block
 
   &.center
     margin:
