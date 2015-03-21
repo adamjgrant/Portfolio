@@ -1,4 +1,5 @@
 mixin img(name, position)
-  .image(class="#{position}")
+  .clearfix
+  .image(class="#{position || 'center'}")
     a(href="http://cdn.everything.io/portfolio/img/lg/#{name}.png")
       img(src="http://cdn.everything.io/portfolio/img/#{name}.png")

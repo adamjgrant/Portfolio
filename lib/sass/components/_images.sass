@@ -1,8 +1,9 @@
 .image
   display: block
-  margin: $space
+  margin: 0
     left: auto
     right: auto
+    bottom: $space
 
   &.left
     float: left
@@ -18,5 +19,22 @@
     +gt($tablet)
       margin-left: $space*2
 
-  img
+  &.snug
+    display: block
+    width: 100%
+    margin: $space*2 0
+
+  img, a
     max-width: 100%
+
+  &.center
+    margin:
+      top: $space*2
+      bottom: $space*2
+
+    img, a
+      margin: 0px auto
+      display: block
+
+.clearfix
+  clear: both
