@@ -13,9 +13,13 @@ body
   @media screen and (min-width: $tablet)
     margin-top: $space
 
-  @media screen and (min-width: $tablet-landscape)
-    max-width: 1200px
-    padding-top: 80px
+  +gt($tablet-landscape)
+    margin-top: $space*2
+    padding-bottom: $space*4
+
+  &[data-page="single"]
+    p
+      max-width: $phablet
 
 img
   max-width: 100%

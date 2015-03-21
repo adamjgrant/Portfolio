@@ -332,20 +332,8 @@ projects = [
   technologies: 'Hype2, JavaScript, PHP'
   linkUrl: ''
   linkLabel: ''
-  category: 1
-  showOnHomePage: true
-,
-  id: 260
-  name: 'Comedy Cellar'
-  year: 2013
-  big: false
-  thumbnail: true
-  shortDesc: ''
-  technologies: 'Hype2, JavaScript, PHP'
-  linkUrl: ''
-  linkLabel: ''
   category: 3
-  showOnHomePage: false
+  showOnHomePage: true
 ,
   id: 251
   name: 'Watermelon Keg'
@@ -525,7 +513,7 @@ projects = [
   linkUrl: 'http://mailto.ninja'
   linkLabel: 'mailto.ninja'
   category: 2
-  showOnHomePage: true 
+  showOnHomePage: true
 ,
   id: 500
   name: 'kttty'
@@ -537,7 +525,7 @@ projects = [
   linkUrl: 'http://kttty.com'
   linkLabel: 'kttty'
   category: 0
-  showOnHomePage: true 
+  showOnHomePage: true
 ,
   id: 600
   name: 'Sketchbook'
@@ -561,7 +549,7 @@ projects = [
   linkUrl: 'http://getkickstart.com'
   linkLabel: 'GetKickstart'
   category: 2
-  showOnHomePage: true 
+  showOnHomePage: true
 ,
   id: 800
   name: 'AskAlexis'

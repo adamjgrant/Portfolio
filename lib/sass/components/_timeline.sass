@@ -11,11 +11,13 @@
   transition: all 0.2s
 
   &:hover
-    outline: 1px solid #CCC
     box-shadow: 0px 0px 5px #BBB
+    margin-top: -25px
     margin-left: -25px
     padding-left: 25px
     border-color: map-get($colors, green)
+    background: white
+    z-index: 10
 
     .tl-spine-dot-marker
       margin-left: -55px
@@ -44,7 +46,7 @@
     &-marker
       padding: 4px
       background-color: map-get($gray, light)
-      display: inline-block 
+      display: inline-block
       position: relative
       border: 3px solid white
       margin-left: -29px

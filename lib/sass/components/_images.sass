@@ -6,9 +6,17 @@
 
   &.left
     float: left
+    margin-right: $space
+
+    +gt($tablet)
+      margin-right: $space*2
 
   &.right
     float: right
+    margin-left: $space
+
+    +gt($tablet)
+      margin-left: $space*2
 
   img
     max-width: 100%
