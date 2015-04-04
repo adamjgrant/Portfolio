@@ -299,18 +299,6 @@ projects = [
   category: 0
   showOnHomePage: true
 ,
-  id: 210
-  name: 'TinyGrowl'
-  year: 2012
-  big: false
-  thumbnail: true
-  shortDesc: 'A very simple jQuery plugin to create Growl-like messages in Bootstrap.'
-  technologies: 'JavaScript/jQuery'
-  linkUrl: 'https://github.com/ajkochanowicz/tinygrowl/'
-  linkLabel: 'TinyGrowl on GitHub'
-  category: 2
-  showOnHomePage: true
-,
   id: 220
   name: '10 High Impact Usability Improvements'
   year: 2012
