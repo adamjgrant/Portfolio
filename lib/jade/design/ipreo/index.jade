@@ -9,27 +9,19 @@ block page-content
   p Ideas would frequently move betwen paper prototypes, Illustrator mockups, Axure RP interactive prototypes, and functioning HTML/CSS/JavaScript sandboxes.
   p I turned the old process on its head and brought developers, business analysts, and customer reps together in front of white boards and prototypes.
   p With simple tools, we held off on writing up finished specs to deliver to the dev team. Instead, we started with our existing styleguide and UI library and worked through ideas quickly. It was important to emphasize idea- and especially mistake-generation. By taking snapshots like the photos on the left and keeping them in our stack, we could also refer to the concepts we've already tried, or revive old ideas we liked before.
-  .row
-    .col.col-md-4
-      h3 Graphic Design
-      h4 Print
-      p For this design, I combined Adobe Photoshop, Adobe Illustrator, and Cinema 4D. This banner was to accompany a table at a promotional convention. Our goal was to convey the ease-of-use of Debtdomain as well as its modern design.
-    .col.col-md-8
-      .thumbnail
-        img.img-responsive(src="/img/dd_banner.png")
-        .caption (Left) One of the company's commissioned banners before I started. (Right) My redesign.
-  br
-  .thumbnail
-    img.img-responsive(src="/img/dd_icons_ai_and_fontographer.png")
-    .caption Custom icons were rendered meticulously to the pixel in Adobe Illustrator. They were then imported from EPS into Fontographer and, through a multi-stage process, converted into web fonts and stylesheets compatible with IE7 as well as modern browsers.
-  br
-  .row
-    .col.col-md-4
-      h3 Digital
-      p I mentioned in my copy on Kickstrap how I enjoy starting with UI Kits. These collages of UI, type, and other style elements are helpful in keeping elements consistent, managing colors, and testing new additions to the interface.
+  h2 Graphic Design
+  h3 Print
+  p For this design, I combined Adobe Photoshop, Adobe Illustrator, and Cinema 4D. This banner was to accompany a table at a promotional convention. Our goal was to convey the ease-of-use of Debtdomain as well as its modern design.
+  +img('dd_banner', 'snug')
+  p 
+    em (Left) One of the company's commissioned banners before I started. (Right) My redesign.
+  +img('dd_icons_ai_and_fontographer', 'snug')
+  p
+    em Custom icons were rendered meticulously to the pixel in Adobe Illustrator. They were then imported from EPS into Fontographer and, through a multi-stage process, converted into web fonts and stylesheets compatible with IE7 as well as modern browsers.
+  h2 Digital
+  p I mentioned in my copy on Kickstrap how I enjoy starting with UI Kits. These collages of UI, type, and other style elements are helpful in keeping elements consistent, managing colors, and testing new additions to the interface.
 
-      p It wasn't enough to choose colors and border-radii and throw them into a stylesheet. We needed custom graphics rendered in Photoshop and a system (LESS mixins) to generate derivatives of colors via a preprocessor. We also purchased the complete Adelle Sans font family for quick native rendering from our server.
-    .col.col-md-8
-      .thumbnail
-        img.img-responsive(src="/img/dd_uikit.png")
-        .caption The working UI Kit used for the design and branding of Debtdomain.com
+  p It wasn't enough to choose colors and border-radii and throw them into a stylesheet. We needed custom graphics rendered in Photoshop and a system (LESS mixins) to generate derivatives of colors via a preprocessor. We also purchased the complete Adelle Sans font family for quick native rendering from our server.
+  +img('dd_uikit', 'snug')
+  p
+    em The working UI Kit used for the design and branding of Debtdomain.com
