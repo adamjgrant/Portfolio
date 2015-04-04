@@ -31,43 +31,43 @@ block page-content
   p We went through several iterations of the site via Axure prototypes, wireframes, and good ol' pen and paper. In the first, beta release of the product most of our input came from direct surveys on the site, five second and nav flow tests via Usability hub, and actual in-person user interviews.
   p More importantly, we got to watch what people were building and learned about their ideas for using product (not always the same as ours.)
   p We wanted to make the docs very readable and the resource pages (for downloading extensions) akin to downloading apps on your phone.
-  .thumbnail.center-block
-    img.img-responsive(src="/img/ks_uikit.png")
-    br
-    img.img-responsive(src="/img/ks_docs_detail.png")
-    .caption GetKickstrap.com was originally built in Django. I started with a UI Kit fonts from TypeKit and built out the docs, resource uploading, user registration and social features.
-  h3 
+  +img('ks_uikit', 'snug')
+  p
+    em GetKickstrap.com was originally built in Django. I started with a UI Kit fonts from TypeKit and built out the docs, resource uploading, user registration and social features.
+  h2 
     span(style="text-decoration: line-through") Designing
     |  Obsessing over the Logo
-  .thumbnail.center-block(style="width: 320px")
-    img.img-responsive(src="/img/ks_logo1.png")
-    img.img-responsive(src="/img/ks_logo2.png")
-    .caption Kickstrap logos for version 1 (above) and two (below)
+  +img_clover(['ks_logo1', 'ks_logo2'])
+  p
+    em Kickstrap logos for version 1 (above) and two (below)
   p The logo was something I've spent a lot of time on, yet am still not finished. I've learned exactly how difficult it is to create a typeface--and I only made nine letters.
-  .thumbnail.center-block(style="width: 320px")
-    img.img-responsive(src="/img/ks_mainlogo_pre.jpg")
-    .caption After hundreds of attempts and a couple beers, finally I arrived at a "K" I was happy with.
+  +img('ks_mainlogo_pre', 'snug', 'jpg')
+  p
+    em After hundreds of attempts and a couple beers, finally I arrived at a "K" I was happy with.
   p It was important for me that the K seemed playful, and actually kicking as if jumping from a swing in flight. In earlier designs, I approached this more literally, actually embedding a floating swing across or next to the logo.
-  .thumbnail.center-block
-    img.img-responsive(src="/img/ks_logo_measured.png")
-    img.img-responsive(src="/img/ks_k_iteration.png")
-    img.img-responsive(src="/img/ks_logo_sketch.jpg")
-    .caption Even more iteration over getting the vector version to get the right look. Not merely an exercise of tracing.
-  h3 Design Goals
+  +img_clover(['ks_logo_measured', 'ks_k_iteration', 'ks_logo_sketch'])
+  p
+    em Even more iteration over getting the vector version to get the right look. Not merely an exercise of tracing.
+
+  h2 Design Goals
   p It was our goal to make Kickstrap a tool that was so simple, you didn't need to install anything. Just download the product and slap it on a server. Because of this simple design, it also allowed it to be paired with a myriad of frameworks, platforms, and languages.
   p For example, we've seen Kickstrap deployed in Django, RoR, PHP, .NET, and used in both corporate, public, and personal sites.
-  h3 Creating the Product
+
+  h2 Creating the Product
   p I don't like calling Kickstrap a framework (although I will anyway for brevity), it's more like a kit which employs frameworks in a concerted way.
   p The core concept of Kickstrap is that it extends on Bootstrap's functionality, all-the-while allowing you to continuously keep Bootstrap up-to-date.
   p To accomplish this, Kickstrap uses LESS, a CSS preprocessor to compile from Bootstrap's core LESS files. The website gives users access to a user-submitted library of apps, extras, and themes.
-  .thumbnail.center-block(style="width: 320px")
-    img.img-responsive(src="/img/ks_logo.png")
-    .caption The resulting K could be broken apart and still recognized, proving its ownable and reusable quality.
-  h3 Apps
+  +img('ks_logo', 'snug')
+  p
+    em The resulting K could be broken apart and still recognized, proving its ownable and reusable quality.
+
+  h2 Apps
   p Apps are common jQuery plugins repackaged as Asynchronous Module Definitions or AMDs. This allows users to download the dependencies needed for these plugins as single folders and merely refer to them by name when needed. Kickstrap automatically loads the necessary JS and CSS in the correct order written in a configuration file for the app.
-  h3 Themes
+
+  h2 Themes
   p Themes are merely LESS files which override Bootstrap's default theme. The vast majority of these themes are provided with permission from Thomas Park of 
     a(href="http://bootswatch.com") Bootswatch
-  h3 Extras
+
+  h2 Extras
   p Extras are additional UI elements on top of the many provided in Bootstrap.
     
