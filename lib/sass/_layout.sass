@@ -17,10 +17,16 @@ body
 
   &[data-page="single"]
     p, ul
-      max-width: $phablet
+      max-width: 100%
 
-    blockquote
-      max-width: $phablet+100px
+      +gt($tablet)
+        max-width: $phablet
+
+    blockquote, iframe
+      max-width: 100%
+
+      +gt($tablet)
+        max-width: $phablet+100px
 
       cite
         display: block
