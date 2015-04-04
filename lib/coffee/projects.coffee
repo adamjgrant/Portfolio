@@ -514,18 +514,6 @@ projects = [
   linkLabel: 'GetKickstart'
   category: 2
   showOnHomePage: true
-,
-  id: 800
-  name: 'AskAlexis'
-  year: 2015
-  big: true
-  thumbnail: false
-  shortDesc: 'Alexis is the whip smart woman you can text for everyday advice.'
-  technologies: 'HTML, Sass, JS, Slim, ReactJS, Ruby on Rails, Cloud66'
-  linkUrl: 'http://askalexis.io'
-  linkLabel: 'AskAlexis'
-  category: 2
-  showOnHomePage: true
 ]
 
 module.exports = projects
