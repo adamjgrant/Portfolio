@@ -437,35 +437,11 @@ projects = [
   big: false
   thumbnail: false
   shortDesc: 'Just started at this amazing company. More on this later.'
-  technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
+  technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, and more'
   linkUrl: 'http://neo.com'
   linkLabel: 'Neo Homepage'
   category: 2
   showOnHomePage: true
-,
-  id: 360
-  name: 'Neo'
-  year: 2014
-  big: false
-  thumbnail: false
-  shortDesc: 'Just started at this amazing company. More on this later.'
-  technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
-  linkUrl: 'http://neo.com'
-  linkLabel: 'Neo Homepage'
-  category: 1
-  showOnHomePage: false
-,
-  id: 370
-  name: 'Neo'
-  year: 2014
-  big: false
-  thumbnail: false
-  shortDesc: 'Just started at this amazing company. More on this later.'
-  technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, Swift'
-  linkUrl: 'http://neo.com'
-  linkLabel: 'Neo Homepage'
-  category: 3
-  showOnHomePage: false
 ,
   id: 380
   name: 'Bitcoin Currency'
