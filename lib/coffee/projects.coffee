@@ -188,7 +188,7 @@ projects = [
   technologies: 'Adobe Premiere Pro, Adobe After Effects'
   linkUrl: ''
   linkLabel: ''
-  category: 1
+  category: 3
   showOnHomePage: true
 ,
   id: 130
