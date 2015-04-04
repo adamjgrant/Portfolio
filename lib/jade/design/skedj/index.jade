@@ -1,39 +1,18 @@
 extends ../../_page
 
 block page-content
-  h1 Bitcoin currency 
-
-  p I've always been fascinated with the technology behind bitcoin, but frustrated by how user un-friendly it all is.
+  p By the time I started with Skedj, they were already employing programmers and had already hired a designer to establish the look-and-feel of the site. My role was mainly to maintain a programmed UI Kit and to make UX and usability decisions on their desktop and mobile app.
+  +img('sk_wireframe', 'snug')
   p
-      img(src="/img/btc0001.png")
+    em One such solution to a dropdown menu on a fixed menubar. The previous menu had too much vertical space which put it at risk of hiding out of reach on smaller screens.
+
+  p Although the designers and programmers had established this look in the website already, there was still more work to do and not much of the code was reusable.
+
+  p I created design classes for the various elements which could be mixed with other classes to create a large library of consistent design options
+  p For example the "button" class would create a generic button, but "green" would color button and other similar elements the branded green (This is better than having a single "green button" class). Additional classes and a little markup would give buttons dynamic effects like growing larger on hover.
+
+  +img_clover(['sk_fittsslaw-01', 'sk_fittsslaw-02', 'sk_fittsslaw-03', 'sk_fittsslaw-04', 'sk_fittsslaw-05', 'sk_fittsslaw-06'])
   p
-    a(href="http://imgur.com/a/sp1sT") See all bills
-  p I quickly learned the best way to keep my bitcoins was on cold storage--paper wallets. This means your bitcoins are associated with a set of keys that are printed on paper. This kind of storage is "cold" because these keys are not stored electronically, where they could be accessed by hackers.
-  p This method works very well, but I knew we still needed some solution for everyday spending so bitcoin could be more than a commodity; something that could actually be used at a point of sale.
-
-  .image_grid
-    .image
-      img(src="/img/btc0002.png")
-    .image
-      img(src="/img/btc0010.png")
-    .image
-      img(src="/img/btc0050.png")
-    .image
-      img(src="/img/btc0100.png")
-    .image
-      img(src="/img/btc0500.png")
-    .image
-      img(src="/img/btc1000.png")
-    .image
-      img(src="/img/btc5000.png")
-    .image
-      img(src="/img/btc10000.png")
-    .image
-      img(src="/img/btc50000.png")
-    .image
-      img(src="/img/btc.png")
-
-  p By keeping bitcoins stored over many different bills in differing denominations, it limits a theif's ability to steal your coins (In the same way carrying a bunch of 20s is better than a 100 dollar bill.)
-  p This project remains an open source project for any developers to make their own equipment that uses these designs. So far, Jeff Hockema of 
-    a(href="https://encryptedbitcoinwallet.com/") EncryptedBitcoinWallet.com
-    |  has taken me up on this, offering these designs as an option for printing.
+    em A series of Fitts's law measurements to determine the optimal placement for a submenu link.
+  p Other parts of my role involved basic decision-making and UX direction for the app. As the site gradually approached its launch, we were scrambling to finish up concepts for both the iPhone app and some unbuilt but essential screens.
+  p After several delays, Ske.dj finally launched. I still use it to track when my favorite commedians and musicians are coming to NYC.
