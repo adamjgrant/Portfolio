@@ -5,6 +5,11 @@
     right: auto
     bottom: $space
 
+  img, a
+    max-width: 100%
+    margin: 0px auto
+    display: block
+
   &.left, &.right
     +gt($tablet)
       max-width: $phone
@@ -25,10 +30,8 @@
     width: 100%
     margin: $space*2 0
 
-  img, a
-    max-width: 100%
-    margin: 0px auto
-    display: block
+    img, a
+      margin: 0
 
   &.center
     margin:
