@@ -1,7 +1,7 @@
 extends ../../_page
 
 block page-content
-  h1 Kickstrap
+  div(class="render" data-page-id="130")
   h2 Version 1
   p I had seen a lot of Bootstrap sites before I built Kickstrap. I noticed they didn't seem to upgrade with the main repo, however. I suspected a lot of people were editing the Bootstrap CSS directly, so I created a template to keep Bootstrap loosely-coupled from the user's code.
   p The simplest way to do this would be to simply add a second CSS file after bootstrap.css. However, this creates an additional HTTP request and the second CSS file isn't able to use the variables and mixins from bootstrap.less.

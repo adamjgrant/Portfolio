@@ -1,12 +1,9 @@
 extends ../../_page
 
 block page-content
-  include ../../_mixins.jade
   
-  +img('mailtoninja01', 'right')
-  :markdown
-    # mailto.ninja
-
+  div(class="render" data-page-id="400")
+  +img('mailtoninja01', 'snug')
     While at Neo, I noticed a lot of our MVPs required us to get information from users in some way. As MVPs, we didn't always have the time to build out database-supported systems or mailing applications.
     
     Some of our products were so (intentionally) simple, they consisted of nothing more than a landing page. Our solution to this was to create a "mailto" link. This is simply a hyperlink that triggers your default mail client to open up. These links can also prepopulate to, from, subject, and body fields.

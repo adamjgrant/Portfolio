@@ -2,6 +2,112 @@ extends ../../_page
 
 block page-content
   div(class="render" data-page-id="700")
-  :markdown
 
-    Lorem ipsum dolor sit amet
+  :markdown
+    Kickstart is actually the third version of [Kickstrap](/development/kickstrap/).
+    However, the changes were so fundamental it rendered a completely different product
+    and deserves its own separate place in my timeline.
+
+    Whereas the focus of Kickstrap was to extend Bootstrap, Kickstart became its own
+    standalone CSS library. I'm careful to describe it as a library and not a framework
+    as this is one of its key distinctions from Bootstrap.
+
+    Kickstart actually has several parts:
+
+    - The CSS component library
+    - Kickstart.js
+
+    These components are also manifested as an optional Rails Gem and Gulp starter seed.
+    Kickstart can be extended by an online service, built in Rails, called the [Kickstart Store](http://kickstart.everything.io)
+
+    While building Kickstart, I've developed a couple working drafts to serve as conventions for CSS variables and selectors:
+
+    - [Amadeus](http://getkickstart.com/amadeus/)
+    - [Chopin](http://getkickstart.com/chopin/)
+
+    ## The CSS component library
+
+    I evolved Kicktrap into Kickstart because I heard a lot of senior engineers
+    complaining about Bootstrap. It has become a sort of mark of an amateur among front
+    end developers.
+
+    Some of that is understandable, however I wasn't keen on the idea that I had to 
+    write every single navbar from scratch simply to maintain my credibility. Code should be modular
+    and reusable. Maybe Bootstrap doesn't accomplish that, but it can be accomplished.
+
+    The CSS component library is just that. Kickstart provides *opt-in* components each
+    heralding from a single Sass mixin
+
+        <header class="mynav">
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                Options
+                <ul>
+                  ...
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        .mynav {
+          @include navbar()
+        }
+
+    The components all share a minimal amount of base styling that is inherited from
+    the user's chosen Kickstart theme. It was a top priority for me that Kickstart was
+    super simple to extend and theme. After years of working with Kickstart users and
+    using Kickstart on my own projects, these two points proved as the most needed.
+
+    The goal here wasn't to create every component under the sun, just those most
+    commonly used: navbars, buttons, modal windows, etc.
+
+    However, users are encouraged to create their own components for other developers
+    to use. This is a new piece of the library that I hope to evolve further in later
+    versions.
+
+    ## Kickstart.js
+
+    I've long been a fan of vanilla JavaScript. While I think jQuery is a good tool
+    to use generally, it's not always necessary.
+
+    kickstart.js is unapologetically minimal at only 8kb (jQuery 2 is 86kb). This
+    provides a simple element selector similar to that of jQuery's, a couple of
+    buffering functions, and helper functions for the core Kickstart components.
+
+    While I spent a great deal of effort evolving the functionality of the buffering
+    functions, they've been around for a while but haven't been widely used. This is
+    unfortunate as I see missed optimization opportunities for these functions all the
+    time.
+
+    Essentially, the buffering functions allow the user to gather function calls into
+    a funnel that can either buffer them to be sent within intervals of one another
+    (instead of rapidly or all at once) or to be called only one time a certain number
+    of seconds after the last time it was called (this is called "debouncing").
+
+    ## Gulp starter seed
+
+    The Gulp starter seed is a bundle users can download and install to start building
+    a Kickstart static site immediately. It's also the actual main repository for the
+    development of Kickstart.
+
+    The bundle is designed to hold the core functionality in one directory, allowing the
+    user to write their own modifications in a separate directory. This lets a user
+    update the Kickstart core without affecting their own code.
+
+    The starter seed is also set up to optimize images, remove duplicate CSS rules,
+    minify, compile, and run Phantom JS tests.
+
+    Users also benefit from a high amount of organization. On the CSS side, the entire
+    core is tucked away, allowing for writing mixin-heavy Sass. On the JavaScript side,
+    files are written in CoffeeScript and bundled with Browserify. This allows a user to
+    write their JavaScript modularly but still compress it down to a single file.
+
+
+
