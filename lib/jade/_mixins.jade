@@ -1,8 +1,9 @@
-mixin img(name, position)
+mixin img(name, position, type)
+  - type = type || 'png'
   .clearfix
   .image(class="#{position || 'center'}")
-    a(href="http://cdn.everything.io/portfolio/img/lg/#{name}.png")
-      img(src="http://cdn.everything.io/portfolio/img/#{name}.png")
+    a(href="http://cdn.everything.io/portfolio/img/lg/#{name}.#{type}")
+      img(src="http://cdn.everything.io/portfolio/img/#{name}.#{type}")
 
 mixin img_clover(names)
   .clearfix

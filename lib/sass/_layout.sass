@@ -19,6 +19,18 @@ body
     p, ul
       max-width: $phablet
 
+    blockquote
+      max-width: $phablet+100px
+
+      cite
+        display: block
+        font-size: 1rem
+        text-align: right
+
+        &:before
+          content: "\2014"
+          margin-right: $space/3
+
 img
   max-width: 100%
   max-height: 400px
