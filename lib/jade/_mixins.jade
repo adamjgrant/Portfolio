@@ -3,3 +3,10 @@ mixin img(name, position)
   .image(class="#{position || 'center'}")
     a(href="http://cdn.everything.io/portfolio/img/lg/#{name}.png")
       img(src="http://cdn.everything.io/portfolio/img/#{name}.png")
+
+mixin img_clover(names)
+  .clearfix
+  div(data-component="image_clover")
+    each name in names
+      a.leaf(href="http://cdn.everything.io/portfolio/img/lg/#{name}.png")
+        img(src="http://cdn.everything.io/portfolio/img/#{name}.png")

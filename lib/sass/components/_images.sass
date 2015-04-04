@@ -10,6 +10,9 @@
     margin: 0px auto
     display: block
 
+    +gt($tablet)
+      max-width: calc(100% + 100px)
+
   &.left, &.right
     +gt($tablet)
       max-width: $phone
@@ -30,8 +33,9 @@
     width: 100%
     margin: $space*2 0
 
-    img, a
-      margin: 0
+    +gt($tablet)
+      img, a
+        margin: 0
 
   &.center
     margin:
