@@ -68,6 +68,13 @@ block page-content
     The goal here wasn't to create every component under the sun, just those most
     commonly used: navbars, buttons, modal windows, etc.
 
+  +img('ks-kickstart-store', 'snug')
+
+  :markdown
+    *Freely reusable components in the Kickstart store. Each is a Git submodule, so
+    everyone who uses the component can pull updates from the author, much like a
+    Rails Gem.*
+
     However, users are encouraged to create their own components for other developers
     to use. This is a new piece of the library that I hope to evolve further in later
     versions.
@@ -82,8 +89,9 @@ block page-content
     buffering functions, and helper functions for the core Kickstart components.
 
   +img('ks-kdollar', 'snug')
-
   :markdown
+    *It turns out [you might not need jQuery.](http://youmightnotneedjquery.com/)*
+
     While I spent a great deal of effort evolving the functionality of the buffering
     functions, they've been around for a while but haven't been widely used. This is
     unfortunate as I see missed optimization opportunities for these functions all the
@@ -110,6 +118,9 @@ block page-content
   +img('ks-sass-example', 'snug')
 
   :markdown
+    *Very succinct Sass file for a navbar, relying on basic functionality from Kickstart's
+    core navbar, tucked away and extended.*
+
     Users also benefit from a high amount of organization. On the CSS side, the entire
     core is tucked away, allowing for writing mixin-heavy Sass. On the JavaScript side,
     files are written in CoffeeScript and bundled with Browserify. This allows a user to
@@ -118,7 +129,7 @@ block page-content
   +img('ks-coffeescript', 'snug')
 
   p
-    em An example from this very website, where coffeescript files are neatly organized into modules.
+    em An example from this very website, where coffeescript files are neatly organized into modules. Later, they are bundled together in closures.
 
 
 
