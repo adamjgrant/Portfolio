@@ -10,21 +10,30 @@
   border-left: 5px solid #DDD
   transition: all 0.2s
 
+  h1
+    a
+      color: $default-font-color
+
   &:hover
-    box-shadow: 0px 0px 5px #BBB
-    margin-top: -25px
-    margin-left: -25px
-    padding-left: 25px
+    // box-shadow: 0px 0px 5px #BBB
     border-color: map-get($colors, green)
     background: white
     z-index: 10
 
+    h1
+      a
+        color: map-get($colors, green)
+
     .tl-spine-dot-marker
-      margin-left: -55px
       background-color: map-get($colors, green)
 
       &:before
         border-color: map-get($colors, green)
+
+    .tl-spine-dot
+      &_employer
+        .tl-spine-dot-marker-yearFlag
+          background-color: map-get($colors, green)
 
   +gt($phablet)
     margin-left: 80px
@@ -40,7 +49,7 @@
       padding: $space*2 20px
 
       .tl-spine-dot-marker-yearFlag
-        background-color: map-get($colors, green)
+        background-color: map-get($gray, lightest)
         color: #FFF
 
     &-marker
