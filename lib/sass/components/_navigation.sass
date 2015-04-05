@@ -5,11 +5,15 @@
   &.home
     +navbar-color(map-get($colors, green))
 
+    h1 a
+      color: white
+
   nav
     +wrapper
 
     @media screen and (min-width: $tablet-landscape)
       max-width: 1200px
+
 
   +navbar-fixed
   +navbar-collapse
