@@ -71,18 +71,6 @@ projects = [
   category: 1
   showOnHomePage: true
 ,
-  id: 60
-  name: 'Vegan.FM'
-  year: 2006
-  big: false
-  thumbnail: true
-  shortDesc: 'This was both a website, social network, and native iPhone app that helped vegans look up any conceivable thing to determine if it\'s vegan (What the heck is ambergris?)'
-  technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
-  linkUrl: ''
-  linkLabel: ''
-  category: 2
-  showOnHomePage: true
-,
   id: 70
   name: 'CreativeWorks'
   year: 2008
@@ -93,30 +81,6 @@ projects = [
   linkUrl: ''
   linkLabel: ''
   category: 2
-  showOnHomePage: true
-,
-  id: 80
-  name: 'Miscellarious'
-  year: 2008
-  big: false
-  thumbnail: true
-  shortDesc: 'Create rooms and post PostIt notes on the wall. Anyone can add or edit anything. Recently brought back to life with new code.'
-  technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
-  linkUrl: ''
-  linkLabel: ''
-  category: 2
-  showOnHomePage: true
-,
-  id: 81
-  name: 'Vegan News'
-  year: 2009
-  big: false
-  thumbnail: true
-  shortDesc: 'My monthly video and audio podcast on veganism, complete with news, user voicemail, and recipes'
-  technologies: 'Adobe Premiere Pro, Adobe After Effects'
-  linkUrl: ''
-  linkLabel: ''
-  category: 0
   showOnHomePage: true
 ,
   id: 90
@@ -131,18 +95,6 @@ projects = [
   category: 2
   showOnHomePage: true
 ,
-  id: 95
-  name: 'The French Paper'
-  year: 2010
-  big: false
-  thumbnail: true
-  shortDesc: 'A few of my photos of Southern France were published by this French magazine.'
-  technologies: 'Canon T3 DSLR, Photoshop'
-  linkUrl: ''
-  linkLabel: ''
-  category: 3
-  showOnHomePage: true
-,
   id: 100
   name: 'LED Media'
   year: 2010
@@ -155,18 +107,6 @@ projects = [
   category: 3
   showOnHomePage: true
 ,
-  id: 110
-  name: 'The 5 Biggest Interface Screwups of 2010'
-  year: 2010
-  big: false
-  thumbnail: false
-  shortDesc: 'Guest article for UX Movement'
-  technologies: ''
-  linkUrl: 'http://uxmovement.com/thinking/the-5-biggest-interface-screw-ups-of-2010/'
-  linkLabel: 'Read Article'
-  category: 3
-  showOnHomePage: true
-,
   id: 120
   name: 'PriorKnowledge'
   year: 2011
@@ -174,18 +114,6 @@ projects = [
   thumbnail: true
   shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
   technologies: 'HTML, CSS, AdobeCS, Cinema4D'
-  linkUrl: ''
-  linkLabel: ''
-  category: 3
-  showOnHomePage: true
-,
-  id: 125
-  name: 'New York Times Company'
-  year: 2011
-  big: false
-  thumbnail: true
-  shortDesc: 'Created How-To videos for NYTC\'s About.com articles.'
-  technologies: 'Adobe Premiere Pro, Adobe After Effects'
   linkUrl: ''
   linkLabel: ''
   category: 3
@@ -287,30 +215,6 @@ projects = [
   category: 3
   showOnHomePage: false
 ,
-  id: 215
-  name: 'Magic Radio'
-  year: 2012
-  big: false
-  thumbnail: true
-  shortDesc: 'I created a radio that plays non-stop old-time radio programs'
-  technologies: 'Basic electronics, Arduino, Java'
-  linkUrl: ''
-  linkLabel: ''
-  category: 0
-  showOnHomePage: true
-,
-  id: 220
-  name: '10 High Impact Usability Improvements'
-  year: 2012
-  big: false
-  thumbnail: false
-  shortDesc: 'Article written as guest expert for UserTesting.com'
-  technologies: ''
-  linkUrl: 'http://www.usertesting.com/blog/2012/04/24/10-high-impact-usability-improvements-part-1/'
-  linkLabel: 'Read Article'
-  category: 3
-  showOnHomePage: true
-,
   id: 250
   name: 'Comedy Cellar'
   year: 2013
@@ -321,18 +225,6 @@ projects = [
   linkUrl: ''
   linkLabel: ''
   category: 3
-  showOnHomePage: true
-,
-  id: 251
-  name: 'Watermelon Keg'
-  year: 2013
-  big: false
-  thumbnail: true
-  shortDesc: 'As proof that I\'m fun at parties, my watermelon keg delivers spiked watermelon juice and good times for all.'
-  technologies: 'Watermelon, Pure Genius'
-  linkUrl: ''
-  linkLabel: ''
-  category: 0
   showOnHomePage: true
 ,
   id: 270
@@ -455,18 +347,6 @@ projects = [
   category: 3
   showOnHomePage: true
 ,
-  id: 390
-  name: 'Everything is a Bottle Opener'
-  year: 2014
-  big: false
-  thumbnail: false
-  shortDesc: 'A blog dedicated simply to the many things that can be used as a bottle opener'
-  technologies: 'Bottles, Chainsaws, Helicopters, Pens, etc.'
-  linkUrl: 'http://everythingisabottleopener.tumblr.com/'
-  linkLabel: 'everythingisabottleopener.tumblr.com'
-  category: 0
-  showOnHomePage: false
-,
   id: 400
   name: 'mailto.ninja'
   year: 2014
@@ -478,6 +358,141 @@ projects = [
   linkLabel: 'mailto.ninja'
   category: 2
   showOnHomePage: true
+,
+  id: 700
+  name: 'Kickstart'
+  year: 2015
+  big: true
+  thumbnail: false
+  shortDesc: 'A full featured CSS/JS library that puts Bootstrap and Foundation to shame.'
+  technologies: 'HTML, CSS, JS, CoffeeScript, Jade, Gulp, Jekyll, Ruby on Rails'
+  linkUrl: 'http://getkickstart.com'
+  linkLabel: 'GetKickstart'
+  category: 2
+  showOnHomePage: true
+]
+
+# Projects to show in version 3.1+ only.
+projects = projects.concat [
+  id: 60
+  name: 'Vegan.FM'
+  year: 2006
+  big: false
+  thumbnail: true
+  shortDesc: 'This was both a website, social network, and native iPhone app that helped vegans look up any conceivable thing to determine if it\'s vegan (What the heck is ambergris?)'
+  technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
+  linkUrl: ''
+  linkLabel: ''
+  category: 2
+  showOnHomePage: true
+,
+  id: 80
+  name: 'Miscellarious'
+  year: 2008
+  big: false
+  thumbnail: true
+  shortDesc: 'Create rooms and post PostIt notes on the wall. Anyone can add or edit anything. Recently brought back to life with new code.'
+  technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
+  linkUrl: ''
+  linkLabel: ''
+  category: 2
+  showOnHomePage: true
+,
+  id: 81
+  name: 'Vegan News'
+  year: 2009
+  big: false
+  thumbnail: true
+  shortDesc: 'My monthly video and audio podcast on veganism, complete with news, user voicemail, and recipes'
+  technologies: 'Adobe Premiere Pro, Adobe After Effects'
+  linkUrl: ''
+  linkLabel: ''
+  category: 0
+  showOnHomePage: true
+,
+  id: 95
+  name: 'The French Paper'
+  year: 2010
+  big: false
+  thumbnail: true
+  shortDesc: 'A few of my photos of Southern France were published by this French magazine.'
+  technologies: 'Canon T3 DSLR, Photoshop'
+  linkUrl: ''
+  linkLabel: ''
+  category: 3
+  showOnHomePage: true
+,
+  id: 110
+  name: 'The 5 Biggest Interface Screwups of 2010'
+  year: 2010
+  big: false
+  thumbnail: false
+  shortDesc: 'Guest article for UX Movement'
+  technologies: ''
+  linkUrl: 'http://uxmovement.com/thinking/the-5-biggest-interface-screw-ups-of-2010/'
+  linkLabel: 'Read Article'
+  category: 3
+  showOnHomePage: true
+,
+  id: 125
+  name: 'New York Times Company'
+  year: 2011
+  big: false
+  thumbnail: true
+  shortDesc: 'Created How-To videos for NYTC\'s About.com articles.'
+  technologies: 'Adobe Premiere Pro, Adobe After Effects'
+  linkUrl: ''
+  linkLabel: ''
+  category: 3
+  showOnHomePage: true
+,
+  id: 215
+  name: 'Magic Radio'
+  year: 2012
+  big: false
+  thumbnail: true
+  shortDesc: 'I created a radio that plays non-stop old-time radio programs'
+  technologies: 'Basic electronics, Arduino, Java'
+  linkUrl: ''
+  linkLabel: ''
+  category: 0
+  showOnHomePage: true
+,
+  id: 220
+  name: '10 High Impact Usability Improvements'
+  year: 2012
+  big: false
+  thumbnail: false
+  shortDesc: 'Article written as guest expert for UserTesting.com'
+  technologies: ''
+  linkUrl: 'http://www.usertesting.com/blog/2012/04/24/10-high-impact-usability-improvements-part-1/'
+  linkLabel: 'Read Article'
+  category: 3
+  showOnHomePage: true
+,
+  id: 251
+  name: 'Watermelon Keg'
+  year: 2013
+  big: false
+  thumbnail: true
+  shortDesc: 'As proof that I\'m fun at parties, my watermelon keg delivers spiked watermelon juice and good times for all.'
+  technologies: 'Watermelon, Pure Genius'
+  linkUrl: ''
+  linkLabel: ''
+  category: 0
+  showOnHomePage: true
+,
+  id: 390
+  name: 'Everything is a Bottle Opener'
+  year: 2014
+  big: false
+  thumbnail: false
+  shortDesc: 'A blog dedicated simply to the many things that can be used as a bottle opener'
+  technologies: 'Bottles, Chainsaws, Helicopters, Pens, etc.'
+  linkUrl: 'http://everythingisabottleopener.tumblr.com/'
+  linkLabel: 'everythingisabottleopener.tumblr.com'
+  category: 0
+  showOnHomePage: false
 ,
   id: 500
   name: 'kttty'
@@ -502,18 +517,6 @@ projects = [
   linkLabel: ''
   category: 0
   showOnHomePage: false
-,
-  id: 700
-  name: 'Kickstart'
-  year: 2015
-  big: true
-  thumbnail: false
-  shortDesc: 'A full featured CSS/JS library that puts Bootstrap and Foundation to shame.'
-  technologies: 'HTML, CSS, JS, CoffeeScript, Jade, Gulp, Jekyll, Ruby on Rails'
-  linkUrl: 'http://getkickstart.com'
-  linkLabel: 'GetKickstart'
-  category: 2
-  showOnHomePage: true
-]
+] if A$.settings.version > 3
 
 module.exports = projects
