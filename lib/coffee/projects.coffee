@@ -194,7 +194,7 @@ projects = [
   id: 130
   name: 'Kickstrap'
   year: 2011
-  big: false
+  big: true
   thumbnail: true
   shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
@@ -398,7 +398,7 @@ projects = [
   id: 320
   name: 'Everything'
   year: 2013
-  big: true
+  big: false
   thumbnail: true
   shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
@@ -434,7 +434,7 @@ projects = [
   id: 350
   name: 'Neo'
   year: 2014
-  big: false
+  big: true
   thumbnail: false
   shortDesc: 'Just started at this amazing company. More on this later.'
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, and more'
@@ -470,7 +470,7 @@ projects = [
   id: 400
   name: 'mailto.ninja'
   year: 2014
-  big: true
+  big: false
   thumbnail: false
   shortDesc: 'A stupidly simple solution to adding email sending to html'
   technologies: 'node.js, Coffeescript, Jade, Sass, Mailgun'
@@ -482,7 +482,7 @@ projects = [
   id: 500
   name: 'kttty'
   year: 2015
-  big: true
+  big: false
   thumbnail: false
   shortDesc: 'My webcomic with no drawings.'
   technologies: 'HTML, CSS, JS, Kickstart, Jekyll, Amazon S3'

@@ -16,21 +16,31 @@
 .tl-spine
 
   article
+    margin-top: $space
+
+    +gt($phablet)
+      margin-top: -30px
+
     h1
-      +heading-rg
+      +heading-xs
       font-family: $heading-font-family
-      font-weight: 300
+      font-weight: 500
 
       &:first-child
         margin-top: $space
 
         +gt($phablet)
-          margin-top: -33px
+          margin-top: 4px
+
+      a
+        color: $default-font-color
 
     h2
       font-family: $default-font-family
       +p()
       margin-top: 0
+      font-size: 0.85rem
+      margin-bottom: 0
 
     .technologies
       color: map-get($gray, light)
@@ -38,12 +48,27 @@
 
   p.technologies
     margin-bottom: 0
+    font-size: 0.85rem
 
   .link
     display: none
 
     &.show
       display: block
+
+  &.big
+    h1
+      +heading_lg
+      margin-top: 0
+
+    h2
+      font-size: 1rem
+      margin-bottom: $space
+
+    p.technologies
+      +p()
+
+    
 
 blockquote
   font-size: 1.75rem

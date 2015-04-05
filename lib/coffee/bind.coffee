@@ -53,7 +53,7 @@ bind = ->
       $project_slug = `$project.name.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'')`
       $project_title.href = "/#{$category_name}/#{$project_slug}"
 
-      if $project.linkUrl.length
+      if $project.linkUrl.length and $project.big
         $link = $_template.querySelector('p.link')
         $link.classList.add 'show'
         $link.innerHTML = "<a href='#{$project.linkUrl}'>#{$project.linkLabel}</a>"
