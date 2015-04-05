@@ -63,7 +63,12 @@ bind = ->
       $_template.querySelector('.page-content .tl-spine-dot-marker-yearFlag').innerHTML = $project.year
 
 
-      render $_template.querySelector('.tl-spine')
+      $spine = $_template.querySelector('.tl-spine')
+      if $project.big
+        $spine.classList.add 'big'
+      else
+        $spine.classList.remove 'big'
+      render $spine
 
   if typeof(k$.$('.render').dataset.pageId) == "string"
     $project = (A$.projects.filter (v) -> v.id == parseInt(k$.$('.render').dataset.pageId))[0]
