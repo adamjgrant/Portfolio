@@ -328,7 +328,7 @@ projects = [
   year: 2014
   big: true
   thumbnail: false
-  shortDesc: 'Just started at this amazing company. More on this later.'
+  shortDesc: 'Designer and Full Stack developer at this Lean innovation agency.'
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, and more'
   linkUrl: 'http://neo.com'
   linkLabel: 'Neo Homepage'
