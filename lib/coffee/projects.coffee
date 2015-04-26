@@ -195,7 +195,7 @@ projects = [
   name: 'Ipreo'
   year: 2012
   big: true
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
   technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
   linkUrl: ''
