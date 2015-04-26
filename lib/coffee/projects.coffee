@@ -2,7 +2,7 @@ projects = [
   id: 0
   name: 'Edupedia'
   year: 1998
-  big: true
+  big: false
   thumbnail: true
   shortDesc: 'An online encylclopedia anyone can edit. Sound familiar? I had the idea way before the other guys, but trust me--it was much worse.'
   technologies: 'HTML, VisualPage'
@@ -98,7 +98,7 @@ projects = [
   id: 100
   name: 'LED Media'
   year: 2010
-  big: false
+  big: true
   thumbnail: true
   shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.'
   technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
@@ -122,7 +122,7 @@ projects = [
   id: 130
   name: 'Kickstrap'
   year: 2011
-  big: true
+  big: false
   thumbnail: true
   shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
@@ -146,7 +146,7 @@ projects = [
   id: 150
   name: 'Ske.dj'
   year: 2011
-  big: false
+  big: true
   thumbnail: true
   shortDesc: ''
   technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
@@ -158,7 +158,7 @@ projects = [
   id: 160
   name: 'VeganKit'
   year: 2012
-  big: true
+  big: false
   thumbnail: true
   shortDesc: 'Another of my most successful projects so far is this all-in-one and multilingual responsive website for vegans and those interested in going vegan.'
   technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
@@ -230,7 +230,7 @@ projects = [
   id: 270
   name: 'UX Zen'
   year: 2013
-  big: true
+  big: false
   thumbnail: true
   shortDesc: 'A zen-like daily affirmation of good UX.'
   techologies: 'Wordpress, HTML, CSS, JavaScript'
@@ -362,7 +362,7 @@ projects = [
   id: 700
   name: 'Kickstart'
   year: 2015
-  big: true
+  big: false
   thumbnail: false
   shortDesc: 'A full featured CSS/JS library that puts Bootstrap and Foundation to shame.'
   technologies: 'HTML, CSS, JS, CoffeeScript, Jade, Gulp, Jekyll, Ruby on Rails'
