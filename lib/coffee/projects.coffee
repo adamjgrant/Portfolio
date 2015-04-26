@@ -147,7 +147,7 @@ projects = [
   name: 'Ske.dj'
   year: 2011
   big: true
-  thumbnail: false
+  thumbnail: true
   shortDesc: ''
   technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
   linkUrl: 'http://ske.dj/'
