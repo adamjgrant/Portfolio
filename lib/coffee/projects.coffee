@@ -363,7 +363,7 @@ projects = [
   name: 'Kickstart'
   year: 2015
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'A full featured CSS/JS library that puts Bootstrap and Foundation to shame.'
   technologies: 'HTML, CSS, JS, CoffeeScript, Jade, Gulp, Jekyll, Ruby on Rails'
   linkUrl: 'http://getkickstart.com'
