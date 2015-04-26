@@ -3,7 +3,7 @@ projects = [
   name: 'Edupedia'
   year: 1998
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'An online encylclopedia anyone can edit. Sound familiar? I had the idea way before the other guys, but trust me--it was much worse.'
   technologies: 'HTML, VisualPage'
   linkUrl: ''
@@ -15,7 +15,7 @@ projects = [
   name: 'Coolpages2000'
   year: 1999
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'This early project stemmed from my excitement of learning how to do rollover image effects after reading through my father\'s computer books.'
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: ''
@@ -27,7 +27,7 @@ projects = [
   name: 'Adeus'
   year: 2000
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Adeus was a command-line NLP bot inspired by A.L.I.C.E, an Artificial Intelligence conversation program.'
   technologies: 'QBASIC, DOS'
   linkUrl: ''
@@ -39,7 +39,7 @@ projects = [
   name: 'Fake Chat'
   year: 2001
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'My first program written for the Sharp Wizard, a hinged digital organizer that could run apps.'
   technologies: 'BASIC'
   linkUrl: ''
@@ -51,7 +51,7 @@ projects = [
   name: 'Rogertoons'
   year: 2002
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'A new obsession with Flash, drawing cartoons, banjo, and mandolin led this website and 4 minute animated cartoon.'
   technologies: 'Macromedia/Adobe Flash, ActionScript, Adobe Premiere Pro'
   linkUrl: ''
@@ -63,7 +63,7 @@ projects = [
   name: 'A21S'
   year: 2002
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'My first mobile website was on this WindowsCE 1.0 device.'
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: ''
@@ -75,7 +75,7 @@ projects = [
   name: 'CreativeWorks'
   year: 2008
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'CW was a turning point for my experience in full stack development. Helped in the creation of many websites for CW clients.'
   technologies: 'HTML, CSS, JavaScript, Adobe CS, in-person usability testing'
   linkUrl: ''
@@ -87,7 +87,7 @@ projects = [
   name: 'Powabunga'
   year: 2010
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'While working at a vegan spa in the South of France, I worked as a developer for the spa owners\' side project.'
   technologies: 'Java Spring MVC, HTML, CSS, JavaScript, Flash'
   linkUrl: 'http://powabunga.com'
@@ -99,7 +99,7 @@ projects = [
   name: 'LED Media'
   year: 2010
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Full technological and UX development of three online businesses for a small NJ-based startup.'
   technologies: 'Magento/Zend PHP, Wordpress, JavaScript/jQuery, CSS, HTML'
   linkUrl: ''
@@ -111,7 +111,7 @@ projects = [
   name: 'PriorKnowledge'
   year: 2011
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
   technologies: 'HTML, CSS, AdobeCS, Cinema4D'
   linkUrl: ''
@@ -123,7 +123,7 @@ projects = [
   name: 'Kickstrap'
   year: 2011
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
   linkUrl: 'http://getkickstrap.com'
@@ -135,7 +135,7 @@ projects = [
   name: 'Kickstrap'
   year: 2011
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: ''
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
   linkUrl: 'http://getkickstrap.com'
@@ -147,7 +147,7 @@ projects = [
   name: 'Ske.dj'
   year: 2011
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: ''
   technologies: 'HTML, CSS, JavaScript, Axure RP, Adobe CS'
   linkUrl: 'http://ske.dj/'
@@ -159,7 +159,7 @@ projects = [
   name: 'VeganKit'
   year: 2012
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Another of my most successful projects so far is this all-in-one and multilingual responsive website for vegans and those interested in going vegan.'
   technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
   linkUrl: 'http://vegankit.com'
@@ -171,7 +171,7 @@ projects = [
   name: 'VeganKit'
   year: 2012
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: ''
   technologies: 'Django, i18n, HTML, CSS, JavaScript, Python, Kickstrap, Axure RP, Persona development, in-person usability testing'
   linkUrl: 'http://vegankit.com'
@@ -183,7 +183,7 @@ projects = [
   name: 'Lab95'
   year: 2012
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'This advanced data-collection tool allows researchers to create individual collection "modules" which can be used alone or as clusters of other modules.'
   technologies: 'Ruby on Rails, HTML, CSS, JavaScript, AngularJS, Amazon S3, Kickstrap, in-person usability testing'
   linkUrl: ''
@@ -195,7 +195,7 @@ projects = [
   name: 'Ipreo'
   year: 2012
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
   technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
   linkUrl: ''
@@ -207,7 +207,7 @@ projects = [
   name: 'Ipreo'
   year: 2012
   big: true
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Worked as the UX/UI Designer/Developer for Debtdomain.com, a loan syndication web application.'
   technologies: 'HTML, CSS, JavaScript, Silverback, Adobe CS, Paper Prototyping, remote and in-person usability testing, Axure RP, Balsamiq, Cinema4D, and some .NET and ColdFusion'
   linkUrl: ''
@@ -219,7 +219,7 @@ projects = [
   name: 'Comedy Cellar'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Created a reservation ticket screen similar to iOS\'s Passbook. Increased sales to owner\'s neighboring bar.'
   technologies: 'Hype2, JavaScript, PHP'
   linkUrl: ''
@@ -231,7 +231,7 @@ projects = [
   name: 'UX Zen'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'A zen-like daily affirmation of good UX.'
   techologies: 'Wordpress, HTML, CSS, JavaScript'
   linkUrl: 'http://adamkochanowicz.com/uxzen/'
@@ -243,7 +243,7 @@ projects = [
   name: 'Campaign Breeze'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Complete rebranding and interaction redesign of this email campaign creation tool.'
   technologies: 'Axure RP, Adobe CS, in-person usability testing.'
   linkUrl: ''
@@ -255,7 +255,7 @@ projects = [
   name: 'KBash'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'A UNIX shell for the web. KBash creates a realistic-looking collapsible terminal that translates UNIX syntax to JavaScript.'
   technologies: 'HTML, CSS, JavaScript'
   linkUrl: 'http://ajkochanowicz.github.io/kbash/'
@@ -267,7 +267,7 @@ projects = [
   name: 'CSS Post Rendering'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'A concept for loading pages quickly and elegantly by delaying non-essential CSS and images until after page load.'
   technologies: 'HTML, CSS, JavaScript, Kickstrap'
   linkUrl: 'http://ajkochanowicz.github.io/CSS-Post-Rendering/'
@@ -291,7 +291,7 @@ projects = [
   name: 'Everything'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive/'
@@ -303,7 +303,7 @@ projects = [
   name: 'Everything'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
@@ -315,7 +315,7 @@ projects = [
   name: 'Everything'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive'
@@ -327,7 +327,7 @@ projects = [
   name: 'Neo'
   year: 2013
   big: true
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'Designer and Full Stack developer at this Lean innovation agency.'
   technologies: 'HTML, CSS, JavaScript, Ruby on Rails, ReactJS, Adobe CS, and more'
   linkUrl: 'http://neo.com'
@@ -378,7 +378,7 @@ projects = projects.concat [
   name: 'Vegan.FM'
   year: 2006
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'This was both a website, social network, and native iPhone app that helped vegans look up any conceivable thing to determine if it\'s vegan (What the heck is ambergris?)'
   technologies: 'HTML, CSS, JavaScript, Joomla, Cocoa, XCode, PHP, MySQL, Adobe CS (phew!)'
   linkUrl: ''
@@ -390,7 +390,7 @@ projects = projects.concat [
   name: 'Miscellarious'
   year: 2008
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Create rooms and post PostIt notes on the wall. Anyone can add or edit anything. Recently brought back to life with new code.'
   technologies: 'Wordpress, PHP, HTML, CSS, JavaScript, Adobe CS, Angular.JS (later)'
   linkUrl: ''
@@ -402,7 +402,7 @@ projects = projects.concat [
   name: 'Vegan News'
   year: 2009
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'My monthly video and audio podcast on veganism, complete with news, user voicemail, and recipes'
   technologies: 'Adobe Premiere Pro, Adobe After Effects'
   linkUrl: ''
@@ -414,7 +414,7 @@ projects = projects.concat [
   name: 'The French Paper'
   year: 2010
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'A few of my photos of Southern France were published by this French magazine.'
   technologies: 'Canon T3 DSLR, Photoshop'
   linkUrl: ''
@@ -438,7 +438,7 @@ projects = projects.concat [
   name: 'New York Times Company'
   year: 2011
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Created How-To videos for NYTC\'s About.com articles.'
   technologies: 'Adobe Premiere Pro, Adobe After Effects'
   linkUrl: ''
@@ -450,7 +450,7 @@ projects = projects.concat [
   name: 'Magic Radio'
   year: 2012
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'I created a radio that plays non-stop old-time radio programs'
   technologies: 'Basic electronics, Arduino, Java'
   linkUrl: ''
@@ -474,7 +474,7 @@ projects = projects.concat [
   name: 'Watermelon Keg'
   year: 2013
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'As proof that I\'m fun at parties, my watermelon keg delivers spiked watermelon juice and good times for all.'
   technologies: 'Watermelon, Pure Genius'
   linkUrl: ''
@@ -510,7 +510,7 @@ projects = projects.concat [
   name: 'Sketchbook'
   year: "Various"
   big: false
-  thumbnail: true
+  thumbnail: false
   shortDesc: 'Just some selections from my sketchbook over the years.'
   technologies: 'Boredom'
   linkUrl: ''

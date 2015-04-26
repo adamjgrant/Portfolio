@@ -53,6 +53,11 @@ bind = ->
       $project_slug = `$project.name.toLowerCase().replace(/ /g,'-').replace(/[^\w-]+/g,'')`
       $project_title.href = "/#{$category_name}/#{$project_slug}"
 
+      # If project has a thumbnail
+      if $project.thumbnail
+        $project.thumbnail_img = document.createElement 'img'
+        $project.thumbnail_img.src = "http://cdn.everything.io/portfolio/img/thumbnails/#{$project_slug}.png"
+
       if $project.linkUrl.length and $project.big
         $link = $_template.querySelector('p.link')
         $link.classList.add 'show'
@@ -61,6 +66,7 @@ bind = ->
       $_template.querySelector('.page-content h2').innerHTML = $project.shortDesc
       $_template.querySelector('.page-content .technologies span').innerHTML = $project.technologies
       $_template.querySelector('.page-content .tl-spine-dot-marker-yearFlag').innerHTML = $project.year
+      $_template.querySelector('.page-content .thumbnail').appendChild $project.thumbnail_img if $project.thumbnail
 
 
       $spine = $_template.querySelector('.tl-spine')

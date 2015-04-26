@@ -21,6 +21,16 @@
     +gt($phablet)
       margin-top: -30px
 
+    .thumbnail
+      img
+        display: block
+        margin-bottom: $space
+        height: 150px
+
+        +gt($tablet)
+          float: right
+          margin-left: $space
+
     h1
       +heading-xs
       font-family: $heading-font-family
