@@ -325,7 +325,7 @@ projects = [
 ,
   id: 350
   name: 'Neo'
-  year: 2014
+  year: 2013
   big: true
   thumbnail: false
   shortDesc: 'Designer and Full Stack developer at this Lean innovation agency.'
