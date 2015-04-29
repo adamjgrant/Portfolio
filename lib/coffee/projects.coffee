@@ -517,6 +517,18 @@ projects = projects.concat [
   linkLabel: ''
   category: 0
   showOnHomePage: false
+,
+  id: 700
+  name: 'YesNo.vote'
+  year: "2015"
+  big: false
+  thumbnail: true
+  shortDesc: "Vote yes or no on hot issues and get your voice heard."
+  technologies: "Ruby on Rails, ReactJS, Kickstart"
+  linkUrl: 'http://yesno.vote'
+  linkLabel: 'YesNo.vote'
+  category: 0
+  showOnHomePage: true
 ] if A$.settings.version > 3
 
 module.exports = projects
