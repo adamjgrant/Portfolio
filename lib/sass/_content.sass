@@ -2,8 +2,12 @@
   margin-bottom: $space * 2
 
   h1
-    border-bottom: 1px solid map-get($white, darker)
     padding-bottom: $space
+
+    +gt($desktop)
+      +heading_xxl
+      padding-bottom: 0
+      margin-bottom: 10px
 
   h2
     +heading-sm
@@ -12,6 +16,13 @@
   h3
     +p
     font-family: $default-font-family
+
+  h4
+    +heading_xxs
+    display: inline-block
+    font-weight: 300
+    margin: 0
+      left: $space/2
 
 .tl-spine
 

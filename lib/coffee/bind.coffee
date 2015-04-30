@@ -82,9 +82,9 @@ bind = ->
     $template.querySelector('.page-details h1').innerHTML = $project.name
     $template.querySelector('.page-details h2').innerHTML = $project.shortDesc
     $template.querySelector('.page-details h3').innerHTML = $project.year
+    $template.querySelector('.page-details h4').innerHTML = "<a href='#{$project.linkUrl}'>#{$project.linkLabel}</a>" if $project.linkUrl.length
 
     render $template.querySelector('.page-details')
-
 
   # Now that we're done, let's just remove the template div.
   $template.parentNode.removeChild($template)
