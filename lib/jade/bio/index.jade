@@ -1,0 +1,43 @@
+extends ../_page
+
+block variables
+  - var title = "Bio"
+  - var navClass = "bio"
+
+block page-content
+  div(data-page="bio")
+    .page-details
+      h1 Bio
+
+    article
+      :markdown
+        Adam Grant (born Adam Kochanowicz) is a Full Stack Developer and UX Designer 
+        living in Menlo Park, California.
+
+        ## Early Life
+
+        Adam's father, Thomas Kochanowicz was a software developer and Certified
+        Java Programmer (CJP) from Omaha Nebraska. Before his death in 2013, he
+        developed an online classified ads website called BlueAds.com, one year
+        before the invention of Craigslist. He also filed three patents for
+        woodworking equipment. Adam's mother, Sharon, is a Nurse Practitioner, also 
+        in Omaha.
+
+        Adam began tinkering with computers with his family at a very early age. His
+        father helped him to build his own computer with parts at a local computer store.
+        From his father's work he received copies of otherwise expensive operating systems
+        and development software. He experimented with Symantec Visual Page for creating
+        HTML websites (see [Edupedia](/delights/edupedia/), [Adeus](/delights/adeus/), and
+        [Fake Chat](http://localhost:3000/delights/fake-chat/))
+
+    aside
+      h1 Social media
+      ul
+        li 
+          | Twitter&nbsp;
+          a(href="https://twitter.com/nicegoingadam") @NiceGoingAdam
+        li
+          | GitHub&nbsp;
+          a(href="https://github.com/ajkochanowicz") github.com/ajkochanowicz
+
+

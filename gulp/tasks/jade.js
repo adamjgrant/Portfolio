@@ -22,7 +22,7 @@ gulp.task('jade', function() {
     }}))
     .pipe(gulp.dest(dest + "/" ))
 
-  return gulp.src(['./lib/jade/{delights,design,development,mobile}/**/*.jade'])
+  return gulp.src(['./lib/jade/{bio,delights,design,development,mobile}/**/*.jade'])
     .pipe(changed(dest))
     .pipe(jade(
       {
