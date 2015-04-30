@@ -2,6 +2,9 @@
   +navbar($background-color: white)
   transition: background, 0.25s
 
+  nav > ul > li.navbar-title > h1
+    margin-left: -25px // This should be fixed in Kickstart itself.
+
   &.home
     +navbar-color(map-get($colors, green))
 

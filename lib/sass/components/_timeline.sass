@@ -24,10 +24,15 @@
         padding:
           left: 15px
           right: 15px
-        top: -11px
+        top: -8px
+        left: 20px
+        
+        +gt($phablet)
+          left: -75px
 
         +gt($tablet)
           margin-left: -30px
+          left: -45px
 
     &:hover
       .tl-spine-dot_employer
@@ -100,10 +105,10 @@
         padding: 3px 0
         font-size: 18px
         border-radius: 5px
-        top: -7px
+        top: -6px
         z-index: 1
         color: #A1A1A1
         left: 27px
 
         +gt($phablet)
-          left: -55px
+          left: -45px

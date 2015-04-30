@@ -1,9 +1,8 @@
 [data-component="hero"]
   background: map-get($colors, green)
-  padding: $space*4 $space
+  position: relative
 
   +gt($tablet)
-    padding: $space*8 $space
     margin-bottom: -$space
 
   svg, svg #Name
@@ -17,6 +16,20 @@
     font-family: "lust-script-display"
     color: white
     text-align: center
+    left: 0
+    right: 0
+    top: 50%
+    position: absolute
+    text-align: center
+    margin:
+      bottom: 0
+      top: -25px
 
     +gt($tablet)
       font-size: 4rem
+      margin-top: -45px
+
+  video
+    width: 100%
+    max-width: 100%
+    margin-bottom: -5px
