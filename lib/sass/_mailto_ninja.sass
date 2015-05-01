@@ -1,0 +1,18 @@
+.override .mailto.ninja footer nav.toolbar
+  background-color: map-get($white, dark)
+  height: 52px
+
+.override .mailto.ninja footer nav.toolbar ul li 
+  button#send
+    +button(map-get($colors, green))
+
+    &:hover
+      background: white
+      color: map-get($black, lightest)
+      border-color: transparent
+
+  button#cancel
+    +button(map-get($white, darkest))
+
+.override .mailto.ninja footer nav.toolbar ul li a.logo
+  color: map-get($colors, green)
