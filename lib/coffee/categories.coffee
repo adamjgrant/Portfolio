@@ -14,7 +14,7 @@ categories = [
   id: 2
   name: 'Full Stack Development'
   slug: 'development'
-  lead: 'I\'ve built several websites from top to bottom.'
+  lead: 'HTML5, CSS3, JS/ES6, Ruby on Rails, Django.'
   desc: 'While I prefer to work as close to the design side of projects as possible, when the job needs to be done, I\'m happy to pick up on the latest and greatest back- and front-end frameworks. Most of my earlier projects were written in PHP while more recently I\'ve worked in .NET, Django, and Ruby on Rails.'
 ,
   id: 3
