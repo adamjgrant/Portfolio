@@ -12,7 +12,9 @@
       color: white
 
     nav > ul > li > a:not([role="button"])
-      margin-left: -25px
+      @media screen and (max-width: $tablet - 1px)
+        margin-left: -25px
+
       color: rgba(255, 255, 255, 0.75)
 
   nav
