@@ -111,7 +111,7 @@ projects = [
   name: 'PriorKnowledge'
   year: 2011
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'Recently acquired by Salesforce, I designed and programmed a CMYK-loving brand for this Bayesian data predictive API'
   technologies: 'HTML, CSS, AdobeCS, Cinema4D'
   linkUrl: ''
