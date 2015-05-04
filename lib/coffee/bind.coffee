@@ -99,5 +99,12 @@ bind = ->
   # if not supportsTouch
   #   for $spine in k$.$$('.tl-spine')
   #     $spine.classList.add 'hoverable'
+  
+  # Make the whole .tl-spine element into a pseudo link.
+  $spines = k$.$$('.tl-spine')
+  for $spine in $spines
+    do ($spine) ->
+      $spine.addEventListener 'click', ->
+        document.location.href = $spine.querySelector('article h1 a').href
 
 module.exports = bind

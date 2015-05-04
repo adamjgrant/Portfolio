@@ -30,6 +30,11 @@
     margin-top: $space
     clear: both
 
+    &:hover
+      .thumbnail
+        img
+          opacity: 1
+
     +gt($phablet)
       margin-top: -30px
       padding-bottom: $space*1.2
@@ -43,6 +48,7 @@
         +gt($tablet)
           margin-left: $space
           max-width: 100px
+          opacity: 0.1
 
       +gt($tablet)
         float: right
@@ -103,6 +109,7 @@
 
           +gt($tablet)
             max-width: 200px
+            opacity: 1
 
           +gt($desktop)
             max-width: 300px
