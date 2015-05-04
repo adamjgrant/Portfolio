@@ -38,10 +38,12 @@ bind = ->
 
       # Let's filter out the projects for this category.
       $projects = A$.projects.filter (v) -> 
-        if v.categories
-          return v.categories.indexOf($category.id) > 0
-        else
-          return v.category == $category.id
+        if v.categories is undefined
+          v.categories = new Array
+          v.categories.push v.category
+        v.categories.indexOf($category.id) > -1
+
+      console.log $projects
 
     # If that is the home page
     else

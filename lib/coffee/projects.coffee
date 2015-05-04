@@ -129,19 +129,8 @@ projects = [
   linkUrl: 'http://getkickstrap.com'
   linkLabel: 'Kickstrap Homepage'
   category: 2
+  categories: [2, 3]
   showOnHomePage: true
-,
-  id: 140
-  name: 'Kickstrap'
-  year: 2011
-  big: true
-  thumbnail: false
-  shortDesc: ''
-  technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
-  linkUrl: 'http://getkickstrap.com'
-  linkLabel: 'Kickstrap Homepage'
-  category: 3
-  showOnHomePage: false
 ,
   id: 150
   name: 'Ske.dj'
@@ -189,6 +178,7 @@ projects = [
   linkUrl: ''
   linkLabel: ''
   category: 0
+  categories: [0, 2]
   showOnHomePage: true
 ,
   id: 190
@@ -297,31 +287,8 @@ projects = [
   linkUrl: 'http://cdn.everything.io/archive/'
   linkLabel: '(former) Everything.io Splash Page'
   category: 2
+  categories: [1, 2, 3]
   showOnHomePage: true
-,
-  id: 330
-  name: 'Everything'
-  year: 2013
-  big: false
-  thumbnail: false
-  shortDesc: 'This command center for physical possessions needed to be as seamless as the mobile operating system itself.'
-  technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-  linkUrl: 'http://cdn.everything.io/archive'
-  linkLabel: '(former) Everything.io Splash Page'
-  category: 1
-  showOnHomePage: false
-,
-  id: 340
-  name: 'Everything'
-  year: 2013
-  big: false
-  thumbnail: false
-  shortDesc: 'In EIO, I needed to cram a lot of information into a small space while ensuring a great User Experience.'
-  technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
-  linkUrl: 'http://cdn.everything.io/archive'
-  linkLabel: '(former) Everything.io Splash Page'
-  category: 3
-  showOnHomePage: false
 ,
   id: 350
   name: 'Neo'

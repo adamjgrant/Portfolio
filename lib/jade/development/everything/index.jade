@@ -2,7 +2,7 @@ extends ../../_page
 
 block page-content
   div(class="render" data-page-id="320")
-  p I'm convinced the Internet of Things (IoT) is coming. Gone are the days where only our phones, tablets, and computers are connected to the internet. Internet connectivity devices are getting smaller and cheaper while our need to be online only increases.
+  p I'm convinced the Internet of Things (IoT) is at our heels. Gone are the days where only our phones, tablets, and computers are connected to the internet. Internet connectivity devices are getting smaller and cheaper while our need to be online only increases.
   p I've also seen some growth in Near Field Communication (NFC) and Bluetooth devices. However, these technologies sandbox the control of physical products into a small physical radius and the own product's ecosystem. I'm betting Everything.io on the use of Internet-connected chipsets that communicate over websockets.
   p I've also noticed the "smart products" you can buy today each have their own mobile app to use them. If I'm correct about the number of these devices increasing, this means we'll need to have several apps to control our possessions.
   p Everything.io seeks to streamline this by creating one single platform for all your connected and non-connected devices.
@@ -10,3 +10,75 @@ block page-content
   +img_clover(['eio_breadexpiring', 'eio_umbrella', 'eio_autoorder'])
   p The frontend of EIO is built in Kickstrap 2 with the Bootstrap framework removed. This empowers the site to work more as an app. All data is manipulated and displayed in real time without the need to refresh the screen. In addition, Angular.js completes the job by binding the UI as an MVC. This very portfolio is also built in Kickstrap 2. Notice how quickly navigation changes occur.
   p Because I'm so early in the project, there are still a lot of technology decisions to make. I'm looking at AWS for SMS-sending ability, Ruby on Rails for backend functionality which cannot be achieved through Firebase, and the Raspberry Pi for prototyping its first devices.
+
+  h2 Design
+  p Everything.io is an "Operating System for your Stuff." In the same way your computer keeps track of your files, EIO (as I call it) keeps track of your physical possessions. Although conceivably any thing you own can be added to the app via barcode or manual entry, I'm also building this to anticipate the Internet of Things (IoT). As such, much of the technology will support websocket-connected cloud devices.
+  p I'm giving the UX attention of the app higher attention than usual. I don't think users will initially be won over by the feeling that they 
+    em  need
+    |  the app, even though it can save them money by keeping things circulating through their fridge before expiring.
+  p The experience and design of the app should be good enough that people will want to use it even if they find it useless. Of course, I hope that won't be the case.
+  +img_clover(['eio_icon_design1', 'eio_icon_design2', 'eio_icon_design3','eio_icon_design4','eio_icon_design5' ])
+  p 
+    em Each icon has a clear foreground and background and is measured to a consistent grid template.
+  
+  +img('eio_kitchen', 'left')
+  p Icon design is one of those things that seems so simple. 
+  p After all, they're just little pictures. I learned this very early on as a designer that sometimes the (literally) smallest things are the hardest to do. I learned how hard it was to create a typeface by struggling over just one letter with Kickstrap. I learned from several many icon iterations with Ipreo how difficult it was to convey an idea with only 14 pixels squared.
+  p I relied on old standby methods for EIO by creating a grid, using a color scheme, and sticking to chosen metrics and shapes--reusing them whenever I could.
+  +img('eio_live', 'snug')
+  p 
+    em I regard the kitchen as the most important room in the app and thus spent the most time on its design.
+  p The most time I spent on icons was those that belonged to the Kitchen. This is for two reasons: The early release of the app may only have the kitchen, without any "Room" context to begin with.
+  p Second, as far as our dealing with possessions, nothing beats food. Edibles are the products we purchase and consume most often. So it follows the app should be optimized for handling expiration dates, quantities, and hopefully online grocery delivery.
+  p
+
+  +img('eio_rooms', 'right')
+  h2 App Experience
+  p "Could someone copy my idea but make it simpler?" My goal is to make the answer to that question "no."
+  p A universal platform for tracking and controlling any kind of possession just doesn't exist yet--not for your everyday consumer. It's more interesting to me to create a product that is fundamental rather than is original.
+  p I constantly asked myself "what is the number 1 way to design &quot;x&quot;?" This approach led me to a very minimalist "app screen" appearance for the rooms and the items in the room. The user's mental model shouldn't have to be rebuilt each time they move from screen to screen.
+  p 
+    | However, there is also a danger in being 
+    em too consistent.
+
+  +img('eio_detail', 'right')
+  p If two screens serve two very different purposes or represent different things, there should be visual cues to immediately represent this. For that reason, the home screen is blue and the rooms screens are white with heading text.
+  p This separation is both for branding and to subtly denote being "outside" and "inside" the virtual house. That is, the sky is usually blue and walls are usually white. (See the "Kitchen" screen above.)
+  p The third view is a detail view which embellishes nothing. Backward and forward actions are left- and right-bound, respectively. The logo takes you home. The heading tells you where you are. Chevrons denote navigation, buttons denote actions.
+  p I see screens like this as intermediate steps of the best parts of the experience. They need to take up very little of the display of the app. Users want to fill them out and get them out of the way as soon as possible.
+  +img('eio_logo', 'right')
+  h2 Logo
+  p Rarely do I stick to the first logo idea I come up with. For EIO, while I did use my first idea, I also iterated over the finer details of the "e" possibly hundreds of iterations over.
+  p I have an obsession with typography, so type logos are usually my first pick. The lowercase e has always seemed to be the happiest letter in the alphabet. It looks as though it is smiling.
+  p By levitating the bowl of the E above the lower counter, I am subtly nodding to a character used in formal logic to denote "all," this is a capital A with a horizontal line above it.
+
+  h2 Mobile
+  p Everything.io has currently been repurposed as a kind of umbrella identity for some of my products. However, before, it was a concept for an IoT hub.
+  p Computers organize your files. Everything.io organizes your physical possessions.
+  ul
+    li Add time-sensitive food purchases with an alert linked to the expiration date.
+    li See what you have turned on at home, turn off lights, receive alerts when a light has been on too long.
+    li Add purchases you can write off, complete with receipt and deduction category.
+    li Tag the clothes you loan out to friends with a custom label. Remind yourself to ask for it back with an alert, or automatically send an email reminder to your friend after a specified time span.
+    li Your car can tell you when it's low on gas or needs an oil change. Find it on a map if it falls in the wrong hands.
+    li With "if this, then that" rules, you could create a rule for your air conditioner to turn on if your connected fitness band detects a long run during a hot day.
+    li Your purchases appear automatically in your list of belongings with a "delivery pending" label. Track them right from Everything. The label disappears as soon as delivery has been attempted.\
+    li Analyze the nutrition of the contents of your pantry to determine just how healthy your purchases are.
+
+  h2 Design
+  +img('eio_logo', 'left')
+  p My design goal with Everything.io was to make something very complex actually quite approachable. The open expanses of blue, soft, sans-serif typeface and the symmetrical logo complements the round and colorful icons to create a "right at home" feeling.
+  +img('eio_live', 'snug')
+  p I envisioned the mobile usage of EIO to be somewhere just under 100% so as of yet, I haven't even begun to think of the desktop version.
+
+  +img('eio_kitchen', 'right')
+  h2 Focusing
+  p There's a lot of potential for distraction with all the things going on in the application, so I wanted to make sure there were just a few actionable items on the screen at any one time, and in similar locations from page to page.
+  p Most of the conventions I used are derived from established UI patterns from iOS and iOS applications. For example, the top left and right areas get the user back and forward (when appended with chevrons) through menus in detail view. When drilled out of detail view, they are taken back to the home page, resembling the home screen of an iPhone.
+  .clearfix
+
+  +img('eio_rooms', 'right')
+  h2 Fast performance
+  p I hate waiting and I didn't want to send users to blank screens in between one page refreshing and the other. Angular.js was the most logical solution for me and, of course, Kickstrap 2.
+  p With Kickstrap 2's integrated functionality with Firebae.io, users also don't need to pull down or press a button to refresh their data. All data is hooked up with Websockets and is therefore real-time.
+  p The code is designed to be extremely reusable, using html partials compiled in Jade or served by Angular. Each of the countless views is generated by one of about 4 different view templates. Using this kind of strategy isn't just good for keeping code tidy--it maintains a consistent experience for the user.

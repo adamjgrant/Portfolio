@@ -21,3 +21,76 @@ block page-content
     a(href="http://jspm.io") JSPM (JavaScript Package Manager)
     | . Among other features, JSPM can load virtually any kind of web resource in the context of dependency management. This way, large resources can be loaded asynchronously without the risk of missing dependent scripts. This also makes it easy to program, as pieces of a website can be grouped into modules, and loaded where needed.
   p To keep Kickstrap working quickly, I used a combination of Firebase.io and Angular.js with a library provided by Firebase called AngularFire. As the video shows above, each website is supercharged with a fast front-end MVC and real-time websockets Backend as a Service via a special agreement with Firebase.
+
+  h2 Design
+  p Kickstrap started as a simple personal tool made for my own use and happened to host on GitHub. To my surprise, I found many people had found it, without any promotion on my part. Later it found itself on the front page of Hacker News twice and quickly grew to over 1,500 stars on GitHub.
+  p
+    blockquote I love Kickstrap because its creator, Adam [Grant] Kochanowicz gets why I use Bootstrap. It isn’t because it’s the easiest or prettiest UI framework (it is). It isn’t because it lets me do a lot of cool stuff without patching together my own set of jQuery libraries (it does). It’s because it removes the intial UI legwork as something I have to worry about.
+      cite
+        a(href="http://jandjorgensen.com/programming/2013/10/08/jekyll-kickstrap-its-alive.html") Source
+  p It remained an active project by myself and two other geniuses. In 2014, I decided to change Kickstrap into a full CSS/JavaScript library, changing the name slightly to "Kickstart". You can read more about this in <a href="/development/kickstart">Kickstart</a>
+  +img('ks_skuvault', 'snug')
+  p
+    em 
+      | One of the first businesses to use Kickstrap was 
+      a(href="http://skuvault.com") SkuVault
+      | , a feature-robust tool for warehouse management.
+  h2 Surge of Users
+  p One of the coolest things about releasing an open source project is just to see what people do with it.
+  Most users would take the prebuilt templates and change them with included themes. However, a handful actually dug deep and created robust businesses from them. On a few occasions, I came across postings for Kickstrap developers on CraigsList and online recruiting sites.
+  p Recently, I've spotted a Swedish Auto Parts store, Image thumbnail generator, Miami events site, Portuguese Acting Agency, French-American Mountain-Climbing Catalogue, and a URL Shortener. All built in Kickstrap.
+  +img('ks_jobposting', 'snug')
+  p
+    em One of several "Kickstrap Developer" job postings which surfaced
+  blockquote It's products like this that keep me stoked on being a nerd!
+    cite
+      a(href="https://twitter.com/freakpelican/statuses/276237241431519232") @freakpelican
+  blockquote Your project is awesome.
+    cite
+      a(href="https://twitter.com/paul_irish/status/223070193654575104?uid=111762377&iid=am-85321533413420190534910446&nid=27+236") Paul Irish, Google Chrome Developer
+  h2 Designing Kickstrap 1 Home Page
+  p We went through several iterations of the site via Axure prototypes, wireframes, and good ol' pen and paper. In the first, beta release of the product most of our input came from direct surveys on the site, five second and nav flow tests via Usability hub, and actual in-person user interviews.
+  p More importantly, we got to watch what people were building and learned about their ideas for using product (not always the same as ours.)
+  p We wanted to make the docs very readable and the resource pages (for downloading extensions) akin to downloading apps on your phone.
+  +img('ks_uikit', 'snug')
+  p
+    em GetKickstrap.com was originally built in Django. I started with a UI Kit fonts from TypeKit and built out the docs, resource uploading, user registration and social features.
+  h2 
+    span(style="text-decoration: line-through") Designing
+    |  Obsessing over the Logo
+  +img_clover(['ks_logo1', 'ks_logo2'])
+  p
+    em Kickstrap logos for version 1 (above) and two (below)
+  p The logo was something I've spent a lot of time on, yet am still not finished. I've learned exactly how difficult it is to create a typeface--and I only made nine letters.
+  +img('ks_mainlogo_pre', 'snug', 'jpg')
+  p
+    em After hundreds of attempts and a couple beers, finally I arrived at a "K" I was happy with.
+  p It was important for me that the K seemed playful, and actually kicking as if jumping from a swing in flight. In earlier designs, I approached this more literally, actually embedding a floating swing across or next to the logo.
+  +img_clover(['ks_logo_measured', 'ks_k_iteration', 'ks_logo_sketch'])
+  p
+    em Even more iteration over getting the vector version to get the right look. Not merely an exercise of tracing.
+
+  h2 Design Goals
+  p It was our goal to make Kickstrap a tool that was so simple, you didn't need to install anything. Just download the product and slap it on a server. Because of this simple design, it also allowed it to be paired with a myriad of frameworks, platforms, and languages.
+  p For example, we've seen Kickstrap deployed in Django, RoR, PHP, .NET, and used in both corporate, public, and personal sites.
+
+  h2 Creating the Product
+  p I don't like calling Kickstrap a framework (although I will anyway for brevity), it's more like a kit which employs frameworks in a concerted way.
+  p The core concept of Kickstrap is that it extends on Bootstrap's functionality, all-the-while allowing you to continuously keep Bootstrap up-to-date.
+  p To accomplish this, Kickstrap uses LESS, a CSS preprocessor to compile from Bootstrap's core LESS files. The website gives users access to a user-submitted library of apps, extras, and themes.
+  +img('ks_logo', 'snug')
+  p
+    em The resulting K could be broken apart and still recognized, proving its ownable and reusable quality.
+
+  h2 Apps
+  p Apps are common jQuery plugins repackaged as Asynchronous Module Definitions or AMDs. This allows users to download the dependencies needed for these plugins as single folders and merely refer to them by name when needed. Kickstrap automatically loads the necessary JS and CSS in the correct order written in a configuration file for the app.
+
+  h2 Themes
+  p Themes are merely LESS files which override Bootstrap's default theme. The vast majority of these themes are provided with permission from Thomas Park of 
+    a(href="http://bootswatch.com") Bootswatch
+
+  h2 Extras
+  p Extras are additional UI elements on top of the many provided in Bootstrap.
+    
+
+  
