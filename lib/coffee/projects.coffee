@@ -123,7 +123,7 @@ projects = [
   name: 'Kickstrap'
   year: 2011
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'One of my most successful projects is the most popular fork of Bootstrap. This framework is a trusted resource of companies including Peugeot Citroën and Agile Harbor.'
   technologies: 'HTML, CSS, JavaScript, Bootstrap, Adobe CS'
   linkUrl: 'http://getkickstrap.com'
@@ -281,7 +281,7 @@ projects = [
   name: 'Everything'
   year: 2013
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'My most ambitious project is "The Operating System for your Stuff"--a platform for the control and inventory of smart and non-smart devices.'
   technologies: 'HTML, CSS, JavaScript, Firebase, Angular.js, Kickstrap 2, Java, Raspberry Pi, Arduino, Websockets, Ruby on Rails'
   linkUrl: 'http://cdn.everything.io/archive/'
