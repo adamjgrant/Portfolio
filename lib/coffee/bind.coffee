@@ -37,7 +37,11 @@ bind = ->
       render $template.querySelector('.page-details')
 
       # Let's filter out the projects for this category.
-      $projects = A$.projects.filter (v) -> v.category == $category.id
+      $projects = A$.projects.filter (v) -> 
+        if v.categories
+          return v.categories.indexOf($category.id) > 0
+        else
+          return v.category == $category.id
 
     # If that is the home page
     else

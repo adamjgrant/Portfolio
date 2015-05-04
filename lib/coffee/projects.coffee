@@ -369,6 +369,7 @@ projects = [
   linkUrl: 'http://getkickstart.com'
   linkLabel: 'GetKickstart'
   category: 2
+  categories: [1, 2, 3]
   showOnHomePage: true
 ]
 
