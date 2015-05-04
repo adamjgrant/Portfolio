@@ -338,6 +338,19 @@ projects = [
   category: 2
   categories: [1, 2, 3]
   showOnHomePage: true
+,
+  id: 800
+  name: 'Ask Alexis'
+  year: 2015
+  big: false
+  thumbnail: true
+  shortDesc: 'Sole Rails and Front-End developer for this SMS-based "Invisible App"'
+  technologies: 'HTML, CSS, JS, ReactJS, Rails, Rspec, Capybara, Kickstart'
+  linkUrl: 'http://askalexis.io'
+  linkLabel: 'AskAlexis.io'
+  category: 1
+  categories: [1, 2, 3]
+  showOnHomePage: true
 ]
 
 # Projects to show in version 3.1+ only.
