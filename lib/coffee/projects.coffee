@@ -306,7 +306,7 @@ projects = [
   name: 'Bitcoin Currency'
   year: 2014
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'I created a functional set of denominational Bitcoin bills featuring great men and women of science.'
   technologies: 'Adobe CS'
   linkUrl: 'http://ajkochanowicz.github.io/bitcoinbills/'
