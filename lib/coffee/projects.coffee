@@ -51,7 +51,7 @@ projects = [
   name: 'Rogertoons'
   year: 2002
   big: false
-  thumbnail: false
+  thumbnail: true
   shortDesc: 'A new obsession with Flash, drawing cartoons, banjo, and mandolin led this website and 4 minute animated cartoon.'
   technologies: 'Macromedia/Adobe Flash, ActionScript, Adobe Premiere Pro'
   linkUrl: ''
