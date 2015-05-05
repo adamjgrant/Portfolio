@@ -2,9 +2,6 @@
   +navbar($background-color: white)
   transition: background, 0.25s
 
-  nav > ul > li.navbar-title > h1
-    margin-left: -25px // This should be fixed in Kickstart itself.
-
   &.home
     +navbar-color(map-get($colors, green))
 
@@ -12,9 +9,6 @@
       color: white
 
     nav > ul > li > a:not([role="button"])
-      @media screen and (max-width: $tablet - 1px)
-        margin-left: -25px
-
       color: rgba(255, 255, 255, 0.75)
 
   nav
