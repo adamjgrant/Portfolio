@@ -353,6 +353,21 @@ projects = [
   showOnHomePage: true
 ]
 
+projects = projects.concat [
+  id: 700
+  name: 'YesNo.vote'
+  year: "2015"
+  big: false
+  thumbnail: true
+  shortDesc: "Vote yes or no on hot issues and get your voice heard."
+  technologies: "Ruby on Rails, ReactJS, Kickstart"
+  linkUrl: 'http://yesno.vote'
+  linkLabel: 'YesNo.vote'
+  category: 0
+  categories: [0, 1, 2, 3]
+  showOnHomePage: true
+] if A$.settings.version > 3.0
+
 # Projects to show in version 3.1+ only.
 projects = projects.concat [
   id: 60
@@ -498,18 +513,6 @@ projects = projects.concat [
   linkLabel: ''
   category: 0
   showOnHomePage: false
-,
-  id: 700
-  name: 'YesNo.vote'
-  year: "2015"
-  big: false
-  thumbnail: true
-  shortDesc: "Vote yes or no on hot issues and get your voice heard."
-  technologies: "Ruby on Rails, ReactJS, Kickstart"
-  linkUrl: 'http://yesno.vote'
-  linkLabel: 'YesNo.vote'
-  category: 0
-  showOnHomePage: true
-] if A$.settings.version > 3
+] if A$.settings.version > 3.1
 
 module.exports = projects
