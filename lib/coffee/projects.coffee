@@ -346,7 +346,7 @@ projects = [
   thumbnail: true
   shortDesc: 'Sole Rails and Front-End developer for this SMS-based "Invisible App"'
   technologies: 'HTML, CSS, JS, ReactJS, Rails, Rspec, Capybara, Kickstart'
-  linkUrl: 'http://askalexis.io'
+  linkUrl: 'http://askalexis.io/homepage'
   linkLabel: 'AskAlexis.io'
   category: 1
   categories: [1, 2, 3]
