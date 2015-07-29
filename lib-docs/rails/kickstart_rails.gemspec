@@ -6,7 +6,7 @@ require 'kickstart_rails/version'
 Gem::Specification.new do |spec|
   spec.name          = "kickstart_rails"
   spec.version       = Kickstart_rails::VERSION
-  spec.authors       = ["Adam Kochanowicz"]
+  spec.authors       = ["Adam Grant"]
   spec.email         = ["adamjgrant@gmail.com"]
   spec.summary       = %q{The front-end library for clean HTML and fast websites.}
   spec.description   = %q{The front-end library for clean HTML and fast websites.}
