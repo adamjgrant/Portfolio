@@ -248,7 +248,7 @@ projects = [
   thumbnail: false
   shortDesc: 'A UNIX shell for the web. KBash creates a realistic-looking collapsible terminal that translates UNIX syntax to JavaScript.'
   technologies: 'HTML, CSS, JavaScript'
-  linkUrl: 'http://ajkochanowicz.github.io/kbash/'
+  linkUrl: 'http://adamjgrant.github.io/kbash/'
   linkLabel: 'Demo on GitHub'
   category: 2
   showOnHomePage: true
@@ -260,7 +260,7 @@ projects = [
   thumbnail: false
   shortDesc: 'A concept for loading pages quickly and elegantly by delaying non-essential CSS and images until after page load.'
   technologies: 'HTML, CSS, JavaScript, Kickstrap'
-  linkUrl: 'http://ajkochanowicz.github.io/CSS-Post-Rendering/'
+  linkUrl: 'http://adamjgrant.github.io/CSS-Post-Rendering/'
   linkLabel: 'Demo on GitHub'
   category: 2
   showOnHomePage: true
@@ -272,7 +272,7 @@ projects = [
   thumbnail: false
   shortDesc: 'A standards document to contextualizing "types" of emails with an HTML meta tag. Because not all emails are messages.'
   technologies: 'On GitHub'
-  linkUrl: 'https://github.com/ajkochanowicz/Email-Meta'
+  linkUrl: 'https://github.com/adamjgrant/Email-Meta'
   linkLabel: 'See the specs on GitHub'
   category: 2
   showOnHomePage: true
@@ -309,7 +309,7 @@ projects = [
   thumbnail: true
   shortDesc: 'I created a functional set of denominational Bitcoin bills featuring great men and women of science.'
   technologies: 'Adobe CS'
-  linkUrl: 'http://ajkochanowicz.github.io/bitcoinbills/'
+  linkUrl: 'http://adamjgrant.github.io/bitcoinbills/'
   linkLabel: 'Bitcoin Denominational Currency'
   category: 3
   showOnHomePage: true

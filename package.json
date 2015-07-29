@@ -11,11 +11,11 @@
     "Gulp"
   ],
   "homepage": "http://getkickstart.com",
-  "bugs": "https://github.com/ajkochanowicz/kickstart/issues",
+  "bugs": "https://github.com/adamjgrant/kickstart/issues",
   "author": "Adam Kochanowicz",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ajkochanowicz/kickstart.git"
+    "url": "git://github.com/adamjgrant/kickstart.git"
   },
   "browser": {},
   "browserify": {
