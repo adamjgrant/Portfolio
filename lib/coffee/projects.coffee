@@ -351,6 +351,19 @@ projects = [
   category: 1
   categories: [1, 2, 3]
   showOnHomePage: true
+,
+  id: 900
+  name: 'Apple'
+  year: 2015
+  big: true
+  thumbnail: true
+  shortDesc: 'Full Stack Developer'
+  technologies: 'HTML, CSS, JS, Ruby on Rails, Rspec'
+  linkUrl: 'http://apple.com'
+  linkLabel: 'Apple'
+  category: 2
+  categories: [1, 2, 3]
+  showOnHomePage: true
 ]
 
 projects = projects.concat [
