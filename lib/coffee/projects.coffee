@@ -377,6 +377,19 @@ projects = [
   category: 0
   categories: [0]
   showOnHomePage: true
+,
+  id: 1100
+  name: 'Mozart'
+  year: 2016
+  big: false
+  thumbnail: false
+  shortDesc: 'A simple JavaScript pattern for slim, organized AJAX applications'
+  technologies: 'Pure JavaScript'
+  linkUrl: 'http://adamjgrant.github.io/Mozart/'
+  linkLabel: 'Mozart Documentation'
+  category: 2
+  categories: [2]
+  showOnHomePage: true
 ]
 
 projects = projects.concat [
