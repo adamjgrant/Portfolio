@@ -364,6 +364,19 @@ projects = [
   category: 2
   categories: [1, 2, 3]
   showOnHomePage: true
+,
+  id: 1000
+  name: 'Living Book'
+  year: 2016
+  big: false
+  thumbnail: false
+  shortDesc: 'Pass on the best of your life on to the next generation'
+  technologies: 'Apple Pages'
+  linkUrl: ''
+  linkLabel: ''
+  category: 0
+  categories: [0]
+  showOnHomePage: true
 ]
 
 projects = projects.concat [
