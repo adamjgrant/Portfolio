@@ -357,7 +357,7 @@ projects = [
   year: 2015
   big: true
   thumbnail: true
-  shortDesc: 'Ruby on Rails Developer'
+  shortDesc: 'Software Engineering Developer Lead'
   technologies: 'HTML, CSS, JS, Ruby on Rails, Rspec'
   linkUrl: 'http://apple.com'
   linkLabel: 'Apple'
