@@ -390,6 +390,18 @@ projects = [
   category: 2
   categories: [2]
   showOnHomePage: true
+,
+  id: 1200
+  name: 'Voiceover acting'
+  year: 2019
+  big: false
+  thumbnail: false
+  shortDesc: 'Because why not?'
+  technologies: ''
+  linkUrl: 'http://adamgrantvoice.com'
+  linkLabel: 'AdamGrantVoice.com'
+  category: 0
+  showOnHomePage: false
 ]
 
 projects = projects.concat [
