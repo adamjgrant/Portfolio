@@ -65,6 +65,9 @@ install_nvm:
 	@echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion'
 	@echo source ~/.zshrc
 
+watch:
+	gulp watch
+
 # # This will move over only the docs from 3.x that haven't changed in 4.x
 # sync-docs:
 # 	@rsync -av --exclude-from '4.x-pages.txt' lib-docs/jade/docs/3.x/ lib-docs/jade/docs/4.x/
