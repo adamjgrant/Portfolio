@@ -27,10 +27,11 @@ You need an older version of node. So [nvm is required](https://github.com/nvm-s
 
 1. `make install_nvm`
 2. `rm -rf package-lock.json`
-#3. `nvm install v10.16.3 && nvm use --delete-prefix v10.16.3 && rm -rf node_modules && make`
 3. `nvm install v6.11.2 && nvm use --delete-prefix v6.11.2 && rm -rf node_modules && make`
 
 Using https://github.com/tjunnone/npm-check-updates/issues/367 I just uninstalled gulp with `npm uninstall -g gulp` and then run `make` again.
+
+After this, you'll still get errors, but I at least got gulp watch to work.
 
 ## linker command failed with exit code 1 (use -v to see invocation) 
 
