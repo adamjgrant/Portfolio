@@ -394,14 +394,14 @@ projects = [
   id: 1200
   name: 'Voiceover acting'
   year: 2019
-  big: false
+  big: true
   thumbnail: false
-  shortDesc: 'Because why not?'
-  technologies: ''
+  shortDesc: 'Voice actor and announcer for independent podcasts'
+  technologies: 'Adobe Audition'
   linkUrl: 'http://adamgrantvoice.com'
   linkLabel: 'AdamGrantVoice.com'
   category: 0
-  showOnHomePage: false
+  showOnHomePage: true
 ]
 
 projects = projects.concat [
