@@ -1,5 +1,6 @@
 build:
 	@git submodule update --init --recursive
+	@npm install -g gulp
 	@make build-icons
 	@make build-default
 	@make build-rails
@@ -54,6 +55,15 @@ setup:
 	@sudo npm install
 	@bundle install
 	@make build-default
+
+install_nvm:
+	@brew install nvm
+	@mkdir -p ~/.nvm
+	@echo "Now add this stuff to ~/.zshrc"
+	@echo 'export NVM_DIR="$HOME/.nvm"'
+	@echo '[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm'
+	@echo '[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion'
+	@echo source ~/.zshrc
 
 # # This will move over only the docs from 3.x that haven't changed in 4.x
 # sync-docs:

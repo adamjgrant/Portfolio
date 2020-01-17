@@ -38,7 +38,7 @@
     "gulp": "^3.8.6",
     "gulp-autoprefixer": "0.0.10",
     "gulp-cached": "^1.0.1",
-    "gulp-coffee": "^2.1.1",
+    "gulp-coffee": "^2.3.5",
     "gulp-concat": "^2.4.0",
     "gulp-connect": "^2.0.6",
     "gulp-css-purge": "^1.0.0",
@@ -53,7 +53,7 @@
     "gulp-mustache": "^0.4.0",
     "gulp-newer": "^0.3.0",
     "gulp-notify": "^1.5.0",
-    "gulp-rename": "^1.2.0",
+    "gulp-rename": "^1.4.0",
     "gulp-ruby-sass": "^0.7.1",
     "gulp-todos": "^0.1.0",
     "gulp-uglify": "^1.0.1",
@@ -64,9 +64,12 @@
     "mocha": "^1.21.4",
     "normalize.css": "^3.0.1",
     "pretty-hrtime": "^0.2.1",
-    "require-dir": "^0.1.0",
+    "require-dir": "^0.3.2",
     "vinyl-source-stream": "^0.1.1",
     "watchify": "^2.1.1",
     "when": "^3.4.4"
+  },
+  "dependencies": {
+    "natives": "^1.1.6"
   }
 }
