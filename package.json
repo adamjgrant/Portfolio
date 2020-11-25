@@ -59,7 +59,7 @@
     "gulp-uglify": "^1.0.1",
     "gulp-util": "^3.0.1",
     "gulp-watch": "^0.6.8",
-    "highlight.js": "^8.2.0",
+    "highlight.js": "^10.1.2",
     "markdown-js": "0.0.3",
     "mocha": "^1.21.4",
     "normalize.css": "^3.0.1",
